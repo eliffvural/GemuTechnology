@@ -51,28 +51,6 @@ export default function Header4({ links }) {
               +1 (837) 652 8800
             </a>
           </li>
-          {/* Social Links */}
-          <li>
-            <a href="#" className="no-hover opacity-1 pe-1">
-              <span className="mn-soc-link mn-soc-link-color" title="Facebook">
-                <i className="fa-facebook-f" />
-              </span>
-              <span className="mobile-nav-display-i">Facebook</span>
-            </a>
-            <a href="#" className="no-hover opacity-1 pe-1">
-              <span className="mn-soc-link mn-soc-link-color" title="LinkedIn">
-                <i className="fa-linkedin-in" />
-              </span>
-              <span className="mobile-nav-display-i">LinkedIn</span>
-            </a>
-            <a href="#" className="no-hover opacity-1">
-              <span className="mn-soc-link mn-soc-link-color" title="Youtube">
-                <i className="fa-youtube" />
-              </span>
-              <span className="mobile-nav-display-i">Youtube</span>
-            </a>
-          </li>
-          {/* End Social Links  */}
         </ul>
       </div>
       {/* End Main Menu */}
