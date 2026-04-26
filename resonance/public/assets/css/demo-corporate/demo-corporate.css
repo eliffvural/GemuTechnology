@@ -92,7 +92,7 @@
   );
   color: var(--color-dark-1);
   font-family: var(--font-global);
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 400;
   letter-spacing: normal;
   line-height: 1.67;
@@ -105,7 +105,7 @@
 .theme-corporate .inner-nav ul,
 .theme-corporate .btn-mod,
 .theme-corporate .fw-title {
-  font-size: 17px !important;
+  font-size: 18px !important;
   line-height: 1.6 !important;
   letter-spacing: normal !important;
 }
@@ -466,7 +466,7 @@
   letter-spacing: -0.037em !important;
 }
 .theme-corporate .hs-descr {
-  font-size: 1.25rem !important;
+  font-size: 1.35rem !important;
   line-height: 1.65 !important;
   font-weight: 500 !important;
   color: var(--color-gray-1) !important;
@@ -499,13 +499,13 @@
   );
 }
 .theme-corporate .section-title {
-  font-size: 44px !important;
+  font-size: 46px !important;
   font-weight: 500 !important;
   line-height: 1.25 !important;
   letter-spacing: -0.017em !important;
 }
 .theme-corporate .section-title-small {
-  font-size: 34px;
+  font-size: 36px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: -0.02em;
@@ -517,7 +517,7 @@
   text-transform: uppercase;
 }
 .theme-corporate .section-descr-small {
-  font-size: 16px !important;
+  font-size: 17px !important;
   line-height: 1.7 !important;
   color: var(--color-gray-1) !important;
 }
@@ -596,6 +596,16 @@
 }
 .theme-corporate .works-grid.work-grid-fancy .work-descr {
   font-size: 16px;
+}
+.theme-corporate .services-8-title {
+  font-size: 21px !important;
+  line-height: 1.35 !important;
+}
+.theme-corporate .services-8-text,
+.theme-corporate .services-8-category,
+.theme-corporate .text-gray {
+  font-size: 18px !important;
+  line-height: 1.65 !important;
 }
 .theme-corporate .work-img-bg {
   background: var(--color-gray-light-2);
@@ -846,7 +856,7 @@
 }
 .theme-corporate .fw-title {
   margin-bottom: 16px;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 500;
   letter-spacing: normal;
 }
@@ -854,7 +864,7 @@
 .theme-corporate .footer-2 li,
 .theme-corporate .footer-2 a,
 .theme-corporate .footer-2 .fw-menu li a {
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.55;
 }
 .theme-corporate .footer-2 .fw-menu li:not(:last-child) {

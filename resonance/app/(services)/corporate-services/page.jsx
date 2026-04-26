@@ -1,23 +1,60 @@
 import AnimatedText from "@/components/common/AnimatedText";
 import Footer4 from "@/components/footers/Footer4";
 import Header4 from "@/components/headers/Header4";
-
-const onePage = false;
-const dark = false;
 import Image from "next/image";
 import { corporateMultipage } from "@/data/menu";
 import Link from "next/link";
 import Service from "@/components/homes/home-4/Service";
 import AnimateButton from "@/components/common/AnimateButton";
-import { progressData } from "@/data/skills";
-import { features5 } from "@/data/features";
+
+const onePage = false;
+const dark = false;
 
 export const metadata = {
-  title:
-    "Corporate Services || Resonance &mdash; One & Multi Page React Nextjs Creative Template",
+  title: "Hizmetler | Gemu Technology",
   description:
-    "Resonance &mdash; One & Multi Page React Nextjs Creative Template",
+    "Gemu Technology'nin uçtan uca yazılım hizmetleri, uzmanlık alanları ve kurumsal teslimat yaklaşımı.",
 };
+
+const expertiseData = [
+  { label: "Kurumsal Web Sistemleri", value: 95 },
+  { label: "Backend ve API Mimarisi", value: 93 },
+  { label: "Mobil Uygulama Geliştirme", value: 90 },
+  { label: "AI ve Otomasyon Çözümleri", value: 88 },
+  { label: "Veri ve Güvenlik Altyapısı", value: 92 },
+];
+
+const serviceBenefits = [
+  {
+    title: "Uçtan Uca Teslimat",
+    description:
+      "Analizden canlıya alıma kadar tüm süreci tek ekip sorumluluğunda yönetiyoruz.",
+    svgPath:
+      "M12 1l3 6 6 .9-4.5 4.4 1.1 6.2L12 15.8 6.4 18.5l1.1-6.2L3 7.9 9 7l3-6z",
+  },
+  {
+    title: "Ölçeklenebilir Mimari",
+    description:
+      "Büyüme hedeflerinize uyumlu, performans odaklı ve sürdürülebilir sistem tasarımları kuruyoruz.",
+    svgPath:
+      "M4 19h16v2H4v-2zm1-7h3v5H5v-5zm5-4h3v9h-3V8zm5-3h3v12h-3V5z",
+  },
+  {
+    title: "Kurumsal Güvenlik",
+    description:
+      "Kimlik doğrulama, yetkilendirme ve veri güvenliğini ürünün doğal bir parçası olarak ele alıyoruz.",
+    svgPath:
+      "M12 2l7 3v6c0 4.6-3 8.5-7 9.9C8 19.5 5 15.6 5 11V5l7-3zm0 2.1L7 6.2V11c0 3.5 2.1 6.6 5 7.8 2.9-1.2 5-4.3 5-7.8V6.2l-5-2.1z",
+  },
+  {
+    title: "Şeffaf İletişim",
+    description:
+      "Düzenli raporlama, öngörülebilir planlama ve hızlı geri bildirim döngüsüyle ilerliyoruz.",
+    svgPath:
+      "M3 4h18v12H7l-4 4V4zm2 2v9.2L6.2 14H19V6H5zm3 2h8v2H8V8zm0 3h6v2H8v-2z",
+  },
+];
+
 export default function CorporateServicesPage() {
   return (
     <>
@@ -45,9 +82,9 @@ export default function CorporateServicesPage() {
                   <div className="col-lg-10 offset-lg-1">
                     <h1 className="hs-title-9 mb-10">
                       <span className="wow charsAnimIn" data-splitting="chars">
-                        <AnimatedText text="Our" />
+                        <AnimatedText text="Hizmetlerimiz" />
                         <span className="mark-decoration-3-wrap">
-                          <AnimatedText text="Services" />
+                          <AnimatedText text="Gemu Technology" />
                           <b
                             className="mark-decoration-3 wow scalexIn"
                             data-wow-delay="0.5s"
@@ -59,7 +96,7 @@ export default function CorporateServicesPage() {
                       className="hs-descr mb-0 wow fadeIn"
                       data-wow-delay="0.2s"
                     >
-                      Online marketing that leaves an impression.
+                      İhtiyacınıza özel, ölçeklenebilir ve yüksek performanslı yazılım çözümleri.
                     </p>
                   </div>
                 </div>
@@ -75,10 +112,9 @@ export default function CorporateServicesPage() {
                 <div className="row mb-70 mb-sm-50">
                   <div className="col-md-8 offset-md-2 text-center">
                     <p className="section-descr mb-0">
-                      With a deep understanding of local markets and a global
-                      perspective, our team of seasoned professionals is
-                      equipped to navigate the complexities of international
-                      marketing campaigns.
+                      Kurumsal web, backend, mobil uygulama ve yapay zeka alanlarında
+                      teknik yetkinliğimizi iş hedeflerinizle birleştiriyor; ölçülebilir
+                      sonuç üreten dijital ürünler geliştiriyoruz.
                     </p>
                   </div>
                 </div>
@@ -96,9 +132,9 @@ export default function CorporateServicesPage() {
                       />
                     </div>
                     <p className="section-descr-medium mb-50 mb-sm-40">
-                      Looking for exclusive marketing services? Contact us and
-                      get free online consultation for your brand or your
-                      client's brand.
+                      Projenizin kapsamını, teknik ihtiyaçlarını ve önceliklerini
+                      birlikte netleştirelim. Doğru mimariyle hızlı başlayan, güvenli
+                      ilerleyen ve büyüdükçe güçlenen bir ürün süreci tasarlayalım.
                     </p>
                     <div className="local-scroll text-center">
                       <Link
@@ -111,7 +147,7 @@ export default function CorporateServicesPage() {
                           <i className="mi-heart" />
                         </span>
                         <span data-btn-animate="y">
-                          <AnimateButton text={"Request Price"} />
+                          <AnimateButton text={"Teklif ve Yol Haritası Alın"} />
                         </span>
                       </Link>
                     </div>
@@ -132,19 +168,17 @@ export default function CorporateServicesPage() {
                 <div className="row position-relative">
                   <div className="col-md-6 col-lg-5 mb-md-50 mb-sm-30">
                     <h3 className="section-title mb-30">
-                      What our area of&nbsp;expertise?
+                      Uzmanlık alanlarımız
                     </h3>
                     <p className="text-gray mb-0">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Nam pulvinar vitae neque et porttitor. Integer non dapibus
-                      diam, ac eleifend lectus. In maximus ligula semper metus
-                      pellentesque mattis. Maecenas volutpat, diam enim sagittis
-                      quam.
+                      Teknik ekiplerimiz modern yazılım mimarisi, güvenlik ve performans
+                      disiplinlerini birlikte uygular. Böylece ürününüz yalnızca bugün
+                      değil, büyüme dönemlerinde de stabil ve sürdürülebilir kalır.
                     </p>
                   </div>
                   <div className="col-md-6 offset-lg-1 pt-10 pt-sm-0">
                     {/* Bar Item */}
-                    {progressData.map((elm, i) => (
+                    {expertiseData.map((elm, i) => (
                       <div key={i} className="progress tpl-progress">
                         <div
                           className="progress-bar bg-gradient-primary-1"
@@ -165,19 +199,19 @@ export default function CorporateServicesPage() {
                 <div className="row mb-50 mb-sm-50">
                   <div className="col-md-10 offset-md-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3 text-center">
                     <h2 className="section-title-small mb-20">
-                      Why choose Resonance?
+                      Neden Gemu Technology?
                     </h2>
                     <p className="text-gray mb-0">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua.
+                      Projelerinizi sadece kod teslimi olarak değil; strateji, mühendislik
+                      ve operasyonel sürdürülebilirlik odağında uzun vadeli bir ortaklık
+                      modeliyle ele alıyoruz.
                     </p>
                   </div>
                 </div>
                 {/* Features Grid */}
                 <div className="row mt-n30 wow fadeInUp">
                   {/* Feature Item */}
-                  {features5.map((elm, i) => (
+                  {serviceBenefits.map((elm, i) => (
                     <div
                       key={i}
                       className="col-sm-6 col-xl-3 d-flex align-items-stretch"
