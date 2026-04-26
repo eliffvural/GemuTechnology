@@ -96,22 +96,22 @@ export const testimonials4 = [
     id: 1,
     delay: "0s",
     stars: 4.5,
-    text: "“Really impressed with the service and the results!”",
-    caption: "Rated 4.5 on Trustpilot",
+    text: "“İhtiyacımızı hızlı analiz edip ölçeklenebilir bir çözüm planı sundular.”",
+    caption: "Kurumsal müşteri değerlendirmesi",
   },
   {
     id: 2,
     delay: "0.15s",
     stars: 4.5,
-    text: "“Excellent service for targeted lead generation.”",
-    caption: "Rated 4.5 on Trustpilot",
+    text: "“Teknik kalite, iletişim ve teslimat disiplini beklentimizin üzerindeydi.”",
+    caption: "Kurumsal müşteri değerlendirmesi",
   },
   {
     id: 3,
     delay: "0.3s",
     stars: 4.5,
-    text: "“I have super enjoyed working with Resonance.”",
-    caption: "Rated 4.5 on Trustpilot",
+    text: "“Gemu Technology, ekibimizin güvenle birlikte çalıştığı bir çözüm ortağı oldu.”",
+    caption: "Kurumsal müşteri değerlendirmesi",
   },
 ];
 
@@ -119,16 +119,16 @@ export const testimonialItems = [
   {
     imageSrc: "/assets/images/demo-corporate/testimonial-1.jpg",
     quote:
-      "This template is so beautiful and has such wonderful new options. It is updated often which gives me even more quality. The support is the absolute best I've ever had the pleasure of interacting with. Quick, courteous, premium and extremely helpful!",
-    author: "Adam Peterson",
-    position: "Marketing Consultant",
+      "Yeni ürün lansman sürecimizde ihtiyaçlarımızı doğru analiz ettiler, teknik borcu düşük bir mimari kurdular ve kritik teslim tarihlerini eksiksiz karşıladılar. Ekipler arası koordinasyonumuz belirgin şekilde hızlandı.",
+    author: "Mert Aydın",
+    position: "Dijital Dönüşüm Direktörü",
   },
   {
     imageSrc: "/assets/images/demo-corporate/testimonial-2.jpg",
     quote:
-      "Optimization and structure are very good for SEO basics. A remarkable model, everything has been thought out with talent, the design, the various adaptations. Beautiful template, nice code and easy to customize.",
-    author: "Jordan Harvey",
-    position: "SEO/SMO Expert",
+      "Performans, güvenlik ve sürdürülebilirlik başlıklarında net kazanımlar elde ettik. Gemu Technology yalnızca geliştirme yapan bir ekip değil; ürün kararlarımıza stratejik katkı sunan güçlü bir teknoloji ortağı.",
+    author: "Selin Karaca",
+    position: "Ürün ve Teknoloji Müdürü",
   },
 ];
 

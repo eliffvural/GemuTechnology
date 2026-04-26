@@ -7,7 +7,7 @@ export default function Testimonials() {
       <div className="row">
         <div className="col-md-8 offset-md-2 col-lg-6 offset-lg-3">
           <h2 className="section-title mb-70 mb-sm-50 text-center">
-            Clients Stories
+            Müşteri Hikayeleri
           </h2>
         </div>
       </div>

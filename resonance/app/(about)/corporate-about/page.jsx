@@ -10,14 +10,36 @@ import { corporateMultipage } from "@/data/menu";
 import Link from "next/link";
 import Cta from "@/components/homes/home-4/Cta";
 import Testimonials from "@/components/homes/home-4/Testimonials";
-import { features5 } from "@/data/features";
 
 export const metadata = {
-  title:
-    "Corporate About || Resonance &mdash; One & Multi Page React Nextjs Creative Template",
+  title: "Hakkımızda | Gemu Technology",
   description:
-    "Resonance &mdash; One & Multi Page React Nextjs Creative Template",
+    "Gemu Technology'nin yaklaşımını, çalışma modelini ve neden tercih edildiğini keşfedin.",
 };
+
+const aboutBenefits = [
+  {
+    title: "Stratejik Yaklaşım",
+    description:
+      "İş hedeflerinizi teknik kararlarla hizalıyor, kısa vadeli teslimat ile uzun vadeli ölçeklenebilirliği aynı çerçevede yönetiyoruz.",
+    svgPath:
+      "M12 0c6.627 0 12 5.373 12 12s-5.373 12-12 12S0 18.627 0 12 5.373 0 12 0zm0 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm-1 4h2v7h-2V6zm0 9h2v2h-2v-2z",
+  },
+  {
+    title: "Mühendislik Disiplini",
+    description:
+      "Modern mimari, temiz kod ve test odaklı geliştirme prensipleriyle güvenilir, sürdürülebilir ve bakım maliyeti düşük sistemler üretiyoruz.",
+    svgPath:
+      "M10 2h4v3h-4V2zm-6 5h16v2H4V7zm2 4h12v11H6V11zm2 2v7h8v-7H8z",
+  },
+  {
+    title: "Ölçülebilir Etki",
+    description:
+      "Yalnızca yazılım teslim etmiyor; performans, kullanıcı deneyimi ve operasyonel verimlilik metrikleriyle somut iş değeri oluşturuyoruz.",
+    svgPath:
+      "M3 21h18v2H3v-2zm2-8h3v6H5v-6zm5-4h3v10h-3V9zm5-3h3v13h-3V6z",
+  },
+];
 export default function CorporateAboutPage() {
   return (
     <>
@@ -45,9 +67,9 @@ export default function CorporateAboutPage() {
                   <div className="col-lg-10 offset-lg-1">
                     <h1 className="hs-title-9 mb-10">
                       <span className="wow charsAnimIn" data-splitting="chars">
-                        <AnimatedText text="About" />
+                        <AnimatedText text="Hakkımızda" />
                         <span className="mark-decoration-3-wrap">
-                          <AnimatedText text="Studio" />
+                          <AnimatedText text="Gemu Technology" />
                           <b
                             className="mark-decoration-3 wow scalexIn"
                             data-wow-delay="0.5s"
@@ -59,7 +81,7 @@ export default function CorporateAboutPage() {
                       className="hs-descr mb-0 wow fadeIn"
                       data-wow-delay="0.2s"
                     >
-                      Crafting immersive digital journeys for brands.
+                      İş hedeflerinizi modern teknolojiyle buluşturan stratejik yazılım ortağınız.
                     </p>
                   </div>
                 </div>
@@ -86,11 +108,10 @@ export default function CorporateAboutPage() {
                 <div className="row mb-70 mb-sm-50">
                   <div className="col-md-10 offset-md-1 col-lg-8 offset-lg-2 text-center">
                     <p className="section-descr dark-white mb-0">
-                      Marketing is the activity, set of institutions, and
-                      processes for creating, communicating, delivering, and
-                      exchanging offerings that have value for customers
-                      partners, and society at large. However, the definition of
-                      marketing has evolved over the years.
+                      Gemu Technology olarak kurumların karmaşık operasyonel ihtiyaçlarını
+                      sade, güvenilir ve ölçeklenebilir dijital ürünlere dönüştürüyoruz.
+                      Fikirden yayına alıma kadar tüm süreçte iş birliğini, şeffaflığı ve
+                      teknik mükemmeliyeti odağa alıyoruz.
                     </p>
                   </div>
                 </div>
@@ -99,7 +120,7 @@ export default function CorporateAboutPage() {
                 {/* End Testimonials Grid */}
                 <div className="local-scroll text-center">
                   <Link
-                    href={`/corporate-about${dark ? "-dark" : ""}`}
+                    href={`/corporate-services${dark ? "-dark" : ""}`}
                     className={`btn btn-mod ${
                       dark ? "btn-dark" : "btn-w"
                     } btn-with-icon btn-circle`}
@@ -108,7 +129,7 @@ export default function CorporateAboutPage() {
                       <i className="mi-favorite" />
                     </span>
                     <span data-btn-animate="y">
-                      <AnimateButton text={"View Our Services"} />
+                      <AnimateButton text={"Hizmetlerimizi İnceleyin"} />
                     </span>
                   </Link>
                 </div>
@@ -131,19 +152,18 @@ export default function CorporateAboutPage() {
                 <div className="row">
                   <div className="col-md-7 col-lg-6 col-xl-5">
                     <h2 className="section-title mb-40 mb-xs-30">
-                      Get <span className="mark-decoration-5">free</span>{" "}
-                      marketing consultation online
+                      Projenizi birlikte değerlendirelim
                     </h2>
                     <p className="section-descr mb-50 mb-sm-40">
-                      Contact us and get free marketing consultation for your
-                      business.
+                      Hedeflerinizi dinleyelim, teknik yol haritanızı birlikte netleştirelim
+                      ve kurumunuza en uygun çözüm mimarisini kurgulayalım.
                     </p>
                     <div className="local-scroll mb-70 mb-sm-50">
                       <Link
                         href={`/corporate-contact${dark ? "-dark" : ""}`}
                         className="btn btn-mod btn-w-c btn-large btn-round btn-hover-anim opacity-09"
                       >
-                        <span>Get a Consultation</span>
+                        <span>İletişime Geçin</span>
                       </Link>
                     </div>
                   </div>
@@ -164,16 +184,16 @@ export default function CorporateAboutPage() {
                     {/* Text */}
                     <div className="col-md-12 col-lg-3 mb-md-50">
                       <h2 className="section-caption mb-xs-10">
-                        Primary Benefits
+                        Neden Biz?
                       </h2>
                       <h3 className="section-title-small mb-40">
-                        Why choose Resonance?
+                        Gemu Technology ile çalışmanın avantajları
                       </h3>
                       <div className="section-line" />
                     </div>
                     {/* End Text */}
                     {/* Feature Item */}
-                    {features5.slice(0, 3).map((elm, i) => (
+                    {aboutBenefits.map((elm, i) => (
                       <div
                         key={i}
                         className="col-md-4 col-lg-3 d-flex align-items-stretch mb-sm-30"
