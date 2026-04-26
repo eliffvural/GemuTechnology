@@ -12,6 +12,25 @@ import Link from "next/link";
 import Testimonials2 from "./Testimonials2";
 import Image from "next/image";
 export default function Home4({ onePage = false, dark = false }) {
+  const solutionAreas = [
+    {
+      title: "Kurumsal Web Çözümleri",
+      text: "Next.js ve React ile hızlı, SEO güçlü ve sürdürülebilir web ürünleri geliştiriyoruz.",
+    },
+    {
+      title: "Backend ve API Sistemleri",
+      text: "Güvenli kimlik yönetimi ve ölçeklenebilir servis katmanlarıyla güçlü altyapılar kuruyoruz.",
+    },
+    {
+      title: "Mobil Uygulama Çözümleri",
+      text: "iOS ve Android için tek kod tabanında yüksek performanslı mobil deneyimler sunuyoruz.",
+    },
+    {
+      title: "AI ve Otomasyon Çözümleri",
+      text: "LLM ve akıllı otomasyon senaryoları ile ekiplerin verimliliğini artıran çözümler üretiyoruz.",
+    },
+  ];
+
   return (
     <>
       <hr className={`mt-0 mb-0 ${dark ? "white" : ""} `} />
@@ -158,6 +177,16 @@ export default function Home4({ onePage = false, dark = false }) {
                 hızlandırır.
               </p>
             </div>
+          </div>
+          <div className="row mt-n30 mb-70 mb-sm-50">
+            {solutionAreas.map((item, i) => (
+              <div key={i} className="col-md-6 col-xl-3 d-flex align-items-stretch mt-30">
+                <div className="alt-features-item box-shadow mt-0 w-100">
+                  <h3 className="alt-features-title mb-10">{item.title}</h3>
+                  <div className="alt-features-descr">{item.text}</div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
         <Service />
