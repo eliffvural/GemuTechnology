@@ -92,7 +92,7 @@
   );
   color: var(--color-dark-1);
   font-family: var(--font-global);
-  font-size: 18px;
+  font-size: 19px;
   font-weight: 400;
   letter-spacing: normal;
   line-height: 1.67;
@@ -105,7 +105,7 @@
 .theme-corporate .inner-nav ul,
 .theme-corporate .btn-mod,
 .theme-corporate .fw-title {
-  font-size: 18px !important;
+  font-size: 19px !important;
   line-height: 1.6 !important;
   letter-spacing: normal !important;
 }
@@ -466,7 +466,7 @@
   letter-spacing: -0.037em !important;
 }
 .theme-corporate .hs-descr {
-  font-size: 1.35rem !important;
+  font-size: 1.45rem !important;
   line-height: 1.65 !important;
   font-weight: 500 !important;
   color: var(--color-gray-1) !important;
@@ -499,13 +499,13 @@
   );
 }
 .theme-corporate .section-title {
-  font-size: 46px !important;
+  font-size: 48px !important;
   font-weight: 500 !important;
   line-height: 1.25 !important;
   letter-spacing: -0.017em !important;
 }
 .theme-corporate .section-title-small {
-  font-size: 36px;
+  font-size: 38px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: -0.02em;

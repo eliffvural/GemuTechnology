@@ -1,4 +1,3 @@
-import AnimatedText from "@/components/common/AnimatedText";
 import Footer4 from "@/components/footers/Footer4";
 import Header4 from "@/components/headers/Header4";
 
@@ -7,15 +6,47 @@ const dark = false;
 import Image from "next/image";
 import { corporateMultipage } from "@/data/menu";
 import Link from "next/link";
-import { portfolios11 } from "@/data/portfolio";
-import { features2 } from "@/data/features";
 
 export const metadata = {
-  title:
-    "Corporate Portfolio || Resonance &mdash; One & Multi Page React Nextjs Creative Template",
+  title: "Projeler | Gemu Technology",
   description:
-    "Resonance &mdash; One & Multi Page React Nextjs Creative Template",
+    "Gemu Technology proje vitrini. Projeleriniz yayına hazır olduğunda bu alandan kolayca yayınlayabilirsiniz.",
 };
+
+const portfolioHighlights = [
+  "Kurumsal web platformları",
+  "Backend ve API mimarileri",
+  "Mobil uygulama projeleri",
+  "AI ve otomasyon uygulamaları",
+];
+
+const portfolioPlaceholders = [
+  {
+    title: "Proje Kartı 01",
+    description: "Proje adı, kapsamı ve kullanılan teknolojiler burada yer alacak.",
+  },
+  {
+    title: "Proje Kartı 02",
+    description: "Müşteri hedefi, çözülen problem ve iş çıktıları burada sunulacak.",
+  },
+  {
+    title: "Proje Kartı 03",
+    description: "Performans, ölçeklenebilirlik ve operasyonel katkı metrikleri eklenecek.",
+  },
+  {
+    title: "Proje Kartı 04",
+    description: "Sektöre özel çözüm yaklaşımı ve teslimat modeli anlatılacak.",
+  },
+  {
+    title: "Proje Kartı 05",
+    description: "Vaka çalışması formatında süreç, mimari ve sonuç paylaşılacak.",
+  },
+  {
+    title: "Proje Kartı 06",
+    description: "Proje görseli, kısa özet ve detay sayfası bağlantısı eklenecek.",
+  },
+];
+
 export default function CorporatePortfolioPage() {
   return (
     <>
@@ -42,22 +73,19 @@ export default function CorporatePortfolioPage() {
                 <div className="row">
                   <div className="col-lg-10 offset-lg-1">
                     <h1 className="hs-title-9 mb-10">
-                      <span className="wow charsAnimIn" data-splitting="chars">
-                        <AnimatedText text="Selected" />
-                        <span className="mark-decoration-3-wrap">
-                          <AnimatedText text="Work" />
-                          <b
-                            className="mark-decoration-3 wow scalexIn"
-                            data-wow-delay="0.5s"
-                          />
-                        </span>
+                      <span className="mark-decoration-3-wrap wow fadeInUp">
+                        Projelerimiz
+                        <b
+                          className="mark-decoration-3 wow scalexIn"
+                          data-wow-delay="0.5s"
+                        />
                       </span>
                     </h1>
                     <p
                       className="hs-descr mb-0 wow fadeIn"
                       data-wow-delay="0.2s"
                     >
-                      Explore captivating web design solutions.
+                      Yayına alacağımız projeleri burada vaka odaklı bir yapı ile sergileyeceğiz.
                     </p>
                   </div>
                 </div>
@@ -73,20 +101,20 @@ export default function CorporatePortfolioPage() {
                   >
                     <div className="col-lg-5 mb-md-40">
                       <p className="section-descr mb-0">
-                        We help brands and businesses stand out in the changing
-                        digital landscape.
+                        Bu alan, Gemu Technology'nin geliştirdiği projeleri
+                        sektör, teknoloji ve iş sonucu odaklı şekilde sunmak için hazırlandı.
                       </p>
                     </div>
                     <div className="col-lg-6 offset-lg-1 d-flex align-items-end pb-10">
                       {/* Features List */}
                       <div className="row mt-n10">
                         {/* Features List Item */}
-                        {features2.map((elm, i) => (
+                        {portfolioHighlights.map((item, i) => (
                           <div key={i} className="col-sm-6 d-flex mt-10">
                             <div className="features-list-icon features-list-color-1">
                               <i className="mi-check" />
                             </div>
-                            <div className="features-list-text">{elm.text}</div>
+                            <div className="features-list-text">{item}</div>
                           </div>
                         ))}
                         {/* End Features List Item */}
@@ -96,31 +124,39 @@ export default function CorporatePortfolioPage() {
                       {/* End Features List */}
                     </div>
                   </div>
+                  <div className="mb-40 mb-sm-30 text-center">
+                    <h2 className="section-title-small mb-10">Projelerimiz</h2>
+                    <p className="section-descr-small mb-0">
+                      Proje içeriklerini son aşamada ekleyeceğiz. Aşağıdaki kartlar bu
+                      içerikler için hazır şablon alanlarıdır.
+                    </p>
+                  </div>
                   {/* Portfolio Grid */}
                   <div className="row mt-n50 mt-sm-n40">
                     {/* Portfolio Item */}
-                    {portfolios11.map((elm, i) => (
+                    {portfolioPlaceholders.map((elm, i) => (
                       <div key={i} className="col-md-6 col-lg-4 mt-50 mt-sm-40">
-                        <Link href={`/corporate-portfolio`} className="portfolio-5-link">
-                          <div className="portfolio-5-image">
-                            <div className="portfolio-5-image-bg wow scalexIn" />
-                            <div className="wow fadeIn" data-wow-delay="1s">
-                              <Image
-                                src={elm.imageUrl}
-                                width={660}
-                                height={472}
-                                alt="Image Description"
-                              />
+                        <div className="portfolio-5-link">
+                          <div
+                            className="portfolio-5-image bg-gray-light-2 d-flex align-items-center justify-content-center"
+                            style={{ minHeight: 260 }}
+                          >
+                            <div className="text-center p-4">
+                              <div className="mb-10 opacity-07">
+                                <i className="mi-image size-24" />
+                              </div>
+                              <div className="section-descr-small">
+                                Proje görseli buraya eklenecek
+                              </div>
                             </div>
                           </div>
                           <h3 className="portfolio-5-title">
                             <span>{elm.title}</span>
                           </h3>
-                          <div className="portfolio-5-number">{elm.number}</div>
                           <div className="portfolio-5-number-descr">
                             {elm.description}
                           </div>
-                        </Link>
+                        </div>
                       </div>
                     ))}
                     {/* End Portfolio Item */}
@@ -148,9 +184,8 @@ export default function CorporatePortfolioPage() {
                         />
                       </div>
                       <p className="section-descr-medium mb-50 mb-sm-40">
-                        Looking for exclusive marketing services? Contact us and
-                        get free online consultation for your brand or your
-                        client's brand.
+                        Projelerinizi bu alana birlikte taşıyalım. Teknik kapsamı netleştirip
+                        her proje için etkili bir sunum kurgusu oluşturalım.
                       </p>
                       <div className="local-scroll text-center">
                         <Link
@@ -163,7 +198,7 @@ export default function CorporatePortfolioPage() {
                           <span data-btn-animate="y">
                             <span className="btn-animate-y">
                               <span className="btn-animate-y-1">
-                                Get Free Consultation{" "}
+                                Projeni Planla{" "}
                                 <i
                                   className="mi-arrow-right"
                                   aria-hidden="true"
@@ -173,7 +208,7 @@ export default function CorporatePortfolioPage() {
                                 className="btn-animate-y-2"
                                 aria-hidden="true"
                               >
-                                Get Free Consultation{" "}
+                                Projeni Planla{" "}
                                 <i
                                   className="mi-arrow-right"
                                   aria-hidden="true"
