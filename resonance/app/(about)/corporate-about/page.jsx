@@ -68,20 +68,13 @@ export default function CorporateAboutPage() {
                     <h1 className="hs-title-9 mb-10">
                       <span className="wow charsAnimIn" data-splitting="chars">
                         <AnimatedText text="Hakkımızda" />
-                        <span className="mark-decoration-3-wrap">
-                          <AnimatedText text="Gemu Technology" />
-                          <b
-                            className="mark-decoration-3 wow scalexIn"
-                            data-wow-delay="0.5s"
-                          />
-                        </span>
                       </span>
                     </h1>
                     <p
                       className="hs-descr mb-0 wow fadeIn"
                       data-wow-delay="0.2s"
                     >
-                      İş hedeflerinizi modern teknolojiyle buluşturan stratejik yazılım ortağınız.
+                      Geleceğe hazır dijital ürünler için stratejik teknoloji ortağınız.
                     </p>
                   </div>
                 </div>
