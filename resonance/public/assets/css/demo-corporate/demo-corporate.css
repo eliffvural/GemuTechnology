@@ -92,7 +92,7 @@
   );
   color: var(--color-dark-1);
   font-family: var(--font-global);
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   letter-spacing: normal;
   line-height: 1.67;
@@ -183,7 +183,7 @@
   opacity: 1;
 }
 .theme-corporate .inner-nav ul {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   letter-spacing: normal;
 }
@@ -431,14 +431,14 @@
 }
 .theme-corporate .btn-mod.btn-medium {
   padding: 13px 22px;
-  font-size: 19px;
+  font-size: 17px;
   font-weight: 500;
   text-transform: none;
   letter-spacing: 0;
 }
 .theme-corporate .btn-mod.btn-large {
   padding: 20px 40px;
-  font-size: 22px;
+  font-size: 19px;
   font-weight: 500;
   line-height: 1.1;
   text-transform: none;
@@ -479,13 +479,13 @@
   );
 }
 .theme-corporate .section-title {
-  font-size: 56px !important;
+  font-size: 48px !important;
   font-weight: 500 !important;
   line-height: 1.25 !important;
   letter-spacing: -0.017em !important;
 }
 .theme-corporate .section-title-small {
-  font-size: 42px;
+  font-size: 36px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: -0.02em;
@@ -496,21 +496,21 @@
   letter-spacing: normal !important;
 }
 .theme-corporate .section-descr {
-  font-size: 29px !important;
+  font-size: 24px !important;
   font-weight: 400 !important;
   line-height: 1.448 !important;
   letter-spacing: -0.005em !important;
   color: var(--color-dark-1) !important;
 }
 .theme-corporate .light-content .section-descr {
-  font-size: 29px !important;
+  font-size: 24px !important;
   font-weight: 400 !important;
   line-height: 1.448 !important;
   letter-spacing: -0.005em !important;
   color: #fff !important;
 }
 .theme-corporate .section-descr-medium {
-  font-size: 29px !important;
+  font-size: 24px !important;
   font-weight: 400 !important;
   line-height: 1.448 !important;
   letter-spacing: -0.0075em !important;
@@ -565,7 +565,7 @@
 }
 .theme-corporate .works-grid.work-grid-fancy .work-title {
   margin-bottom: 10px;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 500;
 }
 .theme-corporate .works-grid.work-grid-fancy .work-descr {
@@ -615,7 +615,7 @@
   box-shadow: var(--box-shadow-block-strong);
 }
 .theme-corporate .post-prev-title {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 500;
 }
 .theme-corporate .post-prev-img a:hover {
@@ -651,7 +651,7 @@
 }
 .theme-corporate .post-prev-2-title {
   margin-bottom: 15px;
-  font-size: 24px;
+  font-size: 21px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: normal;

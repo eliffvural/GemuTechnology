@@ -1,5 +1,4 @@
 "use client";
-import { footerLinks2, navigationLinks, socialMediaLinks } from "@/data/footer";
 import React from "react";
 
 export default function Footer4() {
@@ -27,39 +26,69 @@ export default function Footer4() {
         </a>
       </div>
       {/* End Back to Top Link */}
-      <div className="page-section">
+      <div className="page-section pb-70">
         <div className="row">
-          <div className="col-lg-6 mb-md-60">
-            <h2 className="section-title mb-60 mb-sm-40">
-              Ready to get started with Resonance Template?
-            </h2>
+          <div className="col-lg-4 mb-md-50">
+            <h3 className="section-title-small mb-20">Gemu Technology</h3>
+            <p className="mb-30">
+              Kurumlara özel yazılım, modern ürün mimarisi ve ölçeklenebilir dijital
+              dönüşüm çözümleri sunuyoruz.
+            </p>
             <div className="local-scroll">
-              <a
-                href="#contact"
-                className="btn btn-mod btn-color btn-large btn-round btn-hover-anim"
-              >
-                <span>Get a Consultation</span>
+              <a href="/corporate-contact" className="btn btn-mod btn-color btn-medium btn-round btn-hover-anim">
+                <span>Projenizi Konuşalım</span>
               </a>
             </div>
           </div>
-          <div className="col-lg-5 offset-lg-1 pt-10">
+          <div className="col-lg-8">
             <div className="row">
-              <div className="col-md-6 mb-sm-40">
+              <div className="col-md-4 mb-sm-40">
+                <h4 className="fw-title mb-20">Kurumsal</h4>
                 <ul className="fw-menu-large clearlist local-scroll">
-                  {navigationLinks.map((elm, i) => (
-                    <li key={i}>
-                      <a href={elm.href}>{elm.text}</a>
-                    </li>
-                  ))}
+                  <li>
+                    <a href="/corporate-multi-page">Ana Sayfa</a>
+                  </li>
+                  <li>
+                    <a href="/corporate-about">Hakkımızda</a>
+                  </li>
+                  <li>
+                    <a href="/corporate-services">Hizmetler</a>
+                  </li>
+                  <li>
+                    <a href="/corporate-portfolio">Projeler</a>
+                  </li>
                 </ul>
               </div>
-              <div className="col-md-6">
+              <div className="col-md-4 mb-sm-40">
+                <h4 className="fw-title mb-20">Yasal</h4>
                 <ul className="fw-menu-large clearlist">
-                  {footerLinks2.map((elm, i) => (
-                    <li key={i}>
-                      <a href={elm.href}>{elm.text}</a>
-                    </li>
-                  ))}
+                  <li>
+                    <a href="#">KVKK Aydınlatma Metni</a>
+                  </li>
+                  <li>
+                    <a href="#">Açık Rıza Metni</a>
+                  </li>
+                  <li>
+                    <a href="#">Gizlilik Politikası</a>
+                  </li>
+                  <li>
+                    <a href="#">Çerez Politikası</a>
+                  </li>
+                </ul>
+              </div>
+              <div className="col-md-4">
+                <h4 className="fw-title mb-20">İletişim</h4>
+                <ul className="fw-menu-large clearlist">
+                  <li>
+                    <a href="tel:+908501234567">+90 (850) 123 45 67</a>
+                  </li>
+                  <li>
+                    <a href="mailto:info@gemutechnology.com">info@gemutechnology.com</a>
+                  </li>
+                  <li>İstanbul, Türkiye</li>
+                  <li>
+                    <a href="/corporate-contact">İletişim Formu</a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -67,28 +96,15 @@ export default function Footer4() {
         </div>
       </div>
       {/* Footer Text */}
-      <div className="row">
-        <div className="col-md-6 mb-sm-40">
-          Made with love for great people. <br />© IB-Themes{" "}
-          {new Date().getFullYear()}.
+      <div className="row pt-30 border-top">
+        <div className="col-md-8 mb-sm-30">
+          © {new Date().getFullYear()} Gemu Technology. Tüm hakları saklıdır.
         </div>
-        {/* Social Links */}
-        <div className="col-md-6 footer-2-social-links text-md-end mb-md-40">
-          {socialMediaLinks.map((elm, i) => (
-            <React.Fragment key={i}>
-              <a
-                href={elm.href}
-                title="Facebook"
-                rel="noopener nofollow"
-                target="_blank"
-              >
-                <span className="visually-hidden">{elm.name}</span>
-                <i className={elm.iconClass} />
-              </a>{" "}
-            </React.Fragment>
-          ))}
+        <div className="col-md-4 text-md-end mb-md-40">
+          <a href="#" className="link-hover-anim">
+            Mesafeli Satış ve Hizmet Şartları
+          </a>
         </div>
-        {/* End Social Links */}
       </div>
       {/* End Footer Text */}
     </div>
