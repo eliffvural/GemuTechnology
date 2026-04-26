@@ -6,7 +6,6 @@ import Portfolio from "./Portfolio";
 import Steps from "./Steps";
 import Testimonials from "./Testimonials";
 import Blog from "../home-4/Blog";
-import NewsLetter from "./NewsLetter";
 import Contact from "./Contact";
 import AnimateButton from "@/components/common/AnimateButton";
 import Link from "next/link";
@@ -389,20 +388,6 @@ export default function Home4({ onePage = false, dark = false }) {
             </div>{" "}
             <Blog />
           </div>
-        </div>
-      </section>
-      <section className="container">
-        <div
-          className={`page-section px-4 px-md-0 ${
-            dark
-              ? "bg-dark-2 border-dark light-content"
-              : "bg-gradient-primary-light-1"
-          }  round`}
-        >
-          {dark && (
-            <div className="position-absolute top-0 start-0 bottom-0 end-0 bg-gradient-primary-dark-1 opacity-01"></div>
-          )}
-          <NewsLetter />
         </div>
       </section>
       <section
