@@ -342,12 +342,6 @@ export default function Home4({ onePage = false, dark = false }) {
                   </>
                 )}
               </div>
-              <p className="section-descr-small mb-0 opacity-09">
-                Uçtan uca çözüm anlayışımızla yalnızca yazılım üreten bir ekip
-                değil; hedeflerinizi sahiplenen, karar süreçlerinize katılan ve
-                büyüme stratejinize eşlik eden uzun vadeli bir teknoloji ortağı
-                olarak konumlanıyoruz.
-              </p>
             </div>
           </div>
         </div>
