@@ -26,86 +26,91 @@ export default function Footer4() {
         </a>
       </div>
       {/* End Back to Top Link */}
-      <div className="page-section pb-50">
-        <div className="row">
-          <div className="col-lg-4 mb-md-50">
-            <h3 className="fw-title mb-15">Gemu Technology</h3>
-            <p className="mb-25">
+      <div className="page-section pb-40 pt-30">
+        <div className="footer-4-shell">
+          <div className="row gx-5 gy-4">
+            <div className="col-lg-4">
+              <h3 className="fw-title mb-15">Gemu Technology</h3>
+              <p className="mb-25">
               Kurumlara özel yazılım, modern ürün mimarisi ve ölçeklenebilir dijital
               dönüşüm çözümleri sunuyoruz.
-            </p>
-            <div className="local-scroll">
-              <a
-                href="/corporate-contact"
-                className="btn btn-mod btn-color btn-small btn-round btn-hover-anim"
-              >
-                <span>Projenizi Konuşalım</span>
-              </a>
+              </p>
+              <div className="local-scroll">
+                <a
+                  href="/corporate-contact"
+                  className="btn btn-mod btn-color btn-small btn-round btn-hover-anim"
+                >
+                  <span>Projenizi Konuşalım</span>
+                </a>
+              </div>
             </div>
-          </div>
-          <div className="col-lg-8">
-            <div className="row">
-              <div className="col-md-4 mb-sm-40">
-                <h4 className="fw-title mb-20">Kurumsal</h4>
-                <ul className="fw-menu clearlist local-scroll">
-                  <li>
-                    <a href="/corporate-multi-page">Ana Sayfa</a>
-                  </li>
-                  <li>
-                    <a href="/corporate-about">Hakkımızda</a>
-                  </li>
-                  <li>
-                    <a href="/corporate-services">Hizmetler</a>
-                  </li>
-                  <li>
-                    <a href="/corporate-portfolio">Projeler</a>
-                  </li>
-                </ul>
-              </div>
-              <div className="col-md-4 mb-sm-40">
-                <h4 className="fw-title mb-20">Yasal</h4>
-                <ul className="fw-menu clearlist">
-                  <li>
-                    <a href="#">KVKK Aydınlatma Metni</a>
-                  </li>
-                  <li>
-                    <a href="#">Açık Rıza Metni</a>
-                  </li>
-                  <li>
-                    <a href="#">Gizlilik Politikası</a>
-                  </li>
-                  <li>
-                    <a href="#">Çerez Politikası</a>
-                  </li>
-                </ul>
-              </div>
-              <div className="col-md-4">
-                <h4 className="fw-title mb-20">İletişim</h4>
-                <ul className="fw-menu clearlist">
-                  <li>
-                    <a href="tel:+908501234567">+90 (850) 123 45 67</a>
-                  </li>
-                  <li>
-                    <a href="mailto:info@gemutechnology.com">info@gemutechnology.com</a>
-                  </li>
-                  <li>İstanbul, Türkiye</li>
-                  <li>
-                    <a href="/corporate-contact">İletişim Formu</a>
-                  </li>
-                </ul>
+            <div className="col-lg-8">
+              <div className="row">
+                <div className="col-md-4 mb-sm-20">
+                  <h4 className="fw-title mb-20">Kurumsal</h4>
+                  <ul className="fw-menu clearlist local-scroll">
+                    <li>
+                      <a href="/corporate-multi-page">Ana Sayfa</a>
+                    </li>
+                    <li>
+                      <a href="/corporate-about">Hakkımızda</a>
+                    </li>
+                    <li>
+                      <a href="/corporate-services">Hizmetler</a>
+                    </li>
+                    <li>
+                      <a href="/corporate-portfolio">Projeler</a>
+                    </li>
+                  </ul>
+                </div>
+                <div className="col-md-4 mb-sm-20">
+                  <h4 className="fw-title mb-20">Yasal</h4>
+                  <ul className="fw-menu clearlist">
+                    <li>
+                      <a href="#">KVKK Aydınlatma Metni</a>
+                    </li>
+                    <li>
+                      <a href="#">Açık Rıza Metni</a>
+                    </li>
+                    <li>
+                      <a href="#">Gizlilik Politikası</a>
+                    </li>
+                    <li>
+                      <a href="#">Çerez Politikası</a>
+                    </li>
+                  </ul>
+                </div>
+                <div className="col-md-4">
+                  <h4 className="fw-title mb-20">İletişim</h4>
+                  <ul className="fw-menu clearlist">
+                    <li>
+                      <a href="tel:+908501234567">+90 (850) 123 45 67</a>
+                    </li>
+                    <li>
+                      <a href="mailto:info@gemutechnology.com">info@gemutechnology.com</a>
+                    </li>
+                    <li>İstanbul, Türkiye</li>
+                    <li>
+                      <a href="/corporate-contact">İletişim Formu</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
       {/* Footer Text */}
-      <div className="row pt-20 border-top">
-        <div className="col-md-8 mb-sm-30">
+      <div className="row pt-20 border-top footer-4-bottom">
+        <div className="col-lg-6 mb-sm-15">
           © {new Date().getFullYear()} Gemu Technology. Tüm hakları saklıdır.
         </div>
-        <div className="col-md-4 text-md-end mb-md-40">
+        <div className="col-lg-6 text-lg-end">
+          <a href="#" className="link-hover-anim me-3">
+            Mesafeli Satış Sözleşmesi
+          </a>
           <a href="#" className="link-hover-anim">
-            Mesafeli Satış ve Hizmet Şartları
+            Hizmet Şartları
           </a>
         </div>
       </div>
