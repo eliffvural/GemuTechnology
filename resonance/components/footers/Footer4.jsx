@@ -26,16 +26,19 @@ export default function Footer4() {
         </a>
       </div>
       {/* End Back to Top Link */}
-      <div className="page-section pb-70">
+      <div className="page-section pb-50">
         <div className="row">
           <div className="col-lg-4 mb-md-50">
-            <h3 className="section-title-small mb-20">Gemu Technology</h3>
-            <p className="mb-30">
+            <h3 className="fw-title mb-15">Gemu Technology</h3>
+            <p className="mb-25">
               Kurumlara özel yazılım, modern ürün mimarisi ve ölçeklenebilir dijital
               dönüşüm çözümleri sunuyoruz.
             </p>
             <div className="local-scroll">
-              <a href="/corporate-contact" className="btn btn-mod btn-color btn-medium btn-round btn-hover-anim">
+              <a
+                href="/corporate-contact"
+                className="btn btn-mod btn-color btn-small btn-round btn-hover-anim"
+              >
                 <span>Projenizi Konuşalım</span>
               </a>
             </div>
@@ -44,7 +47,7 @@ export default function Footer4() {
             <div className="row">
               <div className="col-md-4 mb-sm-40">
                 <h4 className="fw-title mb-20">Kurumsal</h4>
-                <ul className="fw-menu-large clearlist local-scroll">
+                <ul className="fw-menu clearlist local-scroll">
                   <li>
                     <a href="/corporate-multi-page">Ana Sayfa</a>
                   </li>
@@ -61,7 +64,7 @@ export default function Footer4() {
               </div>
               <div className="col-md-4 mb-sm-40">
                 <h4 className="fw-title mb-20">Yasal</h4>
-                <ul className="fw-menu-large clearlist">
+                <ul className="fw-menu clearlist">
                   <li>
                     <a href="#">KVKK Aydınlatma Metni</a>
                   </li>
@@ -78,7 +81,7 @@ export default function Footer4() {
               </div>
               <div className="col-md-4">
                 <h4 className="fw-title mb-20">İletişim</h4>
-                <ul className="fw-menu-large clearlist">
+                <ul className="fw-menu clearlist">
                   <li>
                     <a href="tel:+908501234567">+90 (850) 123 45 67</a>
                   </li>
@@ -96,7 +99,7 @@ export default function Footer4() {
         </div>
       </div>
       {/* Footer Text */}
-      <div className="row pt-30 border-top">
+      <div className="row pt-20 border-top">
         <div className="col-md-8 mb-sm-30">
           © {new Date().getFullYear()} Gemu Technology. Tüm hakları saklıdır.
         </div>
