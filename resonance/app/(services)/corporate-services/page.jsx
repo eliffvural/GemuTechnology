@@ -1,4 +1,3 @@
-import AnimatedText from "@/components/common/AnimatedText";
 import Footer4 from "@/components/footers/Footer4";
 import Header4 from "@/components/headers/Header4";
 import Image from "next/image";
@@ -81,15 +80,12 @@ export default function CorporateServicesPage() {
                 <div className="row">
                   <div className="col-lg-10 offset-lg-1">
                     <h1 className="hs-title-9 mb-10">
-                      <span className="wow charsAnimIn" data-splitting="chars">
-                        <AnimatedText text="Hizmetlerimiz" />
-                        <span className="mark-decoration-3-wrap">
-                          <AnimatedText text="Gemu Technology" />
-                          <b
-                            className="mark-decoration-3 wow scalexIn"
-                            data-wow-delay="0.5s"
-                          />
-                        </span>
+                      <span className="mark-decoration-3-wrap wow fadeInUp">
+                        Hizmetlerimiz
+                        <b
+                          className="mark-decoration-3 wow scalexIn"
+                          data-wow-delay="0.5s"
+                        />
                       </span>
                     </h1>
                     <p

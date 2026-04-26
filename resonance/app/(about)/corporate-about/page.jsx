@@ -1,5 +1,4 @@
 import AnimateButton from "@/components/common/AnimateButton";
-import AnimatedText from "@/components/common/AnimatedText";
 import Footer4 from "@/components/footers/Footer4";
 import Header4 from "@/components/headers/Header4";
 import Testimonials2 from "@/components/homes/home-4/Testimonials2";
@@ -66,8 +65,12 @@ export default function CorporateAboutPage() {
                 <div className="row">
                   <div className="col-lg-10 offset-lg-1">
                     <h1 className="hs-title-9 mb-10">
-                      <span className="wow charsAnimIn" data-splitting="chars">
-                        <AnimatedText text="Hakkımızda" />
+                      <span className="mark-decoration-3-wrap wow fadeInUp">
+                        Hakkımızda
+                        <b
+                          className="mark-decoration-3 wow scalexIn"
+                          data-wow-delay="0.5s"
+                        />
                       </span>
                     </h1>
                     <p
