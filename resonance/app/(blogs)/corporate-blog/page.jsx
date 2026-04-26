@@ -78,7 +78,7 @@ export default function CorporateBlogPage() {
                       {blogs16.map((elm, i) => (
                         <div key={i} className="post-prev-2 col-md-6 mt-50">
                           <div className="post-prev-2-img">
-                            <Link href={`/corporate-blog`}>
+                            <Link href={`/blog`}>
                               <Image
                                 src={elm.imgUrl}
                                 width={610}
@@ -88,7 +88,7 @@ export default function CorporateBlogPage() {
                             </Link>
                           </div>
                           <h3 className="post-prev-2-title">
-                            <Link href={`/corporate-blog`}>
+                            <Link href={`/blog`}>
                               {elm.title}
                             </Link>
                           </h3>

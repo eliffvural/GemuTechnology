@@ -36,7 +36,7 @@ export default function Footer4() {
             </p>
             <div className="local-scroll">
               <a
-                href="/corporate-contact"
+                href="/iletisim"
                 className="btn btn-mod btn-color btn-small btn-round btn-hover-anim"
               >
                 <span>Projenizi Konuşalım</span>
@@ -49,16 +49,16 @@ export default function Footer4() {
                 <h4 className="fw-title mb-20">Kurumsal</h4>
                 <ul className="fw-menu clearlist local-scroll">
                   <li>
-                    <a href="/corporate-multi-page">Ana Sayfa</a>
+                    <a href="/">Ana Sayfa</a>
                   </li>
                   <li>
-                    <a href="/corporate-about">Hakkımızda</a>
+                    <a href="/hakkimizda">Hakkımızda</a>
                   </li>
                   <li>
-                    <a href="/corporate-services">Hizmetler</a>
+                    <a href="/hizmetler">Hizmetler</a>
                   </li>
                   <li>
-                    <a href="/corporate-portfolio">Projeler</a>
+                    <a href="/projeler">Projeler</a>
                   </li>
                 </ul>
               </div>
@@ -90,7 +90,7 @@ export default function Footer4() {
                   </li>
                   <li>İstanbul, Türkiye</li>
                   <li>
-                    <a href="/corporate-contact">İletişim Formu</a>
+                    <a href="/iletisim">İletişim Formu</a>
                   </li>
                 </ul>
               </div>

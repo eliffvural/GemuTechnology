@@ -116,7 +116,7 @@ export default function CorporateAboutPage() {
                 {/* End Testimonials Grid */}
                 <div className="local-scroll text-center">
                   <Link
-                    href={`/corporate-services${dark ? "-dark" : ""}`}
+                    href={`/hizmetler${dark ? "-dark" : ""}`}
                     className={`btn btn-mod ${
                       dark ? "btn-dark" : "btn-w"
                     } btn-with-icon btn-circle`}
@@ -156,7 +156,7 @@ export default function CorporateAboutPage() {
                     </p>
                     <div className="local-scroll mb-70 mb-sm-50">
                       <Link
-                        href={`/corporate-contact${dark ? "-dark" : ""}`}
+                        href={`/iletisim${dark ? "-dark" : ""}`}
                         className="btn btn-mod btn-w-c btn-large btn-round btn-hover-anim opacity-09"
                       >
                         <span>İletişime Geçin</span>

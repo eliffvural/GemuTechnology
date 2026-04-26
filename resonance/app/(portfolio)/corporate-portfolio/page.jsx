@@ -189,7 +189,7 @@ export default function CorporatePortfolioPage() {
                       </p>
                       <div className="local-scroll text-center">
                         <Link
-                          href={`/corporate-contact`}
+                          href={`/iletisim`}
                           className="btn btn-mod btn-w btn-with-icon btn-circle"
                         >
                           <span className="btn-icon color-1">

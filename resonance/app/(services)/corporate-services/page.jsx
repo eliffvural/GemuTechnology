@@ -134,7 +134,7 @@ export default function CorporateServicesPage() {
                     </p>
                     <div className="local-scroll text-center">
                       <Link
-                        href={`/corporate-contact${dark ? "-dark" : ""}`}
+                        href={`/iletisim${dark ? "-dark" : ""}`}
                         className={`btn btn-mod ${
                           dark ? "btn-dark" : "btn-w"
                         } btn-with-icon btn-circle`}

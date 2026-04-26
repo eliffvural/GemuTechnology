@@ -154,12 +154,12 @@ export const elegantOnepage = [
 ];
 
 export const corporateMultipage = [
-  { href: "/corporate-multi-page", text: "Ana Sayfa" },
-  { href: "/corporate-about", text: "Hakkımızda" },
-  { href: "/corporate-services", text: "Hizmetler" },
-  { href: "/corporate-portfolio", text: "Projeler" },
-  { href: "/corporate-blog", text: "Blog" },
-  { href: "/corporate-contact", text: "İletişim" },
+  { href: "/", text: "Ana Sayfa" },
+  { href: "/hakkimizda", text: "Hakkımızda" },
+  { href: "/hizmetler", text: "Hizmetler" },
+  { href: "/projeler", text: "Projeler" },
+  { href: "/blog", text: "Blog" },
+  { href: "/iletisim", text: "İletişim" },
 ];
 
 export const corporateMultipageDark = [

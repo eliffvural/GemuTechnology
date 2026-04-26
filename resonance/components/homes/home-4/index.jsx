@@ -70,7 +70,7 @@ export default function Home4({ onePage = false, dark = false }) {
             ) : (
               <>
                 <Link
-                  href={`/corporate-about${dark ? "-dark" : ""}`}
+                  href={`/hakkimizda${dark ? "-dark" : ""}`}
                   className={`btn btn-mod ${
                     dark ? "btn-dark" : "btn-w"
                   } btn-with-icon btn-circle`}
@@ -125,7 +125,7 @@ export default function Home4({ onePage = false, dark = false }) {
                 ) : (
                   <>
                     <Link
-                      href={`/corporate-contact${dark ? "-dark" : ""}`}
+                      href={`/iletisim${dark ? "-dark" : ""}`}
                       className="btn btn-mod btn-w-c btn-large btn-round btn-hover-anim opacity-09"
                     >
                       <span>Uzman Ekiple İletişime Geçin</span>
@@ -199,7 +199,7 @@ export default function Home4({ onePage = false, dark = false }) {
                 ) : (
                   <>
                     <Link
-                      href={`/corporate-contact${dark ? "-dark" : ""}`}
+                      href={`/iletisim${dark ? "-dark" : ""}`}
                       className={`btn btn-mod ${
                         dark ? "btn-dark" : "btn-w"
                       } btn-with-icon btn-circle`}
@@ -257,7 +257,7 @@ export default function Home4({ onePage = false, dark = false }) {
             ) : (
               <>
                 <Link
-                  href={`/corporate-portfolio${dark ? "-dark" : ""}`}
+                  href={`/projeler${dark ? "-dark" : ""}`}
                   className={`btn btn-mod ${
                     dark ? "btn-dark" : "btn-w"
                   } btn-with-icon btn-circle`}
@@ -333,7 +333,7 @@ export default function Home4({ onePage = false, dark = false }) {
                   <>
                     {" "}
                     <Link
-                      href={`/corporate-contact${dark ? "-dark" : ""}`}
+                      href={`/iletisim${dark ? "-dark" : ""}`}
                       className="btn btn-mod btn-w-c btn-large btn-round btn-hover-anim opacity-09"
                     >
                       <span>Dönüşüm Yolculuğunu Başlatın</span>
@@ -363,7 +363,7 @@ export default function Home4({ onePage = false, dark = false }) {
               </p>
               <div className="local-scroll">
                 <Link
-                  href={`/corporate-blog`}
+                  href={`/blog`}
                   className={`btn btn-mod  ${
                     dark ? "btn-dark" : "btn-w"
                   }  btn-with-icon btn-circle`}
