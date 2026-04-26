@@ -1,31 +1,31 @@
 export const contactItems = [
   {
     iconClass: "mi-location",
-    title: "Address",
-    text: "Envato Pty Ltd, PO Box 16122 Collins Street, West Victoria.",
+    title: "Ofis",
+    text: "İstanbul, Türkiye",
     link: {
       url: "https://goo.gl/maps/7Vw1PBhxx5BaXStr8",
-      text: "See Map",
+      text: "Haritada Gör",
       rel: "nofollow noopener",
       target: "_blank",
     },
   },
   {
     iconClass: "mi-email",
-    title: "Email",
-    text: "ibthemes21@gmail.com",
+    title: "E-posta",
+    text: "info@gemutechnology.com",
     link: {
-      url: "mailto:ibthemes21@gmail.com",
-      text: "Say Hello",
+      url: "mailto:info@gemutechnology.com",
+      text: "E-posta Gönder",
     },
   },
   {
     iconClass: "mi-mobile",
-    title: "Phone",
-    text: "+1 837 652 8800",
+    title: "Telefon",
+    text: "+90 (850) 123 45 67",
     link: {
-      url: "tel:+61383767284",
-      text: "Call now",
+      url: "tel:+908501234567",
+      text: "Hemen Ara",
     },
   },
 ];

@@ -51,7 +51,7 @@ export default function Contact() {
         <div className="col-lg-7 d-flex align-items-strech">
           <div className="border-color-primary-1 round w-100 px-4 px-sm-5 py-5">
             <h3 className="section-title-small mt-n10 mb-40 mb-sm-30">
-              We'd love to hear from you
+              Projenizi birlikte değerlendirelim
             </h3>
             {/* Contact Form */}
             <form
@@ -63,13 +63,13 @@ export default function Contact() {
                 <div className="col-md-6">
                   {/* Name */}
                   <div className="form-group">
-                    <label htmlFor="name">Name</label>
+                    <label htmlFor="name">Ad Soyad</label>
                     <input
                       type="text"
                       name="name"
                       id="name"
                       className="input-lg round form-control"
-                      placeholder="Enter your name"
+                      placeholder="Adınızı ve soyadınızı yazın"
                       pattern=".{3,100}"
                       required
                       aria-required="true"
@@ -80,13 +80,13 @@ export default function Contact() {
                 <div className="col-md-6">
                   {/* Email */}
                   <div className="form-group">
-                    <label htmlFor="email">Email</label>
+                    <label htmlFor="email">E-posta</label>
                     <input
                       type="email"
                       name="email"
                       id="email"
                       className="input-lg round form-control"
-                      placeholder="Enter your email"
+                      placeholder="E-posta adresinizi yazın"
                       pattern=".{5,100}"
                       required
                       aria-required="true"
@@ -97,13 +97,13 @@ export default function Contact() {
               </div>
               {/* Message */}
               <div className="form-group">
-                <label htmlFor="message">Message</label>
+                <label htmlFor="message">Mesajınız</label>
                 <textarea
                   name="message"
                   id="message"
                   className="input-lg round form-control"
                   style={{ height: 132 }}
-                  placeholder="Enter your message"
+                  placeholder="Proje kapsamını ve ihtiyaçlarınızı paylaşın"
                   defaultValue={""}
                 />
               </div>
@@ -112,9 +112,9 @@ export default function Contact() {
                   {/* Inform Tip */}
                   <div className="form-tip w-100 pt-3">
                     <i className="icon-info size-16" />
-                    All the fields are required. By sending the form you agree
-                    to the <a href="#">Terms &amp; Conditions</a> and{" "}
-                    <a href="#">Privacy Policy</a>.
+                    Tüm alanların doldurulması zorunludur. Formu göndererek{" "}
+                    <a href="#">KVKK Aydınlatma Metni</a> ve{" "}
+                    <a href="#">Gizlilik Politikası</a> koşullarını kabul etmiş olursunuz.
                   </div>
                   {/* End Inform Tip */}
                 </div>
@@ -127,7 +127,7 @@ export default function Contact() {
                       id="submit_btn"
                       aria-controls="result"
                     >
-                      <span>Send Message</span>
+                      <span>Mesajı Gönder</span>
                     </button>
                   </div>
                   {/* End Send Button */}

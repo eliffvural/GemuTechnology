@@ -1,4 +1,3 @@
-import AnimatedText from "@/components/common/AnimatedText";
 import Footer4 from "@/components/footers/Footer4";
 import Header4 from "@/components/headers/Header4";
 
@@ -6,16 +5,14 @@ const onePage = false;
 const dark = false;
 import Image from "next/image";
 import { corporateMultipage } from "@/data/menu";
-import Link from "next/link";
 import Contact from "@/components/homes/home-4/Contact";
 import Map from "@/components/common/Map";
 import Faq from "@/components/common/Faq";
 
 export const metadata = {
-  title:
-    "Corporate Contact || Resonance &mdash; One & Multi Page React Nextjs Creative Template",
+  title: "İletişim | Gemu Technology",
   description:
-    "Resonance &mdash; One & Multi Page React Nextjs Creative Template",
+    "Projenizi birlikte planlamak için Gemu Technology ile iletişime geçin.",
 };
 export default function CorporateContactPage() {
   return (
@@ -43,22 +40,19 @@ export default function CorporateContactPage() {
                 <div className="row">
                   <div className="col-lg-10 offset-lg-1">
                     <h1 className="hs-title-9 mb-10">
-                      <span className="wow charsAnimIn" data-splitting="chars">
-                        <AnimatedText text="Contact" />
-                        <span className="mark-decoration-3-wrap">
-                          <AnimatedText text="Us" />
-                          <b
-                            className="mark-decoration-3 wow scalexIn"
-                            data-wow-delay="0.5s"
-                          />
-                        </span>
+                      <span className="mark-decoration-3-wrap wow fadeInUp">
+                        İletişim
+                        <b
+                          className="mark-decoration-3 wow scalexIn"
+                          data-wow-delay="0.5s"
+                        />
                       </span>
                     </h1>
                     <p
                       className="hs-descr mb-0 wow fadeIn"
                       data-wow-delay="0.2s"
                     >
-                      Reach out and let's bring your vision to life.
+                      Hedeflerinizi konuşalım, doğru ürün yol haritasını birlikte oluşturalım.
                     </p>
                   </div>
                 </div>
@@ -75,9 +69,9 @@ export default function CorporateContactPage() {
                 <div className="row mb-80 mb-sm-60">
                   <div className="col-md-10 offset-md-1 col-lg-8 offset-lg-2 text-center">
                     <p className="section-descr dark-white mb-0">
-                      We’re open to talking to good people. Just say hello, and
-                      we’ll start productive cooperation. Start your own success
-                      story.
+                      Projenizin ihtiyaçlarını, teknik kapsamını ve teslimat planını
+                      birlikte netleştirelim. İlk görüşmeden itibaren şeffaf,
+                      ölçülebilir ve sonuç odaklı bir iş birliği süreci yürütüyoruz.
                     </p>
                   </div>
                 </div>{" "}
@@ -93,7 +87,7 @@ export default function CorporateContactPage() {
                 <div className="row position-relative">
                   <div className="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
                     <h3 className="section-title text-center mb-80 mb-sm-60">
-                      Frequently Asked Questions
+                      Sıkça Sorulan Sorular
                     </h3>
 
                     {/* <!-- Accordion --> */}

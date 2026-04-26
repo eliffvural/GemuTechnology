@@ -28,27 +28,27 @@ export const faqs = [
 export const faqDataMain = [
   {
     id: 1,
-    question: "What do you mean by an End Product?",
+    question: "Proje süreciniz nasıl ilerliyor?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vehicula porttitor rutrum. Ut laoreet sodales rutrum. Ut eget tristique nibh. Cras mattis est eget lacus dignissim, non consectetur velit pellentesque. Ut sit amet placerat eros, id gravida arcu. Sed felis purus, tempor ac vestibulum nec, consectetur at purus.",
+      "Analiz, planlama, tasarım, geliştirme, test ve yayına alım adımlarını şeffaf bir proje yönetimi ile yürütüyoruz. Her aşamada düzenli durum paylaşımı yaparak sizi süreçte aktif tutuyoruz.",
   },
   {
     id: 2,
-    question: "Where do I find my Purchase or License code?",
+    question: "Proje süresini ve bütçeyi nasıl belirliyorsunuz?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vehicula porttitor rutrum. Ut laoreet sodales rutrum. Ut eget tristique nibh. Cras mattis est eget lacus dignissim, non consectetur velit pellentesque. Ut sit amet placerat eros, id gravida arcu. Sed felis purus, tempor ac vestibulum nec, consectetur at purus.",
+      "İhtiyaç analizi sonrasında kapsamı netleştiriyor, teslimat fazlarını planlıyor ve her faz için süre-bütçe tahmini sunuyoruz. Böylece sürprizleri azaltıp öngörülebilir bir çalışma modeli sağlıyoruz.",
   },
   {
     id: 3,
-    question: "Do I need to buy a licence for each site?",
+    question: "Mevcut sistemlerimizle entegrasyon sağlayabilir misiniz?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vehicula porttitor rutrum. Ut laoreet sodales rutrum. Ut eget tristique nibh. Cras mattis est eget lacus dignissim, non consectetur velit pellentesque. Ut sit amet placerat eros, id gravida arcu. Sed felis purus, tempor ac vestibulum nec, consectetur at purus.",
+      "Evet. CRM, ERP, ödeme sistemleri, üçüncü parti API'ler ve kurum içi servislerle entegrasyonları planlı ve güvenli şekilde gerçekleştiriyoruz.",
   },
   {
     id: 4,
-    question: "Is my license transferable?",
+    question: "Yayın sonrası destek veriyor musunuz?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vehicula porttitor rutrum. Ut laoreet sodales rutrum. Ut eget tristique nibh. Cras mattis est eget lacus dignissim, non consectetur velit pellentesque. Ut sit amet placerat eros, id gravida arcu. Sed felis purus, tempor ac vestibulum nec, consectetur at purus.",
+      "Yayına alım sonrasında bakım, izleme, performans optimizasyonu ve yeni özellik geliştirme desteği sunuyoruz. İhtiyaca göre sürdürülebilir destek paketleri planlayabiliyoruz.",
   },
 ];
 export const faqs3 = [
