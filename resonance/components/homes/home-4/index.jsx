@@ -37,14 +37,14 @@ export default function Home4({ onePage = false, dark = false }) {
           <div className="row mb-70 mb-sm-50">
             <div className="col-md-10 offset-md-1 col-lg-8 offset-lg-2 text-center">
               <h2 className="section-title mb-40 mb-xs-30">
-                Ozel Yazilim Cozumlerinde Guvenilir Is Ortaginiz
+                Özel Yazılım Çözümlerinde Güvenilir İş Ortağınız
               </h2>
               <p className="section-descr dark-white mb-0">
-                Hazir paket yaklasimlari yerine, kurumunuzun is modeline tam uyum
-                saglayan butik ve esnek cozum mimarileri tasarliyoruz. Fikirden
-                urune uzanan tum surecte guvenlik, olceklenebilirlik ve kullanici
-                deneyimini ayni standartta yoneterek uzun omurlu dijital urunler
-                gelistiriyoruz.
+                Hazır paket yaklaşımları yerine, kurumunuzun iş modeline tam uyum
+                sağlayan butik ve esnek çözüm mimarileri tasarlıyoruz. Fikirden
+                ürüne uzanan tüm süreçte güvenlik, ölçeklenebilirlik ve kullanıcı
+                deneyimini aynı standartta yöneterek uzun ömürlü dijital ürünler
+                geliştiriyoruz.
               </p>
             </div>
           </div>
@@ -64,7 +64,7 @@ export default function Home4({ onePage = false, dark = false }) {
                     <i className="mi-favorite" />
                   </span>
                   <span data-btn-animate="y">
-                    <AnimateButton text={"Hizmetlerimizi Kesfedin"} />
+                    <AnimateButton text={"Hizmetlerimizi Keşfedin"} />
                   </span>
                 </a>
               </>
@@ -80,7 +80,7 @@ export default function Home4({ onePage = false, dark = false }) {
                     <i className="mi-favorite" />
                   </span>
                   <span data-btn-animate="y">
-                    <AnimateButton text={"Yazilim Hizmetlerimizi Kesfedin"} />
+                    <AnimateButton text={"Yazılım Hizmetlerimizi Keşfedin"} />
                   </span>
                 </Link>
               </>
@@ -105,13 +105,13 @@ export default function Home4({ onePage = false, dark = false }) {
           <div className="row">
             <div className="col-md-7 col-lg-6 col-xl-5">
               <h2 className="section-title mb-40 mb-xs-30">
-                Dijital Donusum Yolculuguna Hazir misiniz?
+                Dijital Dönüşüm Yolculuğuna Hazır mısınız?
               </h2>
               <p className="section-descr mb-50 mb-sm-40">
-                Is hedeflerinizi teknik gerceklikle bulusturuyor, olceklenebilir
-                bir urun yol haritasina donusturuyoruz. Dogru teknoloji
-                kararlarini erken asamada alarak zamani, butceyi ve ekip
-                verimliligini optimize ediyoruz.
+                İş hedeflerinizi teknik gerçeklikle buluşturuyor, ölçeklenebilir
+                bir ürün yol haritasına dönüştürüyoruz. Doğru teknoloji
+                kararlarını erken aşamada alarak zamanı, bütçeyi ve ekip
+                verimliliğini optimize ediyoruz.
               </p>
               <div className="local-scroll mb-70 mb-sm-50">
                 {onePage ? (
@@ -120,7 +120,7 @@ export default function Home4({ onePage = false, dark = false }) {
                       href="#contact"
                       className="btn btn-mod btn-w-c btn-large btn-round btn-hover-anim opacity-09"
                     >
-                      <span>Uzman Ekibimizle Iletisime Gecin</span>
+                      <span>Uzman Ekibimizle İletişime Geçin</span>
                     </a>
                   </>
                 ) : (
@@ -129,7 +129,7 @@ export default function Home4({ onePage = false, dark = false }) {
                       href={`/corporate-contact${dark ? "-dark" : ""}`}
                       className="btn btn-mod btn-w-c btn-large btn-round btn-hover-anim opacity-09"
                     >
-                      <span>Uzman Ekiple Iletisime Gecin</span>
+                      <span>Uzman Ekiple İletişime Geçin</span>
                     </Link>
                   </>
                 )}
@@ -151,12 +151,12 @@ export default function Home4({ onePage = false, dark = false }) {
           <div className="row mb-70 mb-sm-50">
             <div className="col-md-8 offset-md-2 text-center">
               <h2 className="section-title mb-40 mb-xs-30">
-                Yazilim Hizmetlerimiz
+                Yazılım Hizmetlerimiz
               </h2>
               <p className="section-descr mb-0">
-                Uctan uca hizmet modelimiz; modern mimari, yuksek performans ve
-                olceklenebilirlik odaginda kurumlarin dijital buyume hedeflerini
-                hizlandirir.
+                Uçtan uca hizmet modelimiz; modern mimari, yüksek performans ve
+                ölçeklenebilirlik odağında kurumların dijital büyüme hedeflerini
+                hızlandırır.
               </p>
             </div>
           </div>
@@ -176,9 +176,9 @@ export default function Home4({ onePage = false, dark = false }) {
                 />
               </div>
               <p className="section-descr-medium mb-50 mb-sm-40">
-                Is hedeflerinizi teknik gereksinimlerle hizalayarak olceklenebilir
-                urun yol haritalari olusturuyoruz. Ekiplerinize hizli teslimat,
-                operasyonel sureklilik ve olculebilir is sonuclari kazandiriyoruz.
+                İş hedeflerinizi teknik gereksinimlerle hizalayarak ölçeklenebilir
+                ürün yol haritaları oluşturuyoruz. Ekiplerinize hızlı teslimat,
+                operasyonel süreklilik ve ölçülebilir iş sonuçları kazandırıyoruz.
               </p>
               <div className="local-scroll text-center">
                 {onePage ? (
@@ -193,7 +193,7 @@ export default function Home4({ onePage = false, dark = false }) {
                         <i className="mi-heart" />
                       </span>
                       <span data-btn-animate="y">
-                    <AnimateButton text={"Stratejik Degerlendirme Talep Edin"} />
+                    <AnimateButton text={"Stratejik Değerlendirme Talep Edin"} />
                       </span>
                     </a>
                   </>
@@ -209,7 +209,7 @@ export default function Home4({ onePage = false, dark = false }) {
                         <i className="mi-heart" />
                       </span>
                       <span data-btn-animate="y">
-                        <AnimateButton text={"Stratejik Degerlendirme Talep Edin"} />
+                        <AnimateButton text={"Stratejik Değerlendirme Talep Edin"} />
                       </span>
                     </Link>
                   </>
@@ -251,7 +251,7 @@ export default function Home4({ onePage = false, dark = false }) {
                     <i className="mi-link-alt" />
                   </span>
                   <span data-btn-animate="y">
-                    <AnimateButton text={"Musteri Basari Hikayelerini Inceleyin"} />
+                    <AnimateButton text={"Müşteri Başarı Hikayelerini İnceleyin"} />
                   </span>
                 </a>
               </>
@@ -267,7 +267,7 @@ export default function Home4({ onePage = false, dark = false }) {
                     <i className="mi-link-alt" />
                   </span>
                   <span data-btn-animate="y">
-                    <AnimateButton text={"Tum Projelerimizi Inceleyin"} />
+                    <AnimateButton text={"Tüm Projelerimizi İnceleyin"} />
                   </span>
                 </Link>
               </>
@@ -309,15 +309,15 @@ export default function Home4({ onePage = false, dark = false }) {
           <div className="row">
             <div className="col-md-7 offset-md-5 col-lg-6 offset-lg-6 col-xl-5 offset-xl-7">
               <h2 className="section-title mb-40 mb-xs-30">
-                Teknoloji Tercihlerimizle Isinize Somut Deger Katiyoruz
+                Teknoloji Tercihlerimizle İşinize Somut Değer Katıyoruz
               </h2>
               <p className="section-descr mb-50 mb-sm-40">
-                Next.js ve React ile hizli, SEO guclu ve bakimi kolay arayuzler;
-                Node.js ve TypeScript ile esnek, guvenilir servis katmanlari;
-                Supabase ve PostgreSQL ile guvenli, gercek zamanli ve denetlenebilir
-                veri operasyonlari kuruyoruz. Bu teknoloji kombinasyonu sayesinde
-                dijital urunleriniz daha hizli pazara cikar, daha guvenli calisir
-                ve buyume ile birlikte kesintisiz olceklenir.
+                Next.js ve React ile hızlı, SEO güçlü ve bakımı kolay arayüzler;
+                Node.js ve TypeScript ile esnek, güvenilir servis katmanları;
+                Supabase ve PostgreSQL ile güvenli, gerçek zamanlı ve denetlenebilir
+                veri operasyonları kuruyoruz. Bu teknoloji kombinasyonu sayesinde
+                dijital ürünleriniz daha hızlı pazara çıkar, daha güvenli çalışır
+                ve büyüme ile birlikte kesintisiz ölçeklenir.
               </p>
               <div className="local-scroll mb-70 mb-sm-50">
                 {onePage ? (
@@ -327,7 +327,7 @@ export default function Home4({ onePage = false, dark = false }) {
                       href="#contact"
                       className="btn btn-mod btn-w-c btn-large btn-round btn-hover-anim opacity-09"
                     >
-                      <span>Donusum Yolculugunu Baslatin</span>
+                      <span>Dönüşüm Yolculuğunu Başlatın</span>
                     </a>
                   </>
                 ) : (
@@ -337,16 +337,16 @@ export default function Home4({ onePage = false, dark = false }) {
                       href={`/corporate-contact${dark ? "-dark" : ""}`}
                       className="btn btn-mod btn-w-c btn-large btn-round btn-hover-anim opacity-09"
                     >
-                      <span>Donusum Yolculugunu Baslatin</span>
+                      <span>Dönüşüm Yolculuğunu Başlatın</span>
                     </Link>
                   </>
                 )}
               </div>
               <p className="section-descr-small mb-0 opacity-09">
-                Uctan uca cozum anlayisimizla yalnizca yazilim ureten bir ekip
-                degil; hedeflerinizi sahiplenen, karar sureclerinize katilan ve
-                buyume stratejinize eslik eden uzun vadeli bir teknoloji ortagi
-                olarak konumlaniyoruz.
+                Uçtan uca çözüm anlayışımızla yalnızca yazılım üreten bir ekip
+                değil; hedeflerinizi sahiplenen, karar süreçlerinize katılan ve
+                büyüme stratejinize eşlik eden uzun vadeli bir teknoloji ortağı
+                olarak konumlanıyoruz.
               </p>
             </div>
           </div>
@@ -365,8 +365,8 @@ export default function Home4({ onePage = false, dark = false }) {
                 Gemu Technology Blog
               </h2>
               <p className="section-descr dark-white mb-50 mb-sm-40">
-                Modern mimari, AI, veri altyapisi ve dijital donusum odakli
-                teknik iceriklerimizi kesfedin.
+                Modern mimari, AI, veri altyapısı ve dijital dönüşüm odaklı
+                teknik içeriklerimizi keşfedin.
               </p>
               <div className="local-scroll">
                 <Link
@@ -381,11 +381,11 @@ export default function Home4({ onePage = false, dark = false }) {
                   <span data-btn-animate="y">
                     <span className="btn-animate-y">
                       <span className="btn-animate-y-1">
-                        Tum Icerikleri Gor{" "}
+                        Tüm İçerikleri Gör{" "}
                         <i className="mi-arrow-right" aria-hidden="true"></i>
                       </span>
                       <span className="btn-animate-y-2" aria-hidden="true">
-                        Tum Icerikleri Gor{" "}
+                        Tüm İçerikleri Gör{" "}
                         <i className="mi-arrow-right" aria-hidden="true"></i>
                       </span>
                     </span>
@@ -430,13 +430,13 @@ export default function Home4({ onePage = false, dark = false }) {
           <div className="row mb-80 mb-sm-60">
             <div className="col-md-10 offset-md-1 col-lg-8 offset-lg-2 text-center">
               <h2 className="section-title mb-40 mb-xs-30">
-                Gelecegi Birlikte Insa Edelim
+                Geleceği Birlikte İnşa Edelim
               </h2>
               <p className="section-descr dark-white mb-0">
-                Gemu Technology ile bir satis sureci degil, olceklenebilir bir donusum
-                ortakligi baslatin. Hedeflerinizi birlikte netlestirelim ve
+                Gemu Technology ile bir satış süreci değil, ölçeklenebilir bir dönüşüm
+                ortaklığı başlatın. Hedeflerinizi birlikte netleştirelim ve
                 kurumunuza en uygun teknoloji mimarisini stratejik olarak
-                kurgulayalim.
+                kurgulayalım.
               </p>
             </div>
           </div>{" "}

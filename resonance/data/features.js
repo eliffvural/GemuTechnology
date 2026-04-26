@@ -72,9 +72,9 @@ export const qualities = [
 ];
 
 export const features = [
-  { id: 1, text: "Modern mimari odakli stratejik teknoloji ortakligi" },
-  { id: 2, text: "Performans odakli ve olceklenebilir yazilim sistemleri" },
-  { id: 3, text: "Guvenlik, sureklilik ve kurumsal kalite standartlari" },
+  { id: 1, text: "Modern mimari odaklı stratejik teknoloji ortaklığı" },
+  { id: 2, text: "Performans odaklı ve ölçeklenebilir yazılım sistemleri" },
+  { id: 3, text: "Güvenlik, süreklilik ve kurumsal kalite standartları" },
 ];
 
 export const features2 = [

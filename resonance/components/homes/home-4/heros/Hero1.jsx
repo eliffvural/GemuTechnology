@@ -10,17 +10,17 @@ export default function Hero1() {
           <div className="col-lg-6 col-xl-5 offset-xl-1 d-flex align-items-center order-first order-lg-last mb-md-60">
             <div className="w-100 text-center text-lg-start">
               <h1 className="hs-title-9 mb-40 mb-sm-20 wow fadeInUp">
-                Gelecegi Kodluyoruz
+                Geleceği Kodluyoruz
               </h1>
               <p
                 className="hs-descr mb-50 mb-sm-40 wow fadeInUp"
                 data-wow-delay="0.15s"
               >
-                Gemu Technology olarak kurumlarin kritik is hedeflerini, modern yazilim
-                mimarileriyle olceklenebilir dijital urunlere donusturuyoruz.
-                Guvenlik, performans ve operasyonel sureklilik odagiyla bugunu
-                guclendirirken yarinin buyume stratejilerine de saglam bir temel
-                insa ediyoruz.
+                Gemu Technology olarak kurumların kritik iş hedeflerini, modern yazılım
+                mimarileriyle ölçeklenebilir dijital ürünlere dönüştürüyoruz.
+                Güvenlik, performans ve operasyonel süreklilik odağıyla bugünü
+                güçlendirirken yarının büyüme stratejilerine de sağlam bir temel
+                inşa ediyoruz.
               </p>
               <div
                 className="wow fadeInUp wch-unset"
@@ -32,7 +32,7 @@ export default function Hero1() {
                     href="#contact"
                     className="btn btn-mod btn-color btn-large btn-round btn-hover-anim"
                   >
-                    <span>Projeyi Birlikte Planlayalim</span>
+                    <span>Projeyi Birlikte Planlayalım</span>
                   </a>
                 </div>
                 {/* Features List */}
@@ -106,10 +106,10 @@ export default function Hero1() {
                     <span data-btn-animate="y">
                       <span className="btn-animate-y">
                         <span className="btn-animate-y-1">
-                          Stratejik Teknoloji Danismanligi
+                          Stratejik Teknoloji Danışmanlığı
                         </span>
                         <span className="btn-animate-y-2" aria-hidden="true">
-                          Stratejik Teknoloji Danismanligi
+                          Stratejik Teknoloji Danışmanlığı
                         </span>
                       </span>
                     </span>
@@ -126,10 +126,10 @@ export default function Hero1() {
                     <span data-btn-animate="y">
                       <span className="btn-animate-y">
                         <span className="btn-animate-y-1">
-                          Olceklenebilir Yazilim Mimarisi
+                          Ölçeklenebilir Yazılım Mimarisi
                         </span>
                         <span className="btn-animate-y-2" aria-hidden="true">
-                          Olceklenebilir Yazilim Mimarisi
+                          Ölçeklenebilir Yazılım Mimarisi
                         </span>
                       </span>
                     </span>
@@ -146,10 +146,10 @@ export default function Hero1() {
                     <span data-btn-animate="y">
                       <span className="btn-animate-y">
                         <span className="btn-animate-y-1">
-                          Yapay Zeka ile Akilli Operasyonlar
+                          Yapay Zeka ile Akıllı Operasyonlar
                         </span>
                         <span className="btn-animate-y-2" aria-hidden="true">
-                          Yapay Zeka ile Akilli Operasyonlar
+                          Yapay Zeka ile Akıllı Operasyonlar
                         </span>
                       </span>
                     </span>
