@@ -13,6 +13,11 @@ const tabs = [
 
 const statusOptions = ["new", "in_review", "contacted", "closed"];
 const publishOptions = ["draft", "published"];
+const adminCapabilities = [
+  "İletişim mesajlarını takip edin",
+  "Proje taleplerini durumlandırın",
+  "Blog ve proje içeriklerini yayınlayın",
+];
 
 function toSlug(value) {
   return value
@@ -244,17 +249,43 @@ export default function AdminDashboard() {
 
   if (!session) {
     return (
-      <main className="page-section bg-gradient-gray-light-1 min-vh-100">
+      <main className="page-section bg-gradient-gray-light-1 min-vh-100 d-flex align-items-center">
         <div className="container position-relative">
-          <div className="row">
-            <div className="col-md-8 offset-md-2 col-lg-5 offset-lg-3">
-              <div className="alt-features-item box-shadow bg-white mt-0">
-                <h1 className="section-title-small mb-30">
-                  Gemu Technology Admin
+          <div className="row justify-content-center align-items-stretch">
+            <div className="col-lg-5 d-flex">
+              <div className="bg-dark-1 light-content round overflow-hidden px-4 px-sm-5 py-5 w-100">
+                <div className="section-caption mb-20">Gemu Technology</div>
+                <h1 className="section-title mb-40 mb-xs-30">
+                  Yönetim paneli
                 </h1>
+                <p className="section-descr mb-50 mb-sm-40">
+                  Gelen talepleri, içerikleri ve proje kayıtlarını tek yerden
+                  yönetmek için güvenli admin alanı.
+                </p>
+                <div className="mt-n10">
+                  {adminCapabilities.map((item) => (
+                    <div key={item} className="d-flex mt-10">
+                      <div className="features-list-icon features-list-color-1">
+                        <i className="mi-check" />
+                      </div>
+                      <div className="features-list-text">{item}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-5 d-flex">
+              <div className="alt-features-item box-shadow bg-white mt-0 w-100">
+                <div className="section-caption mb-15">Güvenli Giriş</div>
+                <h2 className="section-title-small mb-20">
+                  Hesabınıza giriş yapın
+                </h2>
+                <p className="text-gray mb-30">
+                  Supabase Auth üzerinde tanımlı admin kullanıcınızla devam edin.
+                </p>
                 {notice.message && (
                   <div
-                    className={`mb-20 ${
+                    className={`mb-25 ${
                       notice.type === "error" ? "text-danger" : "text-success"
                     }`}
                   >
@@ -270,6 +301,8 @@ export default function AdminDashboard() {
                       className="input-lg round form-control"
                       value={email}
                       onChange={(event) => setEmail(event.target.value)}
+                      placeholder="admin@gemutechnology.com"
+                      autoComplete="email"
                       required
                     />
                   </div>
@@ -281,18 +314,26 @@ export default function AdminDashboard() {
                       className="input-lg round form-control"
                       value={password}
                       onChange={(event) => setPassword(event.target.value)}
+                      placeholder="Şifrenizi girin"
+                      autoComplete="current-password"
                       required
                     />
                   </div>
                   <button
                     type="submit"
-                    className="btn btn-mod btn-color btn-large btn-round btn-hover-anim"
+                    className="btn btn-mod btn-color btn-large btn-round btn-hover-anim w-100"
                   >
                     <span>Giriş Yap</span>
                   </button>
                 </form>
-                <div className="form-tip mt-30">
-                  Supabase Auth içinde oluşturduğunuz kullanıcı ile giriş yapın.
+                <div className="form-tip mt-25">
+                  Giriş bilgileri veritabanında saklanmaz; oturum Supabase Auth
+                  tarafından yönetilir.
+                </div>
+                <div className="mt-30">
+                  <Link href="/" className="link-hover-anim">
+                    Siteye dön
+                  </Link>
                 </div>
               </div>
             </div>
