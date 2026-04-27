@@ -90,8 +90,8 @@ export default function Contact() {
         </div>
         {/* End Left Column */}
         {/* Right Column */}
-        <div className="col-lg-7 d-flex align-items-strech">
-          <div className="border-color-primary-1 round w-100 px-4 px-sm-5 py-5">
+	        <div className="col-lg-7 d-flex align-items-strech">
+	          <div className="border-color-primary-1 round w-100 px-4 px-sm-5 py-5 compact-contact-panel">
             <h3 className="section-title-small mt-n10 mb-40 mb-sm-30">
               Projenizi birlikte değerlendirelim
             </h3>
@@ -140,13 +140,13 @@ export default function Contact() {
               {/* Message */}
               <div className="form-group">
                 <label htmlFor="message">Mesajınız</label>
-                <textarea
-                  name="message"
-                  id="message"
-                  className="input-lg round form-control"
-                  style={{ height: 132 }}
-                  placeholder="Proje kapsamını ve ihtiyaçlarınızı paylaşın"
-                  required
+	                <textarea
+	                  name="message"
+	                  id="message"
+	                  className="input-lg round form-control contact-message-field"
+	                  style={{ height: 92 }}
+	                  placeholder="Proje kapsamını ve ihtiyaçlarınızı paylaşın"
+	                  required
                   minLength={10}
                 />
               </div>

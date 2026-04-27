@@ -131,6 +131,64 @@ html {
   transition: none !important;
 }
 
+.theme-corporate .contact-form .contact-message-field {
+  height: 92px !important;
+  min-height: 92px !important;
+  max-height: 120px;
+  padding: 14px 18px !important;
+  font-size: 17px !important;
+  line-height: 1.45 !important;
+  resize: vertical;
+}
+
+.theme-corporate .contact-form .contact-message-field::placeholder {
+  font-size: 17px !important;
+  line-height: 1.45 !important;
+}
+
+.theme-corporate .compact-contact-panel {
+  padding-top: 46px !important;
+  padding-bottom: 46px !important;
+}
+
+.theme-corporate .compact-contact-panel .section-title-small {
+  margin-bottom: 30px !important;
+  font-size: 36px !important;
+  line-height: 1.18 !important;
+  letter-spacing: 0 !important;
+}
+
+.theme-corporate .compact-contact-panel .form label {
+  margin-bottom: 12px;
+  font-size: 21px;
+  line-height: 1.25;
+}
+
+.theme-corporate .compact-contact-panel .form input.input-lg {
+  height: 56px !important;
+  padding: 0 18px !important;
+  font-size: 18px !important;
+  line-height: 56px !important;
+}
+
+.theme-corporate .compact-contact-panel .form input.input-lg::placeholder {
+  font-size: 18px !important;
+}
+
+.theme-corporate .compact-contact-panel .form-tip {
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.theme-corporate .compact-contact-panel .form-tip a {
+  font-size: inherit;
+}
+
+.theme-corporate .compact-contact-panel .btn-mod.btn-large {
+  padding: 16px 30px;
+  font-size: 18px;
+}
+
 .consulting-flow {
   position: relative;
   padding: 32px 0 8px;

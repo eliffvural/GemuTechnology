@@ -2,9 +2,9 @@ export const contactItems = [
   {
     iconClass: "mi-location",
     title: "Ofis",
-    text: "İstanbul, Türkiye",
+    text: "Manisa, Yunusemre",
     link: {
-      url: "https://goo.gl/maps/7Vw1PBhxx5BaXStr8",
+      url: "https://www.google.com/maps/search/?api=1&query=Yunusemre%20Manisa",
       text: "Haritada Gör",
       rel: "nofollow noopener",
       target: "_blank",

@@ -88,7 +88,7 @@ export default function Footer4() {
                   <li>
                     <a href="mailto:info@gemutechnology.com">info@gemutechnology.com</a>
                   </li>
-                  <li>İstanbul, Türkiye</li>
+                  <li>Manisa, Yunusemre</li>
                   <li>
                     <a href="/iletisim">İletişim Formu</a>
                   </li>
