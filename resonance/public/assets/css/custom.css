@@ -32,6 +32,12 @@
   height: auto;
   object-fit: contain;
 }
+.gemu-admin-login-logo {
+  display: block;
+  width: 210px;
+  height: auto;
+  object-fit: contain;
+}
 @media (min-width: 1025px) {
   .mn-has-sub:hover + *,
   .mn-has-sub + *:hover {

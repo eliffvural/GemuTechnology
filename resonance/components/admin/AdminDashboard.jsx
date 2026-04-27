@@ -436,7 +436,16 @@ export default function AdminDashboard() {
           <div className="row justify-content-center align-items-stretch">
             <div className="col-lg-5 d-flex">
               <div className="bg-dark-1 light-content round overflow-hidden px-4 px-sm-5 py-5 w-100">
-                <div className="section-caption mb-20">Gemu Technology</div>
+                <div className="d-flex align-items-center gap-3 mb-25">
+                  <Image
+                    src="/assets/images/gemu/logo-large.png"
+                    alt="Gemu"
+                    width={48}
+                    height={48}
+                    style={{ width: 48, height: 48, objectFit: "contain" }}
+                  />
+                  <div className="section-caption mb-0">Gemu Technologies</div>
+                </div>
                 <h1 className="section-title mb-40 mb-xs-30">
                   Yönetim paneli
                 </h1>
@@ -458,6 +467,13 @@ export default function AdminDashboard() {
             </div>
             <div className="col-lg-5 d-flex">
               <div className="alt-features-item box-shadow bg-white mt-0 w-100">
+                <Image
+                  src="/assets/images/gemu/logo-horizontal-english.png"
+                  alt="Gemu Technologies"
+                  width={1693}
+                  height={571}
+                  className="gemu-admin-login-logo mb-30"
+                />
                 <div className="section-caption mb-15">Güvenli Giriş</div>
                 <h2 className="section-title-small mb-20">
                   Hesabınıza giriş yapın
@@ -551,7 +567,7 @@ export default function AdminDashboard() {
             <div>
               <h1 style={adminStyles.brandTitle}>Gemu Technologies</h1>
               <div style={{ ...adminStyles.muted, marginTop: 5, fontSize: 13 }}>
-            Yönetim alanı
+                Yönetim alanı
               </div>
             </div>
           </div>
