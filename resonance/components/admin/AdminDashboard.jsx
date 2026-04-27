@@ -4,11 +4,25 @@ import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { createSupabaseBrowserClient } from "@/lib/supabase/browser";
 
-const tabs = [
-  { id: "messages", label: "Mesajlar" },
-  { id: "requests", label: "Proje Talepleri" },
-  { id: "blog", label: "Blog" },
-  { id: "projects", label: "Projeler" },
+const navSections = [
+  {
+    title: "GENEL",
+    items: [{ id: "dashboard", label: "Dashboard" }],
+  },
+  {
+    title: "İÇERİKLER",
+    items: [
+      { id: "blog", label: "Blog" },
+      { id: "projects", label: "Projeler" },
+    ],
+  },
+  {
+    title: "FORMLAR",
+    items: [
+      { id: "messages", label: "İletişim Mesajları" },
+      { id: "requests", label: "Proje Talepleri" },
+    ],
+  },
 ];
 
 const statusOptions = ["new", "in_review", "contacted", "closed"];
@@ -18,6 +32,171 @@ const adminCapabilities = [
   "Proje taleplerini durumlandırın",
   "Blog ve proje içeriklerini yayınlayın",
 ];
+
+const adminStyles = {
+  shell: {
+    minHeight: "100vh",
+    background: "#f8fafc",
+    color: "#111827",
+    display: "flex",
+    fontFamily:
+      "Inter, Plus Jakarta Sans, system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
+  },
+  sidebar: {
+    width: 280,
+    minHeight: "100vh",
+    background: "#fff",
+    borderRight: "1px solid #e5e7eb",
+    display: "flex",
+    flexDirection: "column",
+    position: "sticky",
+    top: 0,
+  },
+  brand: {
+    padding: "24px 22px",
+    borderBottom: "1px solid #e5e7eb",
+    minHeight: 88,
+  },
+  brandTitle: {
+    fontSize: 22,
+    lineHeight: 1.1,
+    fontWeight: 800,
+    margin: 0,
+  },
+  muted: {
+    color: "#6b7280",
+  },
+  nav: {
+    padding: "24px 0",
+    flex: 1,
+  },
+  navTitle: {
+    color: "#6b7280",
+    fontSize: 12,
+    fontWeight: 800,
+    letterSpacing: 1.4,
+    padding: "0 22px",
+    margin: "0 0 10px",
+  },
+  navButton: {
+    width: "calc(100% - 24px)",
+    margin: "0 12px 8px",
+    border: 0,
+    borderRadius: 10,
+    background: "transparent",
+    color: "#111827",
+    textAlign: "left",
+    padding: "13px 18px",
+    fontSize: 16,
+    fontWeight: 600,
+    cursor: "pointer",
+    transition: "background .15s ease, color .15s ease",
+  },
+  navButtonActive: {
+    background: "#f3f6ff",
+    color: "#2563eb",
+    boxShadow: "inset 4px 0 0 #2563eb",
+  },
+  sidebarFooter: {
+    padding: 22,
+    borderTop: "1px solid #e5e7eb",
+  },
+  content: {
+    flex: 1,
+    minWidth: 0,
+  },
+  topbar: {
+    minHeight: 88,
+    background: "#fff",
+    borderBottom: "1px solid #e5e7eb",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "space-between",
+    padding: "0 36px",
+  },
+  topbarTitle: {
+    fontSize: 28,
+    fontWeight: 800,
+    margin: 0,
+  },
+  main: {
+    padding: "36px",
+    maxWidth: 1320,
+  },
+  card: {
+    background: "#fff",
+    border: "1px solid #e5e7eb",
+    borderRadius: 14,
+    boxShadow: "0 8px 22px rgba(17, 24, 39, 0.05)",
+  },
+  welcomeCard: {
+    padding: "32px 34px",
+    marginBottom: 34,
+  },
+  cardTitle: {
+    fontSize: 28,
+    lineHeight: 1.2,
+    fontWeight: 800,
+    margin: "0 0 12px",
+  },
+  statGrid: {
+    display: "grid",
+    gridTemplateColumns: "repeat(4, minmax(0, 1fr))",
+    gap: 22,
+    marginBottom: 34,
+  },
+  statCard: {
+    padding: 28,
+  },
+  statValue: {
+    fontSize: 38,
+    lineHeight: 1,
+    fontWeight: 800,
+    marginBottom: 22,
+  },
+  quickCard: {
+    padding: "26px 28px",
+    marginBottom: 34,
+  },
+  quickGrid: {
+    display: "grid",
+    gridTemplateColumns: "repeat(4, minmax(0, 1fr))",
+    gap: 18,
+  },
+  quickButton: {
+    border: 0,
+    borderRadius: 10,
+    background: "#6b7280",
+    color: "#fff",
+    fontWeight: 800,
+    fontSize: 15,
+    padding: "16px 18px",
+    cursor: "pointer",
+  },
+  primaryButton: {
+    border: 0,
+    borderRadius: 8,
+    background: "#2563eb",
+    color: "#fff",
+    fontWeight: 800,
+    padding: "14px 20px",
+    textDecoration: "none",
+    display: "inline-flex",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  outlineButton: {
+    border: "1px solid #e5e7eb",
+    borderRadius: 8,
+    background: "#fff",
+    color: "#111827",
+    fontWeight: 800,
+    padding: "13px 18px",
+    textDecoration: "none",
+    width: "100%",
+    cursor: "pointer",
+  },
+};
 
 function toSlug(value) {
   return value
@@ -46,7 +225,7 @@ function formatDate(value) {
 
 export default function AdminDashboard() {
   const supabase = useMemo(() => createSupabaseBrowserClient(), []);
-  const [activeTab, setActiveTab] = useState("messages");
+  const [activeTab, setActiveTab] = useState("dashboard");
   const [session, setSession] = useState(null);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -343,144 +522,249 @@ export default function AdminDashboard() {
     );
   }
 
+  const dashboardStats = [
+    { value: blogPosts.length, label: "Blog Yazıları" },
+    { value: messages.length, label: "İletişim Mesajları" },
+    { value: requests.length, label: "Proje Talepleri" },
+    { value: caseStudies.length, label: "Projeler" },
+  ];
+  const activeLabel =
+    navSections
+      .flatMap((section) => section.items)
+      .find((item) => item.id === activeTab)?.label || "Dashboard";
+
   return (
-    <main className="page-section bg-gradient-gray-light-1 min-vh-100">
-      <div className="container position-relative">
-        <div className="d-flex justify-content-between align-items-center mb-50">
-          <div>
-            <div className="section-caption mb-10">Admin Panel</div>
-            <h1 className="section-title-small mb-0">Gemu Technology Yönetim</h1>
-          </div>
-          <div className="d-flex gap-2 align-items-center">
-            <Link href="/" className="btn btn-mod btn-w btn-small btn-round">
-              Siteye Dön
-            </Link>
-            <button
-              type="button"
-              className="btn btn-mod btn-color btn-small btn-round"
-              onClick={handleLogout}
-            >
-              Çıkış
-            </button>
+    <div style={adminStyles.shell}>
+      <aside style={adminStyles.sidebar}>
+        <div style={adminStyles.brand}>
+          <h1 style={adminStyles.brandTitle}>Gemu Technology</h1>
+          <div style={{ ...adminStyles.muted, marginTop: 8 }}>
+            Yönetim alanı
           </div>
         </div>
 
-        {notice.message && (
-          <div
-            className={`mb-30 ${
-              notice.type === "error" ? "text-danger" : "text-success"
-            }`}
-          >
-            {notice.message}
-          </div>
-        )}
-
-        <div className="mb-40">
-          {tabs.map((tab) => (
-            <button
-              key={tab.id}
-              type="button"
-              className={`btn btn-mod btn-small btn-round me-2 mb-2 ${
-                activeTab === tab.id ? "btn-color" : "btn-w"
-              }`}
-              onClick={() => setActiveTab(tab.id)}
-            >
-              {tab.label}
-            </button>
+        <nav style={adminStyles.nav}>
+          {navSections.map((section) => (
+            <div key={section.title} style={{ marginBottom: 28 }}>
+              <h2 style={adminStyles.navTitle}>{section.title}</h2>
+              {section.items.map((item) => {
+                const isActive = activeTab === item.id;
+                return (
+                  <button
+                    key={item.id}
+                    type="button"
+                    style={{
+                      ...adminStyles.navButton,
+                      ...(isActive ? adminStyles.navButtonActive : {}),
+                    }}
+                    onClick={() => setActiveTab(item.id)}
+                  >
+                    <span style={{ color: "#2563eb", marginRight: 12 }}>·</span>
+                    {item.label}
+                  </button>
+                );
+              })}
+            </div>
           ))}
+        </nav>
+
+        <div style={adminStyles.sidebarFooter}>
+          <div style={{ fontWeight: 700, marginBottom: 24, wordBreak: "break-word" }}>
+            {session.user.email}
+          </div>
+          <button type="button" style={adminStyles.outlineButton} onClick={handleLogout}>
+            Çıkış Yap
+          </button>
         </div>
+      </aside>
 
-        {activeTab === "messages" && (
-          <RecordsPanel
-            title="İletişim Mesajları"
-            records={messages}
-            emptyText="Henüz mesaj yok."
-            renderRecord={(record) => (
-              <RecordCard
-                key={record.id}
-                title={record.name}
-                subtitle={`${record.email} · ${formatDate(record.created_at)}`}
-                body={record.message}
-                status={record.status}
-                statusOptions={statusOptions}
-                onStatusChange={(status) =>
-                  updateStatus("contact_messages", record.id, status)
-                }
-              />
-            )}
-          />
-        )}
+      <div style={adminStyles.content}>
+        <header style={adminStyles.topbar}>
+          <h2 style={adminStyles.topbarTitle}>{activeLabel}</h2>
+          <Link href="/" style={adminStyles.primaryButton}>
+            Websiteyi Gör
+          </Link>
+        </header>
 
-        {activeTab === "requests" && (
-          <RecordsPanel
-            title="Proje Talepleri"
-            records={requests}
-            emptyText="Henüz proje talebi yok."
-            renderRecord={(record) => (
-              <RecordCard
-                key={record.id}
-                title={record.contact_name}
-                subtitle={`${record.email} · ${record.service_type} · ${formatDate(
-                  record.created_at
-                )}`}
-                body={record.description}
-                meta={[
-                  record.company_name && `Şirket: ${record.company_name}`,
-                  record.phone && `Telefon: ${record.phone}`,
-                  record.budget_range && `Bütçe: ${record.budget_range}`,
-                  record.timeline && `Zamanlama: ${record.timeline}`,
-                ].filter(Boolean)}
-                status={record.status}
-                statusOptions={statusOptions}
-                onStatusChange={(status) =>
-                  updateStatus("project_requests", record.id, status)
-                }
-              />
-            )}
-          />
-        )}
+        <main style={adminStyles.main}>
+          {notice.message && (
+            <div
+              style={{
+                ...adminStyles.card,
+                padding: 18,
+                marginBottom: 24,
+                color: notice.type === "error" ? "#dc2626" : "#047857",
+              }}
+            >
+              {notice.message}
+            </div>
+          )}
 
-        {activeTab === "blog" && (
-          <ContentPanel
-            title="Blog Yazıları"
-            records={blogPosts}
-            onSubmit={createBlogPost}
-            fields="blog"
-            renderRecord={(record) => (
-              <PublishCard
-                key={record.id}
-                title={record.title}
-                subtitle={`${record.slug} · ${record.category || "Yazılım"}`}
-                status={record.status}
-                onStatusChange={(status) =>
-                  updatePublishStatus("blog_posts", record.id, status)
-                }
-              />
-            )}
-          />
-        )}
+          {activeTab === "dashboard" && (
+            <>
+              <section style={{ ...adminStyles.card, ...adminStyles.welcomeCard }}>
+                <h2 style={adminStyles.cardTitle}>Hoş geldiniz</h2>
+                <p style={{ ...adminStyles.muted, margin: 0, fontSize: 17 }}>
+                  Blog, proje, iletişim ve proje talebi verilerini buradan
+                  yönetebilirsiniz.
+                </p>
+              </section>
 
-        {activeTab === "projects" && (
-          <ContentPanel
-            title="Projeler ve Vaka Çalışmaları"
-            records={caseStudies}
-            onSubmit={createCaseStudy}
-            fields="projects"
-            renderRecord={(record) => (
-              <PublishCard
-                key={record.id}
-                title={record.title}
-                subtitle={`${record.slug} · ${record.service_type || "Proje"}`}
-                status={record.status}
-                onStatusChange={(status) =>
-                  updatePublishStatus("case_studies", record.id, status)
-                }
-              />
-            )}
-          />
-        )}
+              <section style={adminStyles.statGrid}>
+                {dashboardStats.map((stat) => (
+                  <div
+                    key={stat.label}
+                    style={{ ...adminStyles.card, ...adminStyles.statCard }}
+                  >
+                    <div style={adminStyles.statValue}>{stat.value}</div>
+                    <div style={{ ...adminStyles.muted, fontWeight: 700 }}>
+                      {stat.label}
+                    </div>
+                  </div>
+                ))}
+              </section>
+
+              <section style={{ ...adminStyles.card, ...adminStyles.quickCard }}>
+                <h3 style={{ fontSize: 21, fontWeight: 800, margin: "0 0 18px" }}>
+                  <span
+                    style={{
+                      display: "inline-block",
+                      width: 4,
+                      height: 24,
+                      background: "#2563eb",
+                      borderRadius: 4,
+                      marginRight: 12,
+                      verticalAlign: "middle",
+                    }}
+                  />
+                  Hızlı Aksiyonlar
+                </h3>
+                <div style={adminStyles.quickGrid}>
+                  <button
+                    type="button"
+                    style={{ ...adminStyles.quickButton, background: "#2563eb" }}
+                    onClick={() => setActiveTab("blog")}
+                  >
+                    Blog Yazıları
+                  </button>
+                  <button
+                    type="button"
+                    style={adminStyles.quickButton}
+                    onClick={() => setActiveTab("projects")}
+                  >
+                    Projeler
+                  </button>
+                  <button
+                    type="button"
+                    style={adminStyles.quickButton}
+                    onClick={() => setActiveTab("messages")}
+                  >
+                    İletişim Mesajları
+                  </button>
+                  <button
+                    type="button"
+                    style={adminStyles.quickButton}
+                    onClick={() => setActiveTab("requests")}
+                  >
+                    Proje Talepleri
+                  </button>
+                </div>
+              </section>
+            </>
+          )}
+
+          {activeTab === "messages" && (
+            <RecordsPanel
+              title="İletişim Mesajları"
+              records={messages}
+              emptyText="Henüz mesaj yok."
+              renderRecord={(record) => (
+                <RecordCard
+                  key={record.id}
+                  title={record.name}
+                  subtitle={`${record.email} · ${formatDate(record.created_at)}`}
+                  body={record.message}
+                  status={record.status}
+                  statusOptions={statusOptions}
+                  onStatusChange={(status) =>
+                    updateStatus("contact_messages", record.id, status)
+                  }
+                />
+              )}
+            />
+          )}
+
+          {activeTab === "requests" && (
+            <RecordsPanel
+              title="Proje Talepleri"
+              records={requests}
+              emptyText="Henüz proje talebi yok."
+              renderRecord={(record) => (
+                <RecordCard
+                  key={record.id}
+                  title={record.contact_name}
+                  subtitle={`${record.email} · ${record.service_type} · ${formatDate(
+                    record.created_at
+                  )}`}
+                  body={record.description}
+                  meta={[
+                    record.company_name && `Şirket: ${record.company_name}`,
+                    record.phone && `Telefon: ${record.phone}`,
+                    record.budget_range && `Bütçe: ${record.budget_range}`,
+                    record.timeline && `Zamanlama: ${record.timeline}`,
+                  ].filter(Boolean)}
+                  status={record.status}
+                  statusOptions={statusOptions}
+                  onStatusChange={(status) =>
+                    updateStatus("project_requests", record.id, status)
+                  }
+                />
+              )}
+            />
+          )}
+
+          {activeTab === "blog" && (
+            <ContentPanel
+              title="Blog Yazıları"
+              records={blogPosts}
+              onSubmit={createBlogPost}
+              fields="blog"
+              renderRecord={(record) => (
+                <PublishCard
+                  key={record.id}
+                  title={record.title}
+                  subtitle={`${record.slug} · ${record.category || "Yazılım"}`}
+                  status={record.status}
+                  onStatusChange={(status) =>
+                    updatePublishStatus("blog_posts", record.id, status)
+                  }
+                />
+              )}
+            />
+          )}
+
+          {activeTab === "projects" && (
+            <ContentPanel
+              title="Projeler ve Vaka Çalışmaları"
+              records={caseStudies}
+              onSubmit={createCaseStudy}
+              fields="projects"
+              renderRecord={(record) => (
+                <PublishCard
+                  key={record.id}
+                  title={record.title}
+                  subtitle={`${record.slug} · ${record.service_type || "Proje"}`}
+                  status={record.status}
+                  onStatusChange={(status) =>
+                    updatePublishStatus("case_studies", record.id, status)
+                  }
+                />
+              )}
+            />
+          )}
+        </main>
       </div>
-    </main>
+    </div>
   );
 }
 
