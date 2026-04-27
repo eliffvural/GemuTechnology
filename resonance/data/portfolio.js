@@ -240,24 +240,24 @@ export const portfolios4 = [
   {
     id: 25,
     imageSrc: "/assets/images/demo-corporate/portfolio/project-1.jpg",
-    title: "How Marketing Wire Support Increased Data Accuracy by 70%",
+    title: "B2B Sipariş Portalı ile Operasyon Süresi Azaltıldı",
     number: "70%",
-    description: "growth with Resonance",
+    description: "daha hızlı sipariş yönetimi",
   },
   {
     id: 26,
     imageSrc: "/assets/images/demo-corporate/portfolio/project-2.jpg",
     title:
-      "How Surface Mobility Increased Sales 3X During the Latest Six Months",
+      "Mobil Saha Uygulamasıyla Satış ve Servis Ekipleri Tek Platformda Toplandı",
     number: "3x",
-    description: "sales increased with Resonance",
+    description: "daha hızlı saha geri dönüşü",
   },
   {
     id: 27,
     imageSrc: "/assets/images/demo-corporate/portfolio/project-3.jpg",
-    title: "How Gen Machine Uses Automations to Grow Their Subscriber Base",
-    number: "Zero",
-    description: "negative reviews with Resonance",
+    title: "AI Destekli Destek Sistemiyle Talepler Önceliklendirildi",
+    number: "24/7",
+    description: "akıllı destek otomasyonu",
   },
 ];
 

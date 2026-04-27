@@ -54,6 +54,33 @@ const serviceBenefits = [
   },
 ];
 
+const solutionPackages = [
+  {
+    title: "Ürün Keşfi ve Teknik Strateji",
+    description:
+      "Yeni fikirleri uygulanabilir MVP kapsamına indirger; kullanıcı akışı, veri modeli, entegrasyon haritası ve teslimat planını netleştiririz.",
+    items: ["Ürün kapsamı", "Teknik mimari", "Sprint planı"],
+  },
+  {
+    title: "Kurumsal Uygulama Geliştirme",
+    description:
+      "Web, mobil, backend ve veri katmanlarını tek ürün mimarisi altında birleştirerek kurum içi ve müşteri odaklı uygulamalar geliştiririz.",
+    items: ["Web ve mobil", "API ve veri", "Rol bazlı erişim"],
+  },
+  {
+    title: "AI Destekli Otomasyon",
+    description:
+      "Doküman işleme, destek otomasyonu, raporlama, karar destek ve görüntü işleme senaryolarını mevcut iş akışlarınıza entegre ederiz.",
+    items: ["LLM entegrasyonu", "RAG", "Akıllı iş akışları"],
+  },
+  {
+    title: "Modernizasyon ve Bakım",
+    description:
+      "Yavaşlayan, büyümekte zorlanan veya bakımı maliyetli sistemleri performans, güvenlik ve sürdürülebilirlik odağında yeniden yapılandırırız.",
+    items: ["Refactor", "Performans", "Gözlemlenebilirlik"],
+  },
+];
+
 export default function CorporateServicesPage() {
   return (
     <>
@@ -117,6 +144,29 @@ export default function CorporateServicesPage() {
               </div>
               <Service />
               <div className="container position-relative z-index-1">
+                <div className="row mt-n30 mb-80 mb-sm-60">
+                  {solutionPackages.map((item, i) => (
+                    <div
+                      key={i}
+                      className="col-md-6 col-xl-3 d-flex align-items-stretch mt-30"
+                    >
+                      <div className="alt-features-item border-left mt-0 w-100">
+                        <h3 className="alt-features-title">{item.title}</h3>
+                        <div className="alt-features-descr mb-20">
+                          {item.description}
+                        </div>
+                        {item.items.map((tag) => (
+                          <span
+                            key={tag}
+                            className="services-8-category me-1 mb-1 d-inline-block"
+                          >
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  ))}
+                </div>
                 <div className="row text-center">
                   <div className="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
                     <div className="text-center mb-40 mb-sm-30">

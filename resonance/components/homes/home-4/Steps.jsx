@@ -7,7 +7,7 @@ export default function Steps() {
       <div className="row">
         <div className="col-md-10 offset-md-1 col-lg-6 offset-lg-3">
           <h2 className="section-title mb-70 mb-sm-50 text-center">
-            Calisma Modelimiz
+            Çalışma Modelimiz
           </h2>
           {/* Steps Grid */}
           <div className="mb-n20">

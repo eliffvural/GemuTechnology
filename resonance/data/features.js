@@ -72,27 +72,27 @@ export const qualities = [
 ];
 
 export const features = [
-  { id: 1, text: "Modern mimari odaklı stratejik teknoloji ortaklığı" },
-  { id: 2, text: "Performans odaklı ve ölçeklenebilir yazılım sistemleri" },
-  { id: 3, text: "Güvenlik, süreklilik ve kurumsal kalite standartları" },
+  { id: 1, text: "Fikirden canlıya uçtan uca yazılım geliştirme" },
+  { id: 2, text: "Next.js, Node.js, Supabase ve AI odaklı modern mimari" },
+  { id: 3, text: "Güvenlik, performans ve operasyonel süreklilik standartları" },
 ];
 
 export const features2 = [
   {
     id: 1,
-    text: "Business to business",
+    text: "SaaS ve abonelik platformları",
   },
   {
     id: 2,
-    text: "Non-profit business",
+    text: "Kurumsal otomasyon sistemleri",
   },
   {
     id: 3,
-    text: "Business to customer",
+    text: "E-ticaret ve pazar yeri altyapıları",
   },
   {
     id: 4,
-    text: "Ecommerce",
+    text: "AI destekli karar sistemleri",
   },
 ];
 

@@ -8,10 +8,10 @@ export default function Portfolio() {
     <>
       <div className="row mb-70 mb-sm-50">
         <div className="col-lg-6 col-xl-5 mb-md-40">
-          <h2 className="section-title mb-40 mb-xs-30">Case Studies</h2>
+          <h2 className="section-title mb-40 mb-xs-30">Çözüm Senaryoları</h2>
           <p className="section-descr dark-white mb-0">
-            We help brands and businesses stand out in the changing digital
-            landscape.
+            Yazılım hizmetlerimizi yalnızca ekran tasarımı olarak değil; süreç,
+            veri, entegrasyon ve sürdürülebilir büyüme odağında ele alıyoruz.
           </p>
         </div>
         <div className="col-lg-6 offset-xl-1 d-flex align-items-end pb-10">
@@ -39,7 +39,7 @@ export default function Portfolio() {
         {portfolios4.map((item, index) => (
           <div key={index} className="col-md-6 col-lg-4 mt-50 mt-sm-40">
             <Link
-              href={`/corporate-portfolio-single/${item.id}`}
+              href="/projeler"
               className="portfolio-5-link"
             >
               <div className="portfolio-5-image">

@@ -15,20 +15,64 @@ export default function Home4({ onePage = false, dark = false }) {
   const solutionAreas = [
     {
       title: "Kurumsal Web Çözümleri",
-      text: "Next.js ve React ile hızlı, SEO güçlü ve sürdürülebilir web ürünleri geliştiriyoruz.",
+      text: "Tanıtım siteleri, müşteri portalları, içerik sistemleri ve ürün odaklı web uygulamaları.",
     },
     {
       title: "Backend ve API Sistemleri",
-      text: "Güvenli kimlik yönetimi ve ölçeklenebilir servis katmanlarıyla güçlü altyapılar kuruyoruz.",
+      text: "Rol bazlı erişim, gerçek zamanlı veri, ödeme/ERP/CRM entegrasyonları ve güvenli servis mimarisi.",
     },
     {
       title: "Mobil Uygulama Çözümleri",
-      text: "iOS ve Android için tek kod tabanında yüksek performanslı mobil deneyimler sunuyoruz.",
+      text: "Saha ekipleri, müşteri deneyimi, üyelik sistemleri ve bildirim odaklı mobil ürünler.",
     },
     {
       title: "AI ve Otomasyon Çözümleri",
-      text: "LLM ve akıllı otomasyon senaryoları ile ekiplerin verimliliğini artıran çözümler üretiyoruz.",
+      text: "LLM destekli asistanlar, doküman işleme, raporlama, tahminleme ve süreç otomasyonu.",
     },
+  ];
+
+  const deliveryModels = [
+    {
+      label: "Keşif ve Yol Haritası",
+      title: "Fikri uygulanabilir ürün planına dönüştürürüz",
+      text: "İş hedefi, kullanıcı yolculuğu, veri modeli ve entegrasyon ihtiyaçlarını netleştirerek geliştirme başlamadan önce teknik riskleri görünür hale getiririz.",
+    },
+    {
+      label: "MVP ve Ürün Geliştirme",
+      title: "Hızlı çıkan ama büyümeye hazır ürünler kurarız",
+      text: "Öncelikli özellikleri doğru sıraya koyar, modern frontend/backend mimarisiyle kullanılabilir ilk sürümü kısa döngülerle geliştiririz.",
+    },
+    {
+      label: "Modernizasyon ve Ölçekleme",
+      title: "Mevcut sistemleri daha hızlı ve güvenilir hale getiririz",
+      text: "Eski arayüzleri, kırılgan API yapılarını ve manuel operasyonları ölçülebilir performans, güvenlik ve bakım kazanımlarına dönüştürürüz.",
+    },
+  ];
+
+  const technologyStack = [
+    {
+      title: "Frontend",
+      items: ["Next.js", "React", "SEO", "Core Web Vitals"],
+    },
+    {
+      title: "Backend",
+      items: ["Node.js", "REST/GraphQL", "Auth", "API Gateway"],
+    },
+    {
+      title: "Veri",
+      items: ["Supabase", "PostgreSQL", "RLS", "Analytics"],
+    },
+    {
+      title: "AI",
+      items: ["GPT/Gemini", "Computer Vision", "RAG", "Workflow Automation"],
+    },
+  ];
+
+  const businessOutcomes = [
+    "Daha hızlı pazara çıkış ve kontrollü MVP süreci",
+    "Güvenli veri erişimi, rol yönetimi ve denetlenebilir altyapı",
+    "Tekrarlı operasyonların otomasyonla azaltılması",
+    "Bakımı kolay, ölçeklenebilir ve ölçülebilir ürün mimarisi",
   ];
 
   return (
@@ -191,6 +235,34 @@ export default function Home4({ onePage = false, dark = false }) {
         </div>
         <Service />
         {/* End Services Grid */}
+        <div className="container position-relative">
+          <div className="row mb-70 mb-sm-50">
+            <div className="col-lg-5 mb-md-50">
+              <h2 className="section-title-small mb-30">
+                İş hedefinize göre esnek teslimat modeli
+              </h2>
+              <p className="text-gray mb-0">
+                Yeni bir ürün geliştirmek, mevcut sistemi modernize etmek veya
+                operasyonlarınıza AI katmanı eklemek için aynı disiplinle çalışırız:
+                net kapsam, doğru teknoloji seçimi, düzenli teslimat ve ölçülebilir
+                çıktı.
+              </p>
+            </div>
+            <div className="col-lg-7">
+              <div className="row mt-n30">
+                {deliveryModels.map((item, i) => (
+                  <div key={i} className="col-md-4 d-flex align-items-stretch mt-30">
+                    <div className="alt-features-item border-left mt-0">
+                      <div className="section-caption mb-10">{item.label}</div>
+                      <h3 className="alt-features-title">{item.title}</h3>
+                      <div className="alt-features-descr">{item.text}</div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
         {/* Call to Action Block */}
         <div className="container position-relative z-index-1">
           <div className="row text-center">
@@ -255,6 +327,54 @@ export default function Home4({ onePage = false, dark = false }) {
             height={243}
             alt="resonance template image"
           />
+        </div>
+      </section>
+      <section
+        className={`page-section ${
+          dark ? "bg-dark-1 light-content" : "bg-gradient-gray-light-1"
+        }`}
+      >
+        <div className="container position-relative">
+          <div className="row align-items-center">
+            <div className="col-lg-5 mb-md-50">
+              <h2 className="section-title mb-40 mb-xs-30">
+                Modern teknoloji yığını, net iş çıktısı
+              </h2>
+              <p className="section-descr dark-white mb-40 mb-sm-30">
+                Teknoloji tercihini trend olduğu için değil, ürününüzün büyüme
+                senaryosuna hizmet ettiği için yapıyoruz. Her katmanda performans,
+                güvenlik ve bakım kolaylığını birlikte değerlendiriyoruz.
+              </p>
+              <div className="row mt-n10">
+                {businessOutcomes.map((item, i) => (
+                  <div key={i} className="col-12 d-flex mt-10">
+                    <div className="features-list-icon features-list-color-1">
+                      <i className="mi-check" />
+                    </div>
+                    <div className="features-list-text">{item}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="col-lg-7">
+              <div className="row mt-n30">
+                {technologyStack.map((group, i) => (
+                  <div key={i} className="col-sm-6 d-flex align-items-stretch mt-30">
+                    <div className="alt-features-item box-shadow text-center mt-0 w-100">
+                      <h3 className="alt-features-title">{group.title}</h3>
+                      <div className="mt-20">
+                        {group.items.map((item) => (
+                          <span key={item} className="services-8-category me-1 mb-1 d-inline-block">
+                            {item}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section

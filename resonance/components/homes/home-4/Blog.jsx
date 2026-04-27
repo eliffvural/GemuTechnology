@@ -13,17 +13,17 @@ export default function Blog() {
             className={`post-prev-2 col-md-6 mt-50 wow fadeInLeft `}
           >
             <div className="post-prev-2-img">
-              <Link href={`/corporate-blog-single/${item.id}`}>
+              <Link href="/blog">
                 <Image
                   src={item.imageUrl}
                   width={610}
                   height={436}
-                  alt="Image Description"
+                  alt={item.title}
                 />
               </Link>
             </div>
             <h3 className="post-prev-2-title">
-              <Link href={`/corporate-blog-single/${item.id}`}>
+              <Link href="/blog">
                 {item.title}
               </Link>
             </h3>

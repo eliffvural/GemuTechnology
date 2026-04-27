@@ -90,21 +90,21 @@ export const blogs4 = [
   {
     id: 10,
     imageUrl: "/assets/images/demo-corporate/blog/post-prev-1.jpg",
-    title: "Content Marketing Steps That Will Help You to Grow Your Business",
+    title: "Kurumsal Yazılım Projelerinde Doğru Mimari Nasıl Seçilir?",
     description:
-      "The macro-environment, over which a firm holds little control, consists of a variety of external factors that manifest on a large scale.",
-    date: "February 13, 2022",
-    category: "Articles",
+      "Ürün hedefi, ekip yapısı, güvenlik beklentisi ve büyüme planı bir araya geldiğinde doğru mimari kararları nasıl verilir?",
+    date: "27 Nisan 2026",
+    category: "Mimari",
     colorClass: "color-primary-1",
   },
   {
     id: 11,
     imageUrl: "/assets/images/demo-corporate/blog/post-prev-2.jpg",
-    title: "Top Five Trends for Small Investment Companies Marketing",
+    title: "AI ve Otomasyon ile Operasyonel Verimlilik Nasıl Artırılır?",
     description:
-      "The micro-environment, over which a firm holds a greater amount control, typically includes Employees, Suppliers and the Media.",
-    date: "February 11, 2023",
-    category: "Tutorials",
+      "LLM entegrasyonları, akıllı iş akışları ve veri odaklı otomasyonlarla ekiplerin tekrar eden iş yükünü azaltma yolları.",
+    date: "18 Nisan 2026",
+    category: "AI",
     colorClass: "color-primary-2",
   },
 ];
