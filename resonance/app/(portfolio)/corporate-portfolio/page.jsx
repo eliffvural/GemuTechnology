@@ -6,6 +6,7 @@ const dark = false;
 import Image from "next/image";
 import { corporateMultipage } from "@/data/menu";
 import Link from "next/link";
+import { getPublishedCaseStudies } from "@/lib/supabase/content";
 
 export const metadata = {
   title: "Projeler | Gemu Technology",
@@ -47,7 +48,12 @@ const portfolioPlaceholders = [
   },
 ];
 
-export default function CorporatePortfolioPage() {
+export default async function CorporatePortfolioPage() {
+  const supabaseProjects = await getPublishedCaseStudies();
+  const projects = supabaseProjects.length
+    ? supabaseProjects
+    : portfolioPlaceholders;
+
   return (
     <>
       <div className="theme-corporate">
@@ -127,32 +133,48 @@ export default function CorporatePortfolioPage() {
                   <div className="mb-40 mb-sm-30 text-center">
                     <h2 className="section-title-small mb-10">Projelerimiz</h2>
                     <p className="section-descr-small mb-0">
-                      Proje içeriklerini son aşamada ekleyeceğiz. Aşağıdaki kartlar bu
-                      içerikler için hazır şablon alanlarıdır.
+                      Yayındaki vaka çalışmalarını Supabase üzerinden yönetebilirsiniz.
+                      Henüz içerik eklenmediyse bu alan şablon kartlarla görünür.
                     </p>
                   </div>
                   {/* Portfolio Grid */}
                   <div className="row mt-n50 mt-sm-n40">
                     {/* Portfolio Item */}
-                    {portfolioPlaceholders.map((elm, i) => (
+                    {projects.map((elm, i) => (
                       <div key={i} className="col-md-6 col-lg-4 mt-50 mt-sm-40">
                         <div className="portfolio-5-link">
-                          <div
-                            className="portfolio-5-image bg-gray-light-2 d-flex align-items-center justify-content-center"
-                            style={{ minHeight: 260 }}
-                          >
-                            <div className="text-center p-4">
-                              <div className="mb-10 opacity-07">
-                                <i className="mi-image size-24" />
-                              </div>
-                              <div className="section-descr-small">
-                                Proje görseli buraya eklenecek
+                          {elm.imageUrl ? (
+                            <div className="portfolio-5-image">
+                              <Image
+                                src={elm.imageUrl}
+                                width={660}
+                                height={472}
+                                alt={elm.title}
+                              />
+                            </div>
+                          ) : (
+                            <div
+                              className="portfolio-5-image bg-gray-light-2 d-flex align-items-center justify-content-center"
+                              style={{ minHeight: 260 }}
+                            >
+                              <div className="text-center p-4">
+                                <div className="mb-10 opacity-07">
+                                  <i className="mi-image size-24" />
+                                </div>
+                                <div className="section-descr-small">
+                                  Proje görseli buraya eklenecek
+                                </div>
                               </div>
                             </div>
-                          </div>
+                          )}
                           <h3 className="portfolio-5-title">
                             <span>{elm.title}</span>
                           </h3>
+                          {elm.resultMetric && (
+                            <div className="portfolio-5-number">
+                              {elm.resultMetric}
+                            </div>
+                          )}
                           <div className="portfolio-5-number-descr">
                             {elm.description}
                           </div>

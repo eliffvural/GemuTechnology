@@ -13,14 +13,17 @@ import { blogs16, widgetPosts } from "@/data/blogs";
 import Pagination from "@/components/common/Pagination";
 import { comments } from "@/data/comments";
 import Form2 from "@/components/newsletterForms/Form2";
+import { getPublishedBlogPosts } from "@/lib/supabase/content";
 
 export const metadata = {
-  title:
-    "Corporate Blog || Resonance &mdash; One & Multi Page React Nextjs Creative Template",
+  title: "Blog | Gemu Technology",
   description:
-    "Resonance &mdash; One & Multi Page React Nextjs Creative Template",
+    "Gemu Technology blog: yazılım mimarisi, AI, otomasyon ve dijital ürün geliştirme içerikleri.",
 };
-export default function CorporateBlogPage() {
+export default async function CorporateBlogPage() {
+  const supabasePosts = await getPublishedBlogPosts();
+  const posts = supabasePosts.length ? supabasePosts : blogs16;
+
   return (
     <>
       <div className="theme-corporate">
@@ -47,9 +50,9 @@ export default function CorporateBlogPage() {
                   <div className="col-lg-10 offset-lg-1">
                     <h1 className="hs-title-9 mb-10">
                       <span className="wow charsAnimIn" data-splitting="chars">
-                        <AnimatedText text="Latest" />
+                        <AnimatedText text="Gemu" />
                         <span className="mark-decoration-3-wrap">
-                          <AnimatedText text="News" />
+                          <AnimatedText text="Blog" />
                           <b
                             className="mark-decoration-3 wow scalexIn"
                             data-wow-delay="0.5s"
@@ -61,7 +64,7 @@ export default function CorporateBlogPage() {
                       className="hs-descr mb-0 wow fadeIn"
                       data-wow-delay="0.2s"
                     >
-                      Insights and inspiration at your fingertips.
+                      Yazılım mimarisi, AI ve dijital ürün geliştirme üzerine içerikler.
                     </p>
                   </div>
                 </div>
@@ -75,7 +78,7 @@ export default function CorporateBlogPage() {
                     {/* Blog Posts Grid */}
                     <div className="row mt-n50 mb-60 mb-sm-40">
                       {/* Blog Post Item */}
-                      {blogs16.map((elm, i) => (
+                      {posts.map((elm, i) => (
                         <div key={i} className="post-prev-2 col-md-6 mt-50">
                           <div className="post-prev-2-img">
                             <Link href={`/blog`}>

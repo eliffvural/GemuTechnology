@@ -5,6 +5,7 @@ import { corporateMultipage } from "@/data/menu";
 import Link from "next/link";
 import Service from "@/components/homes/home-4/Service";
 import AnimateButton from "@/components/common/AnimateButton";
+import ProjectRequestForm from "@/components/forms/ProjectRequestForm";
 
 const onePage = false;
 const dark = false;
@@ -242,6 +243,27 @@ export default function CorporateServicesPage() {
                   {/* End Feature Item */}
                 </div>
                 {/* End Features Grid */}
+              </div>
+            </section>
+            <section className="page-section bg-gradient-gray-light-1">
+              <div className="container position-relative">
+                <div className="row mb-70 mb-sm-50">
+                  <div className="col-lg-5 mb-md-30">
+                    <h2 className="section-title mb-30">
+                      Proje talebinizi detaylandıralım
+                    </h2>
+                    <p className="section-descr dark-white mb-0">
+                      İhtiyacınızı birkaç bilgiyle paylaşın; kapsam, zamanlama ve
+                      doğru teknik yaklaşım için size net bir yol haritası ile
+                      dönüş yapalım.
+                    </p>
+                  </div>
+                  <div className="col-lg-7">
+                    <div className="alt-features-item box-shadow bg-white mt-0">
+                      <ProjectRequestForm />
+                    </div>
+                  </div>
+                </div>
               </div>
             </section>
 

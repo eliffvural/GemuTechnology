@@ -1,8 +1,50 @@
 "use client";
 import { contactItems } from "@/data/contact";
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 export default function Contact() {
+  const [status, setStatus] = useState({ type: "", message: "" });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  async function handleSubmit(event) {
+    event.preventDefault();
+    setIsSubmitting(true);
+    setStatus({ type: "", message: "" });
+
+    const formData = new FormData(event.currentTarget);
+    const payload = {
+      name: formData.get("name"),
+      email: formData.get("email"),
+      message: formData.get("message"),
+      source_page:
+        typeof window !== "undefined" ? window.location.pathname : "website",
+    };
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      const result = await response.json();
+
+      if (!response.ok) {
+        throw new Error(result.message);
+      }
+
+      event.currentTarget.reset();
+      setStatus({ type: "success", message: result.message });
+    } catch (error) {
+      setStatus({
+        type: "error",
+        message:
+          error.message || "Mesaj gönderilemedi. Lütfen daha sonra tekrar deneyin.",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  }
+
   return (
     <>
       <div className="row wow fadeInUp">
@@ -55,7 +97,7 @@ export default function Contact() {
             </h3>
             {/* Contact Form */}
             <form
-              onSubmit={(e) => e.preventDefault()}
+              onSubmit={handleSubmit}
               className="form contact-form"
               id="contact_form"
             >
@@ -104,7 +146,8 @@ export default function Contact() {
                   className="input-lg round form-control"
                   style={{ height: 132 }}
                   placeholder="Proje kapsamını ve ihtiyaçlarınızı paylaşın"
-                  defaultValue={""}
+                  required
+                  minLength={10}
                 />
               </div>
               <div className="row">
@@ -126,8 +169,11 @@ export default function Contact() {
                       className="submit_btn btn btn-mod btn-color btn-large btn-round btn-hover-anim"
                       id="submit_btn"
                       aria-controls="result"
+                      disabled={isSubmitting}
                     >
-                      <span>Mesajı Gönder</span>
+                      <span>
+                        {isSubmitting ? "Gönderiliyor..." : "Mesajı Gönder"}
+                      </span>
                     </button>
                   </div>
                   {/* End Send Button */}
@@ -138,7 +184,16 @@ export default function Contact() {
                 role="region"
                 aria-live="polite"
                 aria-atomic="true"
-              />
+                className={`mt-20 ${
+                  status.type === "success"
+                    ? "text-success"
+                    : status.type === "error"
+                      ? "text-danger"
+                      : ""
+                }`}
+              >
+                {status.message}
+              </div>
             </form>
             {/* End Contact Form */}
           </div>
