@@ -15,18 +15,18 @@ export default function Home4({ onePage = false, dark = false }) {
   const deliveryModels = [
     {
       label: "Keşif ve Yol Haritası",
-      title: "Fikri uygulanabilir ürün planına dönüştürürüz",
-      text: "İş hedefi, kullanıcı yolculuğu, veri modeli ve entegrasyon ihtiyaçlarını netleştirerek geliştirme başlamadan önce teknik riskleri görünür hale getiririz.",
+      title: "Ürün kapsamını netleştiririz",
+      text: "Hedefleri, öncelikleri ve teknik riskleri kısa bir yol haritasına dönüştürürüz.",
     },
     {
       label: "MVP ve Ürün Geliştirme",
-      title: "Hızlı çıkan ama büyümeye hazır ürünler kurarız",
-      text: "Öncelikli özellikleri doğru sıraya koyar, modern frontend/backend mimarisiyle kullanılabilir ilk sürümü kısa döngülerle geliştiririz.",
+      title: "İlk sürümü kontrollü çıkarırız",
+      text: "Öncelikli özellikleri sprint ritmiyle geliştirir, ürünü büyümeye hazır kurarız.",
     },
     {
       label: "Modernizasyon ve Ölçekleme",
-      title: "Mevcut sistemleri daha hızlı ve güvenilir hale getiririz",
-      text: "Eski arayüzleri, kırılgan API yapılarını ve manuel operasyonları ölçülebilir performans, güvenlik ve bakım kazanımlarına dönüştürürüz.",
+      title: "Mevcut sistemi güçlendiririz",
+      text: "Performans, güvenlik ve bakım kolaylığı için sistemi sadeleştirip ölçekleriz.",
     },
   ];
 
@@ -284,9 +284,8 @@ export default function Home4({ onePage = false, dark = false }) {
                 İş hedefinize göre esnek teslimat modeli
               </h2>
               <p className="section-descr dark-white mb-0">
-                Yeni ürün, modernizasyon veya AI otomasyonu için aynı netlikle
-                ilerleriz: kapsamı sadeleştirir, teknik kararı iş önceliğine
-                bağlar ve düzenli teslimat ritmi kurarız.
+                Kapsamı sadeleştirir, teknik kararları iş önceliğine bağlar ve
+                düzenli teslimat ritmi kurarız.
               </p>
             </div>
           </div>

@@ -58,26 +58,22 @@ const solutionPackages = [
   {
     title: "Ürün Keşfi ve Teknik Strateji",
     description:
-      "Yeni fikirleri uygulanabilir MVP kapsamına indirger; kullanıcı akışı, veri modeli, entegrasyon haritası ve teslimat planını netleştiririz.",
-    items: ["Ürün kapsamı", "Teknik mimari", "Sprint planı"],
+      "Fikri uygulanabilir kapsam, teknik mimari ve teslimat planına dönüştürürüz.",
   },
   {
     title: "Kurumsal Uygulama Geliştirme",
     description:
-      "Web, mobil, backend ve veri katmanlarını tek ürün mimarisi altında birleştirerek kurum içi ve müşteri odaklı uygulamalar geliştiririz.",
-    items: ["Web ve mobil", "API ve veri", "Rol bazlı erişim"],
+      "Web, mobil, backend ve veri katmanlarını tek ürün mimarisinde geliştiririz.",
   },
   {
     title: "AI Destekli Otomasyon",
     description:
-      "Doküman işleme, destek otomasyonu, raporlama, karar destek ve görüntü işleme senaryolarını mevcut iş akışlarınıza entegre ederiz.",
-    items: ["LLM entegrasyonu", "RAG", "Akıllı iş akışları"],
+      "Doküman, destek, raporlama ve karar destek süreçlerine AI katmanı ekleriz.",
   },
   {
     title: "Modernizasyon ve Bakım",
     description:
-      "Yavaşlayan, büyümekte zorlanan veya bakımı maliyetli sistemleri performans, güvenlik ve sürdürülebilirlik odağında yeniden yapılandırırız.",
-    items: ["Refactor", "Performans", "Gözlemlenebilirlik"],
+      "Yavaşlayan veya bakımı zorlaşan sistemleri sadeleştirir ve ölçekleriz.",
   },
 ];
 
@@ -143,7 +139,7 @@ export default function CorporateServicesPage() {
                 </div>
               </div>
               <Service />
-              <div className="container position-relative z-index-1">
+              <div className="container position-relative z-index-1 pt-40 pt-md-30">
                 <div className="row mt-n30 mb-80 mb-sm-60">
                   {solutionPackages.map((item, i) => (
                     <div
@@ -151,18 +147,13 @@ export default function CorporateServicesPage() {
                       className="col-md-6 col-xl-3 d-flex align-items-stretch mt-30"
                     >
                       <div className="alt-features-item border-left mt-0 w-100">
+                        <div className="section-caption mb-15">
+                          Çözüm {String(i + 1).padStart(2, "0")}
+                        </div>
                         <h3 className="alt-features-title">{item.title}</h3>
-                        <div className="alt-features-descr mb-20">
+                        <div className="alt-features-descr">
                           {item.description}
                         </div>
-                        {item.items.map((tag) => (
-                          <span
-                            key={tag}
-                            className="services-8-category me-1 mb-1 d-inline-block"
-                          >
-                            {tag}
-                          </span>
-                        ))}
                       </div>
                     </div>
                   ))}
