@@ -58,7 +58,7 @@ const adminStyles = {
     minHeight: 88,
   },
   brandTitle: {
-    fontSize: 22,
+    fontSize: 20,
     lineHeight: 1.1,
     fontWeight: 800,
     margin: 0,
@@ -87,7 +87,7 @@ const adminStyles = {
     color: "#111827",
     textAlign: "left",
     padding: "13px 18px",
-    fontSize: 16,
+    fontSize: 15,
     fontWeight: 600,
     cursor: "pointer",
     transition: "background .15s ease, color .15s ease",
@@ -115,7 +115,7 @@ const adminStyles = {
     padding: "0 36px",
   },
   topbarTitle: {
-    fontSize: 28,
+    fontSize: 24,
     fontWeight: 800,
     margin: 0,
   },
@@ -134,7 +134,7 @@ const adminStyles = {
     marginBottom: 34,
   },
   cardTitle: {
-    fontSize: 28,
+    fontSize: 24,
     lineHeight: 1.2,
     fontWeight: 800,
     margin: "0 0 12px",
@@ -149,7 +149,7 @@ const adminStyles = {
     padding: 28,
   },
   statValue: {
-    fontSize: 38,
+    fontSize: 32,
     lineHeight: 1,
     fontWeight: 800,
     marginBottom: 22,
@@ -169,7 +169,7 @@ const adminStyles = {
     background: "#6b7280",
     color: "#fff",
     fontWeight: 800,
-    fontSize: 15,
+    fontSize: 14,
     padding: "16px 18px",
     cursor: "pointer",
   },
@@ -179,7 +179,8 @@ const adminStyles = {
     background: "#2563eb",
     color: "#fff",
     fontWeight: 800,
-    padding: "14px 20px",
+    padding: "12px 18px",
+    fontSize: 14,
     textDecoration: "none",
     display: "inline-flex",
     alignItems: "center",
@@ -191,7 +192,8 @@ const adminStyles = {
     background: "#fff",
     color: "#111827",
     fontWeight: 800,
-    padding: "13px 18px",
+    padding: "12px 16px",
+    fontSize: 14,
     textDecoration: "none",
     width: "100%",
     cursor: "pointer",
@@ -538,7 +540,7 @@ export default function AdminDashboard() {
       <aside style={adminStyles.sidebar}>
         <div style={adminStyles.brand}>
           <h1 style={adminStyles.brandTitle}>Gemu Technology</h1>
-          <div style={{ ...adminStyles.muted, marginTop: 8 }}>
+            <div style={{ ...adminStyles.muted, marginTop: 8, fontSize: 14 }}>
             Yönetim alanı
           </div>
         </div>
@@ -604,7 +606,7 @@ export default function AdminDashboard() {
             <>
               <section style={{ ...adminStyles.card, ...adminStyles.welcomeCard }}>
                 <h2 style={adminStyles.cardTitle}>Hoş geldiniz</h2>
-                <p style={{ ...adminStyles.muted, margin: 0, fontSize: 17 }}>
+                <p style={{ ...adminStyles.muted, margin: 0, fontSize: 15 }}>
                   Blog, proje, iletişim ve proje talebi verilerini buradan
                   yönetebilirsiniz.
                 </p>
@@ -625,7 +627,7 @@ export default function AdminDashboard() {
               </section>
 
               <section style={{ ...adminStyles.card, ...adminStyles.quickCard }}>
-                <h3 style={{ fontSize: 21, fontWeight: 800, margin: "0 0 18px" }}>
+                <h3 style={{ fontSize: 18, fontWeight: 800, margin: "0 0 18px" }}>
                   <span
                     style={{
                       display: "inline-block",
