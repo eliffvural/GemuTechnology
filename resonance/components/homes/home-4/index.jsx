@@ -555,7 +555,7 @@ export default function Home4({ onePage = false, dark = false }) {
               </h2>
               <p className="section-descr dark-white mb-50 mb-sm-40">
                 Dijital ürün, danışmanlık, otomasyon ve dönüşüm odaklı
-                teknik içeriklerimizi keşfedin.
+                içeriklerimizi keşfedin.
               </p>
               <div className="local-scroll">
                 <Link
