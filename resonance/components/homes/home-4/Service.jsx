@@ -1,33 +1,41 @@
 import { services2 } from "@/data/services";
 import React from "react";
 const ServiceItem = ({
+  id,
   iconColorClass,
   path,
   title,
   text,
   categories,
+  outcome,
   delay,
 }) => (
   <div className="col-md-6 col-xl-3 d-flex align-items-stretch mt-30">
     <div
-      className="alt-features-item box-shadow mt-0 w-100 wow fadeIn"
+      className="alt-features-item consulting-service-card mt-0 w-100 wow fadeIn"
       data-wow-duration="1.2s"
       data-wow-delay={delay}
     >
-      <div className={`services-8-icon ${iconColorClass} mb-30`}>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width={24}
-          height={24}
-          viewBox="0 0 24 24"
-          aria-hidden="true"
-        >
-          <path d={path} />
-        </svg>
+      <div className="consulting-service-top">
+        <div className={`services-8-icon ${iconColorClass}`}>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width={24}
+            height={24}
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path d={path} />
+          </svg>
+        </div>
+        <span>{String(id).padStart(2, "0")}</span>
       </div>
-      <h3 className="alt-features-title mb-15">{title}</h3>
-      <div className="alt-features-descr mb-25">{text}</div>
-      <div>
+      <h3 className="alt-features-title mb-15 consulting-service-title">
+        {title}
+      </h3>
+      <div className="alt-features-descr consulting-service-text">{text}</div>
+      <div className="consulting-service-outcome">{outcome}</div>
+      <div className="consulting-service-tags">
         {categories.map((category, index) => (
           <span
             key={index}

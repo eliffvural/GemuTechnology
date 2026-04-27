@@ -32,24 +32,24 @@ export default function Home4({ onePage = false, dark = false }) {
 
   const technologyStack = [
     {
-      title: "Frontend",
-      text: "Hızlı, SEO uyumlu ve dönüşüm odaklı kullanıcı arayüzleri.",
-      items: ["Next.js", "React", "Core Web Vitals"],
+      title: "Deneyim",
+      text: "Kullanıcıların kolay anlayacağı, hızlı ve güven veren dijital yüzler.",
+      items: ["Sade kullanım", "Marka uyumu", "Dönüşüm odağı"],
     },
     {
-      title: "Backend",
-      text: "Güvenli servis katmanları, API tasarımı ve entegrasyon altyapısı.",
-      items: ["Node.js", "REST/GraphQL", "Auth"],
+      title: "Süreç",
+      text: "Ekiplerin daha düzenli çalışmasını sağlayan yönetilebilir iş akışları.",
+      items: ["İş takibi", "Rol yönetimi", "Onay süreçleri"],
     },
     {
       title: "Veri",
-      text: "Ölçeklenebilir veri modeli, erişim kontrolü ve raporlama temeli.",
-      items: ["Supabase", "PostgreSQL", "RLS"],
+      text: "Karar almayı kolaylaştıran düzenli bilgi yapısı ve raporlama zemini.",
+      items: ["Düzenli kayıt", "Güvenli erişim", "Raporlama"],
     },
     {
-      title: "AI",
-      text: "Akıllı asistanlar, otomasyon akışları ve karar destek sistemleri.",
-      items: ["GPT/Gemini", "RAG", "Computer Vision"],
+      title: "Otomasyon",
+      text: "Tekrarlanan işleri azaltan, ekiplere zaman kazandıran akıllı çözümler.",
+      items: ["Zaman tasarrufu", "Karar desteği", "İş yükü azaltma"],
     },
   ];
 
@@ -78,7 +78,7 @@ export default function Home4({ onePage = false, dark = false }) {
     },
     {
       label: "AI ve Otomasyon",
-      text: "Operasyonel süreçlere LLM, RAG ve akıllı iş akışlarıyla verimlilik katarız.",
+      text: "Operasyonel süreçlere akıllı iş akışlarıyla verimlilik katarız.",
       icon: "mi-settings",
     },
   ];
@@ -224,9 +224,10 @@ export default function Home4({ onePage = false, dark = false }) {
                 Yazılım Hizmetlerimiz
               </h2>
               <p className="section-descr mb-0">
-                Uçtan uca hizmet modelimiz; modern mimari, yüksek performans ve
-                ölçeklenebilirlik odağında kurumların dijital büyüme hedeflerini
-                hızlandırır.
+                İhtiyacınızı birlikte anlar, doğru öncelikleri belirler ve işinize
+                uygun dijital çözümü planlarız. Amacımız yalnızca yazılım üretmek
+                değil; karar, süreç ve büyüme tarafında da güvenilir bir yol
+                arkadaşı olmaktır.
               </p>
             </div>
           </div>
@@ -291,9 +292,9 @@ export default function Home4({ onePage = false, dark = false }) {
                 />
               </div>
               <p className="section-descr-medium mb-50 mb-sm-40">
-                İş hedeflerinizi teknik gereksinimlerle hizalayarak ölçeklenebilir
-                ürün yol haritaları oluşturuyoruz. Ekiplerinize hızlı teslimat,
-                operasyonel süreklilik ve ölçülebilir iş sonuçları kazandırıyoruz.
+                Fikrinizi, ihtiyacınızı ya da mevcut sürecinizi birlikte
+                değerlendirelim. Size en uygun çalışma kapsamını, öncelikleri ve
+                uygulanabilir yol haritasını netleştirelim.
               </p>
               <div className="local-scroll text-center">
                 {onePage ? (
@@ -356,7 +357,7 @@ export default function Home4({ onePage = false, dark = false }) {
                 İş hedefinize göre esnek teslimat modeli
               </h2>
               <p className="section-descr dark-white mb-0">
-                Kapsamı sadeleştirir, teknik kararları iş önceliğine bağlar ve
+                Kapsamı sadeleştirir, uygulama kararlarını iş önceliğine bağlar ve
                 düzenli teslimat ritmi kurarız.
               </p>
             </div>
@@ -383,11 +384,11 @@ export default function Home4({ onePage = false, dark = false }) {
           <div className="row align-items-center">
             <div className="col-lg-5 mb-md-50">
               <h2 className="section-title mb-40 mb-xs-30">
-                Doğru teknoloji, sürdürülebilir ürün
+                Doğru plan, sürdürülebilir ürün
               </h2>
               <p className="section-descr dark-white mb-40 mb-sm-30">
-                Teknoloji seçimini yalnızca geliştirme hızı için değil; bakım,
-                güvenlik, performans ve ekip devri kolaylığı için birlikte
+                Ürün kararlarını yalnızca bugünkü ihtiyaca göre değil; bakım,
+                güvenlik, ekip kullanımı ve büyüme dönemleri için birlikte
                 değerlendiriyoruz.
               </p>
               <div className="row mt-n10">
@@ -504,15 +505,14 @@ export default function Home4({ onePage = false, dark = false }) {
           <div className="row">
             <div className="col-md-7 offset-md-5 col-lg-6 offset-lg-6 col-xl-5 offset-xl-7">
               <h2 className="section-title mb-40 mb-xs-30">
-                Teknoloji Tercihlerimizle İşinize Somut Değer Katıyoruz
+                İşinize Somut Değer Katan Dijital Yol Haritası
               </h2>
               <p className="section-descr mb-50 mb-sm-40">
-                Next.js ve React ile hızlı, SEO güçlü ve bakımı kolay arayüzler;
-                Node.js ve TypeScript ile esnek, güvenilir servis katmanları;
-                Supabase ve PostgreSQL ile güvenli, gerçek zamanlı ve denetlenebilir
-                veri operasyonları kuruyoruz. Bu teknoloji kombinasyonu sayesinde
-                dijital ürünleriniz daha hızlı pazara çıkar, daha güvenli çalışır
-                ve büyüme ile birlikte kesintisiz ölçeklenir.
+                İhtiyacınızı dinleyip öncelikleri netleştiriyor, uygulanabilir
+                adımlarla ilerleyen bir dijital dönüşüm planı oluşturuyoruz.
+                Böylece ürününüz daha kontrollü yayına alınır, ekipleriniz daha
+                düzenli çalışır ve büyüme dönemlerinde sisteminiz daha hazırlıklı
+                olur.
               </p>
               <div className="local-scroll mb-70 mb-sm-50">
                 {onePage ? (
@@ -554,7 +554,7 @@ export default function Home4({ onePage = false, dark = false }) {
                 Gemu Technology Blog
               </h2>
               <p className="section-descr dark-white mb-50 mb-sm-40">
-                Modern mimari, AI, veri altyapısı ve dijital dönüşüm odaklı
+                Dijital ürün, danışmanlık, otomasyon ve dönüşüm odaklı
                 teknik içeriklerimizi keşfedin.
               </p>
               <div className="local-scroll">
