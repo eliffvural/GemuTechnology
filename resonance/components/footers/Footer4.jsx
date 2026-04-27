@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 
 export default function Footer4() {
   const scrollToTop = (event) => {
@@ -29,7 +30,13 @@ export default function Footer4() {
       <div className="page-section pb-50">
         <div className="row">
           <div className="col-lg-4 mb-md-50">
-            <h3 className="fw-title mb-15">Gemu Technology</h3>
+            <Image
+              src="/assets/images/gemu/logo-horizontal-english.png"
+              alt="Gemu Technologies"
+              width={1693}
+              height={571}
+              className="gemu-footer-logo mb-20"
+            />
             <p className="mb-25">
               Kurumlara özel yazılım, modern ürün mimarisi ve ölçeklenebilir dijital
               dönüşüm çözümleri sunuyoruz.

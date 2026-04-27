@@ -13,18 +13,18 @@ export default function Header4({ links }) {
       <div className="nav-logo-wrap position-static local-scroll">
         <a href="top" className="logo">
           <Image
-            src="/assets/images/demo-corporate/logo-dark.svg"
-            alt="Your Company Logo"
-            width={106}
-            height={36}
-            className="light-mode-logo"
+            src="/assets/images/gemu/logo-horizontal-english.png"
+            alt="Gemu Technologies"
+            width={1693}
+            height={571}
+            className="light-mode-logo gemu-header-logo"
           />
           <Image
-            src="/assets/images/demo-corporate/logo-white.svg"
-            alt="Your Company Logo"
-            width={106}
-            height={36}
-            className="dark-mode-logo"
+            src="/assets/images/gemu/logo-horizontal-english.png"
+            alt="Gemu Technologies"
+            width={1693}
+            height={571}
+            className="dark-mode-logo gemu-header-logo"
           />
         </a>
       </div>

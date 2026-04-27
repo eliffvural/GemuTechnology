@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { createSupabaseBrowserClient } from "@/lib/supabase/browser";
 
@@ -58,7 +59,7 @@ const adminStyles = {
     minHeight: 88,
   },
   brandTitle: {
-    fontSize: 20,
+    fontSize: 18,
     lineHeight: 1.1,
     fontWeight: 800,
     margin: 0,
@@ -539,9 +540,20 @@ export default function AdminDashboard() {
     <div style={adminStyles.shell}>
       <aside style={adminStyles.sidebar}>
         <div style={adminStyles.brand}>
-          <h1 style={adminStyles.brandTitle}>Gemu Technology</h1>
-            <div style={{ ...adminStyles.muted, marginTop: 8, fontSize: 14 }}>
+          <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+            <Image
+              src="/assets/images/gemu/logo-large.png"
+              alt="Gemu"
+              width={42}
+              height={42}
+              style={{ width: 42, height: 42, objectFit: "contain" }}
+            />
+            <div>
+              <h1 style={adminStyles.brandTitle}>Gemu Technologies</h1>
+              <div style={{ ...adminStyles.muted, marginTop: 5, fontSize: 13 }}>
             Yönetim alanı
+              </div>
+            </div>
           </div>
         </div>
 
