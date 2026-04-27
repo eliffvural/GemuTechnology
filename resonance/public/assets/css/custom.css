@@ -131,6 +131,285 @@ html {
   transition: none !important;
 }
 
+.consulting-flow {
+  position: relative;
+  padding: 44px 0 12px;
+}
+
+.consulting-flow-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 34px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid rgba(18, 18, 18, 0.1);
+}
+
+.consulting-flow-label span {
+  color: #167d74;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.consulting-flow-label strong {
+  max-width: 480px;
+  color: #111;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: right;
+}
+
+.consulting-flow-line {
+  position: absolute;
+  top: 159px;
+  bottom: 26px;
+  left: 88px;
+  width: 1px;
+  background: linear-gradient(
+    180deg,
+    rgba(27, 132, 123, 0),
+    rgba(27, 132, 123, 0.34),
+    rgba(206, 47, 108, 0.24),
+    rgba(27, 132, 123, 0)
+  );
+}
+
+.consulting-flow-step {
+  position: relative;
+  display: grid;
+  grid-template-columns: 82px 72px minmax(0, 1fr);
+  align-items: start;
+  gap: 24px;
+  padding: 28px 0;
+  border-bottom: 1px solid rgba(18, 18, 18, 0.08);
+}
+
+.consulting-flow-step:last-child {
+  border-bottom: 0;
+}
+
+.consulting-flow-marker {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+}
+
+.consulting-flow-marker span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border: 1px solid rgba(27, 132, 123, 0.22);
+  border-radius: 50%;
+  color: #167d74;
+  background: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  box-shadow: 0 10px 28px rgba(27, 132, 123, 0.12);
+}
+
+.consulting-flow-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  color: #fff;
+  background: #167d74;
+  transform: translateY(-7px);
+}
+
+.consulting-flow-icon.color-1 {
+  background: var(--color-primary-1);
+}
+
+.consulting-flow-icon.color-2 {
+  background: var(--color-primary-2);
+}
+
+.consulting-flow-icon.color-3 {
+  background: var(--color-primary-3);
+}
+
+.consulting-flow-icon.color-4 {
+  background: var(--color-primary-4);
+}
+
+.consulting-flow-content {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 290px;
+  gap: 44px;
+}
+
+.consulting-flow-main h3 {
+  margin: 0 0 12px;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.18;
+}
+
+.consulting-flow-main p {
+  max-width: 680px;
+  margin: 0;
+  color: #777;
+  font-size: 18px;
+  line-height: 1.68;
+}
+
+.consulting-flow-side {
+  padding-left: 24px;
+  border-left: 1px solid rgba(18, 18, 18, 0.1);
+}
+
+.consulting-flow-side strong {
+  display: block;
+  margin-bottom: 18px;
+  color: #111;
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 1.35;
+}
+
+.consulting-flow-side div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.consulting-flow-side span {
+  display: inline-flex;
+  padding: 7px 12px;
+  border: 1px solid rgba(18, 18, 18, 0.12);
+  border-radius: 100px;
+  color: #555;
+  font-size: 13px;
+  line-height: 1.2;
+  background: rgba(255, 255, 255, 0.76);
+}
+
+.consulting-flow-step:hover .consulting-flow-marker span {
+  color: #fff;
+  background: #167d74;
+  box-shadow: 0 14px 34px rgba(27, 132, 123, 0.24);
+}
+
+.consulting-flow-step:hover .consulting-flow-icon {
+  transform: translateY(-7px) scale(1.06);
+}
+
+.consulting-flow-icon,
+.consulting-flow-marker span {
+  transition:
+    background 0.25s ease,
+    box-shadow 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+@media (max-width: 991px) {
+  .consulting-flow-step {
+    grid-template-columns: 64px minmax(0, 1fr);
+    gap: 18px;
+  }
+
+  .consulting-flow-icon {
+    display: none;
+  }
+
+  .consulting-flow-content {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .consulting-flow-side {
+    padding-left: 0;
+    border-left: 0;
+  }
+
+  .consulting-flow-line {
+    left: 31px;
+  }
+}
+
+@media (max-width: 767px) {
+  .consulting-flow {
+    padding-top: 24px;
+  }
+
+  .consulting-flow-label {
+    display: block;
+    margin-bottom: 24px;
+  }
+
+  .consulting-flow-label strong {
+    display: block;
+    margin-top: 10px;
+    font-size: 22px;
+    text-align: left;
+  }
+
+  .consulting-flow-step {
+    grid-template-columns: 50px minmax(0, 1fr);
+    padding: 24px 0;
+  }
+
+  .consulting-flow-line {
+    top: 136px;
+    left: 24px;
+  }
+
+  .consulting-flow-marker span {
+    width: 42px;
+    height: 42px;
+  }
+
+  .consulting-flow-main h3 {
+    font-size: 23px;
+  }
+
+  .consulting-flow-main p {
+    font-size: 16px;
+    line-height: 1.62;
+  }
+
+  .consulting-flow-side strong {
+    font-size: 16px;
+  }
+}
+
+.light-content .consulting-flow-label,
+.light-content .consulting-flow-step {
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+.light-content .consulting-flow-label strong,
+.light-content .consulting-flow-main h3,
+.light-content .consulting-flow-side strong {
+  color: #fff;
+}
+
+.light-content .consulting-flow-main p {
+  color: rgba(255, 255, 255, 0.68);
+}
+
+.light-content .consulting-flow-side {
+  border-color: rgba(255, 255, 255, 0.14);
+}
+
+.light-content .consulting-flow-side span {
+  border-color: rgba(255, 255, 255, 0.16);
+  color: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.08);
+}
+
 .consulting-service-card {
   position: relative;
   min-height: 100%;
