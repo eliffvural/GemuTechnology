@@ -61,11 +61,26 @@ export default function Home4({ onePage = false, dark = false }) {
   ];
 
   const expertiseData = [
-    { label: "Kurumsal Web Sistemleri", value: 95 },
-    { label: "Backend ve API Mimarisi", value: 93 },
-    { label: "Mobil Uygulama Geliştirme", value: 90 },
-    { label: "AI ve Otomasyon Çözümleri", value: 88 },
-    { label: "Veri ve Güvenlik Altyapısı", value: 92 },
+    {
+      label: "Teknokent Ar-Ge",
+      text: "Ürüne dönüşebilir fikirleri teknik fizibilite ve yol haritasıyla netleştiririz.",
+      icon: "mi-compass",
+    },
+    {
+      label: "Yazılım Danışmanlığı",
+      text: "Mimari karar, teknoloji seçimi ve ekip yönlendirmesinde stratejik destek veririz.",
+      icon: "mi-message",
+    },
+    {
+      label: "Ürün Geliştirme",
+      text: "Web, mobil, backend ve veri katmanlarını tek ürün mimarisi altında toplarız.",
+      icon: "mi-layers",
+    },
+    {
+      label: "AI ve Otomasyon",
+      text: "Operasyonel süreçlere LLM, RAG ve akıllı iş akışlarıyla verimlilik katarız.",
+      icon: "mi-settings",
+    },
   ];
 
   return (
@@ -222,27 +237,44 @@ export default function Home4({ onePage = false, dark = false }) {
           <div className="row align-items-center">
             <div className="col-md-6 col-lg-5 mb-md-50 mb-sm-30">
               <h3 className="section-title mb-30">
-                Uzmanlık alanlarımız
+                Teknokent odağında uzmanlık ve danışmanlık
               </h3>
-              <p className="text-gray mb-0">
-                Modern yazılım mimarisi, güvenlik ve performans disiplinlerini
-                birlikte uyguluyor; büyümeye hazır, sürdürülebilir ürünler
-                geliştiriyoruz.
+              <p className="text-gray mb-30">
+                Gemu Technology olarak Ar-Ge kültürünü pratik ürün geliştirme
+                disipliniyle birleştiriyoruz. Kurumlara yalnızca yazılım teslim
+                etmiyor; doğru mimari, doğru teknoloji ve sürdürülebilir büyüme
+                planı için danışmanlık da sağlıyoruz.
               </p>
+              <div className="expertise-pill-row">
+                <span>Teknokent şirketi</span>
+                <span>Ar-Ge yaklaşımı</span>
+                <span>Stratejik danışmanlık</span>
+              </div>
             </div>
             <div className="col-md-6 offset-lg-1 pt-10 pt-sm-0">
-              {expertiseData.map((elm, i) => (
-                <div key={i} className="progress tpl-progress">
-                  <div
-                    className="progress-bar bg-gradient-primary-1"
-                    role="progressbar"
-                    style={{ width: `${elm.value}%` }}
-                  >
-                    <div>{elm.label}, %</div>
-                    <span>{elm.value}</span>
-                  </div>
+              <div className="expertise-motion-wrap">
+                <div className="expertise-motion-center">
+                  <span>Gemu Technology</span>
+                  <strong>Ar-Ge, yazılım ve danışmanlık ekosistemi</strong>
                 </div>
-              ))}
+                <div className="expertise-motion-grid">
+                  {expertiseData.map((elm, i) => (
+                    <div
+                      key={i}
+                      className="expertise-motion-card"
+                      style={{ animationDelay: `${i * 0.18}s` }}
+                    >
+                      <div className="expertise-motion-icon">
+                        <i className={elm.icon} aria-hidden="true" />
+                      </div>
+                      <div>
+                        <h4>{elm.label}</h4>
+                        <p>{elm.text}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </div>
