@@ -10,7 +10,7 @@ export default function Hero1() {
           <div className="col-lg-6 col-xl-5 offset-xl-1 d-flex align-items-center order-first order-lg-last mb-md-60">
             <div className="w-100 text-center text-lg-start">
               <h1 className="hs-title-9 hero-gemu-title mb-35 mb-sm-20 wow fadeInUp">
-                Fikri Ürüne Dönüştürün
+                Fikrinizi Ürüne Dönüştürelim
               </h1>
               <p
                 className="hs-descr hero-gemu-descr mb-45 mb-sm-35 wow fadeInUp"
