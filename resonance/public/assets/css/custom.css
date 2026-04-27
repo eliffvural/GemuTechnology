@@ -149,48 +149,112 @@ html {
   transition: none !important;
 }
 
+.theme-corporate .gemu-contact-info-card {
+  position: relative;
+  min-height: 100%;
+  background-color: #061b4a;
+  background-blend-mode: soft-light;
+}
+
+.theme-corporate .gemu-contact-info-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(135deg, rgba(3, 26, 73, 0.86), rgba(0, 111, 222, 0.54)),
+    radial-gradient(circle at 18% 14%, rgba(255, 255, 255, 0.14), transparent 30%);
+  pointer-events: none;
+}
+
+.theme-corporate .gemu-contact-info-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.theme-corporate .gemu-contact-info-card .ci-icon {
+  background: rgba(255, 255, 255, 0.9);
+  color: #006fde;
+}
+
+.theme-corporate .gemu-contact-info-card .ci-title {
+  font-size: 25px !important;
+}
+
+.theme-corporate .gemu-contact-info-card .ci-text,
+.theme-corporate .gemu-contact-info-card .ci-link a {
+  font-size: 18px !important;
+  line-height: 1.45 !important;
+}
+
+.theme-corporate .gemu-contact-info-card hr {
+  opacity: 0.16 !important;
+}
+
+.theme-corporate .contact-form .form-control {
+  border-color: rgba(3, 26, 73, 0.2) !important;
+  background: rgba(255, 255, 255, 0.96) !important;
+  box-shadow: none !important;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.theme-corporate .contact-form .form-control:focus {
+  border-color: rgba(0, 111, 222, 0.55) !important;
+  background: #fff !important;
+  box-shadow: 0 0 0 4px rgba(0, 143, 245, 0.08) !important;
+}
+
+.theme-corporate .contact-form select.form-control {
+  font-size: 16px !important;
+}
+
 .theme-corporate .contact-form .contact-message-field {
   height: 92px !important;
   min-height: 92px !important;
-  max-height: 120px;
-  padding: 14px 18px !important;
-  font-size: 17px !important;
+  max-height: 132px;
+  padding: 13px 16px !important;
+  font-size: 16px !important;
   line-height: 1.45 !important;
   resize: vertical;
 }
 
 .theme-corporate .contact-form .contact-message-field::placeholder {
-  font-size: 17px !important;
+  font-size: 16px !important;
   line-height: 1.45 !important;
 }
 
 .theme-corporate .compact-contact-panel {
-  padding-top: 46px !important;
-  padding-bottom: 46px !important;
+  border-color: rgba(3, 26, 73, 0.18) !important;
+  padding-top: 42px !important;
+  padding-bottom: 42px !important;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(248, 251, 255, 0.82));
 }
 
 .theme-corporate .compact-contact-panel .section-title-small {
-  margin-bottom: 30px !important;
-  font-size: 36px !important;
+  margin-bottom: 28px !important;
+  font-size: 32px !important;
   line-height: 1.18 !important;
   letter-spacing: 0 !important;
 }
 
 .theme-corporate .compact-contact-panel .form label {
-  margin-bottom: 12px;
-  font-size: 21px;
+  margin-bottom: 10px;
+  font-size: 17px;
+  font-weight: 500;
   line-height: 1.25;
 }
 
 .theme-corporate .compact-contact-panel .form input.input-lg {
-  height: 56px !important;
-  padding: 0 18px !important;
-  font-size: 18px !important;
-  line-height: 56px !important;
+  height: 50px !important;
+  padding: 0 16px !important;
+  font-size: 16px !important;
+  line-height: 50px !important;
 }
 
 .theme-corporate .compact-contact-panel .form input.input-lg::placeholder {
-  font-size: 18px !important;
+  font-size: 16px !important;
 }
 
 .theme-corporate .compact-contact-panel .form-tip {
@@ -203,8 +267,38 @@ html {
 }
 
 .theme-corporate .compact-contact-panel .btn-mod.btn-large {
-  padding: 16px 30px;
-  font-size: 18px;
+  padding: 13px 26px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.theme-corporate .gemu-soft-form .form-group {
+  margin-bottom: 18px;
+}
+
+.theme-corporate .gemu-soft-form label {
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.theme-corporate .gemu-soft-form input.input-lg,
+.theme-corporate .gemu-soft-form select.input-lg {
+  height: 50px !important;
+  padding: 0 16px !important;
+  font-size: 16px !important;
+  line-height: 50px !important;
+}
+
+.theme-corporate .gemu-soft-form input.input-lg::placeholder,
+.theme-corporate .gemu-soft-form textarea::placeholder {
+  color: #8a94a6;
+  font-size: 16px !important;
+}
+
+.theme-corporate .gemu-soft-form .btn-mod.btn-large {
+  padding: 13px 24px;
+  font-size: 16px;
 }
 
 .consulting-flow {
@@ -223,7 +317,7 @@ html {
 }
 
 .consulting-flow-label span {
-  color: #167d74;
+  color: #0078d7;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.12em;
@@ -247,10 +341,10 @@ html {
   width: 1px;
   background: linear-gradient(
     180deg,
-    rgba(27, 132, 123, 0),
-    rgba(27, 132, 123, 0.34),
-    rgba(206, 47, 108, 0.24),
-    rgba(27, 132, 123, 0)
+    rgba(0, 143, 245, 0),
+    rgba(0, 143, 245, 0.34),
+    rgba(3, 26, 73, 0.24),
+    rgba(0, 143, 245, 0)
   );
 }
 
@@ -281,14 +375,14 @@ html {
   justify-content: center;
   width: 42px;
   height: 42px;
-  border: 1px solid rgba(27, 132, 123, 0.22);
+  border: 1px solid rgba(0, 143, 245, 0.22);
   border-radius: 50%;
-  color: #167d74;
+  color: #0078d7;
   background: #fff;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.08em;
-  box-shadow: 0 10px 28px rgba(27, 132, 123, 0.12);
+  box-shadow: 0 10px 28px rgba(0, 143, 245, 0.12);
 }
 
 .consulting-flow-icon {
@@ -299,7 +393,7 @@ html {
   height: 52px;
   border-radius: 50%;
   color: #fff;
-  background: #167d74;
+  background: #0078d7;
   transform: translateY(-5px);
 }
 
@@ -373,8 +467,8 @@ html {
 
 .consulting-flow-step:hover .consulting-flow-marker span {
   color: #fff;
-  background: #167d74;
-  box-shadow: 0 14px 34px rgba(27, 132, 123, 0.24);
+  background: #0078d7;
+  box-shadow: 0 14px 34px rgba(0, 143, 245, 0.24);
 }
 
 .consulting-flow-step:hover .consulting-flow-icon {
@@ -494,7 +588,7 @@ html {
   border-radius: 8px;
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(249, 250, 250, 0.92)),
-    radial-gradient(circle at 0 0, rgba(27, 132, 123, 0.08), transparent 38%);
+    radial-gradient(circle at 0 0, rgba(0, 143, 245, 0.08), transparent 38%);
   box-shadow: 0 18px 55px rgba(0, 0, 0, 0.055);
   overflow: hidden;
   transition:
@@ -510,13 +604,13 @@ html {
   bottom: -42px;
   width: 120px;
   height: 120px;
-  border: 1px solid rgba(27, 132, 123, 0.12);
+  border: 1px solid rgba(0, 143, 245, 0.12);
   border-radius: 50%;
   pointer-events: none;
 }
 
 .consulting-service-card:hover {
-  border-color: rgba(27, 132, 123, 0.2);
+  border-color: rgba(0, 143, 245, 0.2);
   box-shadow: 0 24px 68px rgba(0, 0, 0, 0.08);
   transform: translateY(-6px);
 }
@@ -583,7 +677,7 @@ html {
   border-color: rgba(255, 255, 255, 0.12);
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.04)),
-    radial-gradient(circle at 0 0, rgba(27, 132, 123, 0.14), transparent 38%);
+    radial-gradient(circle at 0 0, rgba(0, 143, 245, 0.14), transparent 38%);
 }
 
 .light-content .consulting-service-text {
@@ -656,7 +750,7 @@ html {
   border: 1px solid rgba(18, 18, 18, 0.08);
   border-radius: 8px;
   background:
-    radial-gradient(circle at 50% 48%, rgba(27, 132, 123, 0.14), transparent 34%),
+    radial-gradient(circle at 50% 48%, rgba(0, 143, 245, 0.14), transparent 34%),
     linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(249, 250, 250, 0.88));
   box-shadow: 0 24px 70px rgba(0, 0, 0, 0.07);
   overflow: hidden;
@@ -672,7 +766,7 @@ html {
   content: "";
   position: absolute;
   inset: 36px;
-  border: 1px dashed rgba(27, 132, 123, 0.34);
+  border: 1px dashed rgba(0, 143, 245, 0.34);
   border-radius: 50%;
   animation: expertise-rotate 14s linear infinite;
   pointer-events: none;
@@ -693,10 +787,10 @@ html {
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  background: #1b847b;
+  background: #008ff5;
   box-shadow:
-    0 0 0 8px rgba(27, 132, 123, 0.1),
-    0 0 32px rgba(27, 132, 123, 0.42);
+    0 0 0 8px rgba(0, 143, 245, 0.1),
+    0 0 32px rgba(0, 143, 245, 0.42);
   animation: expertise-orbit-dot 7s ease-in-out infinite;
   pointer-events: none;
   z-index: 4;
@@ -725,8 +819,8 @@ html {
   padding: 24px 22px;
   border-radius: 8px;
   color: #fff;
-  background: #167d74;
-  box-shadow: 0 18px 45px rgba(22, 125, 116, 0.28);
+  background: #0078d7;
+  box-shadow: 0 18px 45px rgba(0, 90, 210, 0.28);
   overflow: hidden;
   animation: expertise-center-pulse 4.8s ease-in-out infinite;
   z-index: 2;
@@ -802,8 +896,8 @@ html {
   height: 38px;
   margin-bottom: 18px;
   border-radius: 50%;
-  color: #167d74;
-  background: rgba(27, 132, 123, 0.11);
+  color: #0078d7;
+  background: rgba(0, 143, 245, 0.11);
 }
 
 .expertise-motion-card h4 {
@@ -829,7 +923,7 @@ html {
 .light-content .expertise-motion-wrap {
   border-color: rgba(255, 255, 255, 0.12);
   background:
-    radial-gradient(circle at 50% 48%, rgba(27, 132, 123, 0.2), transparent 34%),
+    radial-gradient(circle at 50% 48%, rgba(0, 143, 245, 0.2), transparent 34%),
     linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.03));
 }
 
@@ -858,19 +952,19 @@ html {
     box-shadow: 0 12px 34px rgba(0, 0, 0, 0.055);
   }
   50% {
-    box-shadow: 0 22px 48px rgba(27, 132, 123, 0.16);
+    box-shadow: 0 22px 48px rgba(0, 143, 245, 0.16);
   }
 }
 
 @keyframes expertise-center-pulse {
   0%,
   100% {
-    box-shadow: 0 18px 45px rgba(22, 125, 116, 0.28);
+    box-shadow: 0 18px 45px rgba(0, 90, 210, 0.28);
   }
   50% {
     box-shadow:
-      0 22px 60px rgba(22, 125, 116, 0.38),
-      0 0 0 10px rgba(27, 132, 123, 0.08);
+      0 22px 60px rgba(0, 90, 210, 0.38),
+      0 0 0 10px rgba(0, 143, 245, 0.08);
   }
 }
 

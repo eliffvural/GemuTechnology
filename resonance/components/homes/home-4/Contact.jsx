@@ -51,7 +51,7 @@ export default function Contact() {
         {/* Left Column */}
         <div className="col-lg-5 mb-md-50 mb-sm-30 d-flex align-items-strech">
           <div
-            className="bg-color-primary-1 bg-color-alpha-90 bg-image bg-scroll light-content w-100 round overflow-hidden px-4 px-sm-5 py-5"
+            className="gemu-contact-info-card bg-image bg-scroll light-content w-100 round overflow-hidden px-4 px-sm-5 py-5"
             style={{
               backgroundImage:
                 "url(/assets/images/demo-corporate/section-bg-4-gemu.png)",
@@ -144,7 +144,6 @@ export default function Contact() {
 	                  name="message"
 	                  id="message"
 	                  className="input-lg round form-control contact-message-field"
-	                  style={{ height: 92 }}
 	                  placeholder="Proje kapsamını ve ihtiyaçlarınızı paylaşın"
 	                  required
                   minLength={10}

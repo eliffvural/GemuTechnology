@@ -76,7 +76,7 @@ export default function ProjectRequestForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="form contact-form">
+    <form onSubmit={handleSubmit} className="form contact-form gemu-soft-form">
       <div className="row">
         <div className="col-md-6">
           <div className="form-group">
@@ -190,8 +190,7 @@ export default function ProjectRequestForm() {
         <textarea
           id="project_description"
           name="description"
-          className="input-lg round form-control"
-          style={{ height: 140 }}
+          className="input-lg round form-control contact-message-field"
           placeholder="İhtiyacınızı, hedefinizi ve varsa mevcut sisteminizi kısaca anlatın"
           required
           minLength={10}
