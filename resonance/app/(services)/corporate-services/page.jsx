@@ -15,14 +15,6 @@ export const metadata = {
     "Gemu Technology'nin uçtan uca yazılım hizmetleri, uzmanlık alanları ve kurumsal teslimat yaklaşımı.",
 };
 
-const expertiseData = [
-  { label: "Kurumsal Web Sistemleri", value: 95 },
-  { label: "Backend ve API Mimarisi", value: 93 },
-  { label: "Mobil Uygulama Geliştirme", value: 90 },
-  { label: "AI ve Otomasyon Çözümleri", value: 88 },
-  { label: "Veri ve Güvenlik Altyapısı", value: 92 },
-];
-
 const serviceBenefits = [
   {
     title: "Uçtan Uca Teslimat",
@@ -202,37 +194,6 @@ export default function CorporateServicesPage() {
             </section>
             <section className="page-section z-index-1">
               <div className="container position-relative">
-                <div className="row position-relative">
-                  <div className="col-md-6 col-lg-5 mb-md-50 mb-sm-30">
-                    <h3 className="section-title mb-30">
-                      Uzmanlık alanlarımız
-                    </h3>
-                    <p className="text-gray mb-0">
-                      Teknik ekiplerimiz modern yazılım mimarisi, güvenlik ve performans
-                      disiplinlerini birlikte uygular. Böylece ürününüz yalnızca bugün
-                      değil, büyüme dönemlerinde de stabil ve sürdürülebilir kalır.
-                    </p>
-                  </div>
-                  <div className="col-md-6 offset-lg-1 pt-10 pt-sm-0">
-                    {/* Bar Item */}
-                    {expertiseData.map((elm, i) => (
-                      <div key={i} className="progress tpl-progress">
-                        <div
-                          className="progress-bar bg-gradient-primary-1"
-                          role="progressbar"
-                          style={{ width: `${elm.value}%` }}
-                        >
-                          <div>{elm.label}, %</div>
-                          <span>{elm.value}</span>
-                        </div>
-                      </div>
-                    ))}
-                    {/* End Bar Item */}
-                  </div>
-                </div>
-                <div className="page-section">
-                  <hr className="mt-0 mb-0" />
-                </div>
                 <div className="row mb-50 mb-sm-50">
                   <div className="col-md-10 offset-md-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3 text-center">
                     <h2 className="section-title-small mb-20">

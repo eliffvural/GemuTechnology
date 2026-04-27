@@ -56,6 +56,14 @@ export default function Home4({ onePage = false, dark = false }) {
     "Bakımı kolay, ölçeklenebilir ve ölçülebilir ürün mimarisi",
   ];
 
+  const expertiseData = [
+    { label: "Kurumsal Web Sistemleri", value: 95 },
+    { label: "Backend ve API Mimarisi", value: 93 },
+    { label: "Mobil Uygulama Geliştirme", value: 90 },
+    { label: "AI ve Otomasyon Çözümleri", value: 88 },
+    { label: "Veri ve Güvenlik Altyapısı", value: 92 },
+  ];
+
   return (
     <>
       <hr className={`mt-0 mb-0 ${dark ? "white" : ""} `} />
@@ -206,6 +214,34 @@ export default function Home4({ onePage = false, dark = false }) {
         </div>
         <Service />
         {/* End Services Grid */}
+        <div className="container position-relative pt-30 pt-md-10 mb-100 mb-md-80 mb-sm-70">
+          <div className="row align-items-center">
+            <div className="col-md-6 col-lg-5 mb-md-50 mb-sm-30">
+              <h3 className="section-title mb-30">
+                Uzmanlık alanlarımız
+              </h3>
+              <p className="text-gray mb-0">
+                Modern yazılım mimarisi, güvenlik ve performans disiplinlerini
+                birlikte uyguluyor; büyümeye hazır, sürdürülebilir ürünler
+                geliştiriyoruz.
+              </p>
+            </div>
+            <div className="col-md-6 offset-lg-1 pt-10 pt-sm-0">
+              {expertiseData.map((elm, i) => (
+                <div key={i} className="progress tpl-progress">
+                  <div
+                    className="progress-bar bg-gradient-primary-1"
+                    role="progressbar"
+                    style={{ width: `${elm.value}%` }}
+                  >
+                    <div>{elm.label}, %</div>
+                    <span>{elm.value}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
         {/* Call to Action Block */}
         <div className="container position-relative z-index-1">
           <div className="row text-center">
