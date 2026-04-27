@@ -99,6 +99,46 @@ html {
   scroll-behavior: smooth !important;
 }
 
+.theme-corporate .hero-gemu-title {
+  max-width: 620px;
+  font-size: clamp(2.15rem, 1.65rem + 1.65vw, 3.25rem) !important;
+  line-height: 1.16 !important;
+  letter-spacing: 0 !important;
+}
+
+.theme-corporate .hero-gemu-descr {
+  max-width: 650px;
+  font-size: 1.18rem !important;
+  line-height: 1.58 !important;
+  font-weight: 500 !important;
+}
+
+.theme-corporate .hero-gemu-features .features-list-text {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+@media (max-width: 767px) {
+  .theme-corporate .hero-gemu-title {
+    max-width: 360px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 2.2rem !important;
+  }
+
+  .theme-corporate .hero-gemu-descr {
+    max-width: 390px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 1.08rem !important;
+    line-height: 1.55 !important;
+  }
+
+  .theme-corporate .hero-gemu-features .features-list-text {
+    font-size: 16px;
+  }
+}
+
 .expertise-pill-row {
   display: flex;
   flex-wrap: wrap;

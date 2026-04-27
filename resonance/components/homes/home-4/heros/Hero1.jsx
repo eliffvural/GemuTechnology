@@ -9,18 +9,17 @@ export default function Hero1() {
           {/* Home Section Text */}
           <div className="col-lg-6 col-xl-5 offset-xl-1 d-flex align-items-center order-first order-lg-last mb-md-60">
             <div className="w-100 text-center text-lg-start">
-              <h1 className="hs-title-9 mb-40 mb-sm-20 wow fadeInUp">
-                Geleceği Kodluyoruz
+              <h1 className="hs-title-9 hero-gemu-title mb-35 mb-sm-20 wow fadeInUp">
+                Fikri Ürüne Dönüştürün
               </h1>
               <p
-                className="hs-descr mb-50 mb-sm-40 wow fadeInUp"
+                className="hs-descr hero-gemu-descr mb-45 mb-sm-35 wow fadeInUp"
                 data-wow-delay="0.15s"
               >
-                Gemu Technology olarak kurumların kritik iş hedeflerini, modern yazılım
-                mimarileriyle ölçeklenebilir dijital ürünlere dönüştürüyoruz.
-                Güvenlik, performans ve operasyonel süreklilik odağıyla bugünü
-                güçlendirirken yarının büyüme stratejilerine de sağlam bir temel
-                inşa ediyoruz.
+                Gemu Technology olarak kurumların iş hedeflerini, Ar-Ge odaklı
+                yazılım mimarileriyle ölçeklenebilir dijital ürünlere
+                dönüştürüyoruz. Güvenlik, performans ve sürdürülebilir büyüme
+                odağını aynı ürün disiplini içinde yönetiyoruz.
               </p>
               <div
                 className="wow fadeInUp wch-unset"
@@ -36,7 +35,7 @@ export default function Hero1() {
                   </a>
                 </div>
                 {/* Features List */}
-                <div className="mt-n10">
+                <div className="mt-n10 hero-gemu-features">
                   {/* Features List Item */}
                   {features.map((feature) => (
                     <div

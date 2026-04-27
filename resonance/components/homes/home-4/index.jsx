@@ -104,48 +104,57 @@ export default function Home4({ onePage = false, dark = false }) {
         </div>
         {/* End Decorative Line */}
         <div className="container position-relative pt-30 pt-md-20 pt-sm-10">
-          <div className="row align-items-center">
-            <div className="col-md-6 col-lg-5 mb-md-50 mb-sm-30">
-              <h2 className="section-title mb-30">
-                Teknokent odağında uzmanlık ve danışmanlık
+          <div className="row mb-90 mb-md-70 mb-sm-60">
+            <div className="col-md-10 offset-md-1 col-lg-8 offset-lg-2 text-center">
+              <h2 className="section-title mb-40 mb-xs-30">
+                Özel Yazılım Çözümlerinde Güvenilir İş Ortağınız
               </h2>
-              <p className="text-gray mb-30">
-                Gemu Technology olarak Ar-Ge kültürünü pratik ürün geliştirme
-                disipliniyle birleştiriyoruz. Kurumlara yalnızca yazılım teslim
-                etmiyor; doğru mimari, doğru teknoloji ve sürdürülebilir büyüme
-                planı için danışmanlık da sağlıyoruz.
+              <p className="section-descr dark-white mb-0">
+                Hazır paket yaklaşımları yerine, kurumunuzun iş modeline tam uyum
+                sağlayan butik ve esnek çözüm mimarileri tasarlıyoruz. Fikirden
+                ürüne uzanan tüm süreçte güvenlik, ölçeklenebilirlik ve kullanıcı
+                deneyimini aynı standartta yöneterek uzun ömürlü dijital ürünler
+                geliştiriyoruz.
               </p>
-              <div className="expertise-pill-row">
-                <span>Teknokent şirketi</span>
-                <span>Ar-Ge yaklaşımı</span>
-                <span>Stratejik danışmanlık</span>
-              </div>
             </div>
-            <div className="col-md-6 offset-lg-1 pt-10 pt-sm-0">
-              <div className="expertise-motion-wrap">
-                <div className="expertise-motion-center">
-                  <span>Gemu Technology</span>
-                  <strong>Ar-Ge, yazılım ve danışmanlık ekosistemi</strong>
-                </div>
-                <div className="expertise-motion-grid">
-                  {expertiseData.map((elm, i) => (
-                    <div
-                      key={i}
-                      className="expertise-motion-card"
-                      style={{ animationDelay: `${i * 0.18}s` }}
-                    >
-                      <div className="expertise-motion-icon">
-                        <i className={elm.icon} aria-hidden="true" />
-                      </div>
-                      <div>
-                        <h4>{elm.label}</h4>
-                        <p>{elm.text}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
+          </div>
+          {/* Testimonials Grid */}
+          <Testimonials2 />
+          {/* End Testimonials Grid */}
+          <div className="local-scroll text-center">
+            {onePage ? (
+              <>
+                <a
+                  href="#services"
+                  className={`btn btn-mod ${
+                    dark ? "btn-dark" : "btn-w"
+                  } btn-with-icon btn-circle`}
+                >
+                  <span className="btn-icon color-3">
+                    <i className="mi-favorite" />
+                  </span>
+                  <span data-btn-animate="y">
+                    <AnimateButton text={"Hizmetlerimizi Keşfedin"} />
+                  </span>
+                </a>
+              </>
+            ) : (
+              <>
+                <Link
+                  href={`/hakkimizda${dark ? "-dark" : ""}`}
+                  className={`btn btn-mod ${
+                    dark ? "btn-dark" : "btn-w"
+                  } btn-with-icon btn-circle`}
+                >
+                  <span className="btn-icon color-3">
+                    <i className="mi-favorite" />
+                  </span>
+                  <span data-btn-animate="y">
+                    <AnimateButton text={"Yazılım Hizmetlerimizi Keşfedin"} />
+                  </span>
+                </Link>
+              </>
+            )}
           </div>
         </div>
       </section>
@@ -225,57 +234,48 @@ export default function Home4({ onePage = false, dark = false }) {
         <Service />
         {/* End Services Grid */}
         <div className="container position-relative pt-30 pt-md-10 mb-100 mb-md-80 mb-sm-70">
-          <div className="row mb-90 mb-md-70 mb-sm-60">
-            <div className="col-md-10 offset-md-1 col-lg-8 offset-lg-2 text-center">
-              <h3 className="section-title mb-40 mb-xs-30">
-                Özel Yazılım Çözümlerinde Güvenilir İş Ortağınız
+          <div className="row align-items-center">
+            <div className="col-md-6 col-lg-5 mb-md-50 mb-sm-30">
+              <h3 className="section-title mb-30">
+                Teknokent odağında uzmanlık ve danışmanlık
               </h3>
-              <p className="section-descr dark-white mb-0">
-                Hazır paket yaklaşımları yerine, kurumunuzun iş modeline tam uyum
-                sağlayan butik ve esnek çözüm mimarileri tasarlıyoruz. Fikirden
-                ürüne uzanan tüm süreçte güvenlik, ölçeklenebilirlik ve kullanıcı
-                deneyimini aynı standartta yöneterek uzun ömürlü dijital ürünler
-                geliştiriyoruz.
+              <p className="text-gray mb-30">
+                Gemu Technology olarak Ar-Ge kültürünü pratik ürün geliştirme
+                disipliniyle birleştiriyoruz. Kurumlara yalnızca yazılım teslim
+                etmiyor; doğru mimari, doğru teknoloji ve sürdürülebilir büyüme
+                planı için danışmanlık da sağlıyoruz.
               </p>
+              <div className="expertise-pill-row">
+                <span>Teknokent şirketi</span>
+                <span>Ar-Ge yaklaşımı</span>
+                <span>Stratejik danışmanlık</span>
+              </div>
             </div>
-          </div>
-          {/* Testimonials Grid */}
-          <Testimonials2 />
-          {/* End Testimonials Grid */}
-          <div className="local-scroll text-center">
-            {onePage ? (
-              <>
-                <a
-                  href="#services"
-                  className={`btn btn-mod ${
-                    dark ? "btn-dark" : "btn-w"
-                  } btn-with-icon btn-circle`}
-                >
-                  <span className="btn-icon color-3">
-                    <i className="mi-favorite" />
-                  </span>
-                  <span data-btn-animate="y">
-                    <AnimateButton text={"Hizmetlerimizi Keşfedin"} />
-                  </span>
-                </a>
-              </>
-            ) : (
-              <>
-                <Link
-                  href={`/hakkimizda${dark ? "-dark" : ""}`}
-                  className={`btn btn-mod ${
-                    dark ? "btn-dark" : "btn-w"
-                  } btn-with-icon btn-circle`}
-                >
-                  <span className="btn-icon color-3">
-                    <i className="mi-favorite" />
-                  </span>
-                  <span data-btn-animate="y">
-                    <AnimateButton text={"Yazılım Hizmetlerimizi Keşfedin"} />
-                  </span>
-                </Link>
-              </>
-            )}
+            <div className="col-md-6 offset-lg-1 pt-10 pt-sm-0">
+              <div className="expertise-motion-wrap">
+                <div className="expertise-motion-center">
+                  <span>Gemu Technology</span>
+                  <strong>Ar-Ge, yazılım ve danışmanlık ekosistemi</strong>
+                </div>
+                <div className="expertise-motion-grid">
+                  {expertiseData.map((elm, i) => (
+                    <div
+                      key={i}
+                      className="expertise-motion-card"
+                      style={{ animationDelay: `${i * 0.18}s` }}
+                    >
+                      <div className="expertise-motion-icon">
+                        <i className={elm.icon} aria-hidden="true" />
+                      </div>
+                      <div>
+                        <h4>{elm.label}</h4>
+                        <p>{elm.text}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         {/* Call to Action Block */}
