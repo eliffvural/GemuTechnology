@@ -97,61 +97,34 @@ export default function Hero1() {
                 <div className="mt-10">
                   <a
                     href="#services"
-                    className="btn btn-mod btn-w btn-with-icon btn-circle"
+                    className="btn btn-mod btn-w btn-with-icon btn-circle hero-overlay-link-static"
                   >
                     <span className="btn-icon color-3">
                       <i className="mi-user" aria-hidden="true" />
                     </span>
-                    <span data-btn-animate="y">
-                      <span className="btn-animate-y">
-                        <span className="btn-animate-y-1">
-                          Stratejik Teknoloji Danışmanlığı
-                        </span>
-                        <span className="btn-animate-y-2" aria-hidden="true">
-                          Stratejik Teknoloji Danışmanlığı
-                        </span>
-                      </span>
-                    </span>
+                    <span>Stratejik Teknoloji Danışmanlığı</span>
                   </a>
                 </div>
                 <div className="mt-10">
                   <a
                     href="#services"
-                    className="btn btn-mod btn-w btn-with-icon btn-circle"
+                    className="btn btn-mod btn-w btn-with-icon btn-circle hero-overlay-link-static"
                   >
                     <span className="btn-icon color-2">
                       <i className="mi-search" aria-hidden="true" />
                     </span>
-                    <span data-btn-animate="y">
-                      <span className="btn-animate-y">
-                        <span className="btn-animate-y-1">
-                          Ölçeklenebilir Yazılım Mimarisi
-                        </span>
-                        <span className="btn-animate-y-2" aria-hidden="true">
-                          Ölçeklenebilir Yazılım Mimarisi
-                        </span>
-                      </span>
-                    </span>
+                    <span>Ölçeklenebilir Yazılım Mimarisi</span>
                   </a>
                 </div>
                 <div className="mt-10">
                   <a
                     href="#services"
-                    className="btn btn-mod btn-w btn-with-icon btn-circle"
+                    className="btn btn-mod btn-w btn-with-icon btn-circle hero-overlay-link-static"
                   >
                     <span className="btn-icon color-4">
                       <i className="mi-message" aria-hidden="true" />
                     </span>
-                    <span data-btn-animate="y">
-                      <span className="btn-animate-y">
-                        <span className="btn-animate-y-1">
-                          Yapay Zeka ile Akıllı Operasyonlar
-                        </span>
-                        <span className="btn-animate-y-2" aria-hidden="true">
-                          Yapay Zeka ile Akıllı Operasyonlar
-                        </span>
-                      </span>
-                    </span>
+                    <span>Yapay Zeka ile Akıllı Operasyonlar</span>
                   </a>
                 </div>
               </div>

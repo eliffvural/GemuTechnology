@@ -118,6 +118,19 @@ html {
   line-height: 1.5;
 }
 
+.theme-corporate .hero-overlay-link-static,
+.theme-corporate .hero-overlay-link-static:hover,
+.theme-corporate .hero-overlay-link-static:focus {
+  background: #fff !important;
+  box-shadow: var(--box-shadow-block) !important;
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+.theme-corporate .hero-overlay-link-static span {
+  transition: none !important;
+}
+
 @media (max-width: 767px) {
   .theme-corporate .hero-gemu-title {
     max-width: 360px;
