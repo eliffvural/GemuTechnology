@@ -206,34 +206,6 @@ export default function Home4({ onePage = false, dark = false }) {
         </div>
         <Service />
         {/* End Services Grid */}
-        <div className="container position-relative">
-          <div className="row mb-70 mb-sm-50">
-            <div className="col-lg-5 mb-md-50">
-              <h2 className="section-title-small mb-30">
-                İş hedefinize göre esnek teslimat modeli
-              </h2>
-              <p className="text-gray mb-0">
-                Yeni bir ürün geliştirmek, mevcut sistemi modernize etmek veya
-                operasyonlarınıza AI katmanı eklemek için aynı disiplinle çalışırız:
-                net kapsam, doğru teknoloji seçimi, düzenli teslimat ve ölçülebilir
-                çıktı.
-              </p>
-            </div>
-            <div className="col-lg-7">
-              <div className="row mt-n30">
-                {deliveryModels.map((item, i) => (
-                  <div key={i} className="col-md-4 d-flex align-items-stretch mt-30">
-                    <div className="alt-features-item border-left mt-0">
-                      <div className="section-caption mb-10">{item.label}</div>
-                      <h3 className="alt-features-title">{item.title}</h3>
-                      <div className="alt-features-descr">{item.text}</div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
         {/* Call to Action Block */}
         <div className="container position-relative z-index-1">
           <div className="row text-center">
@@ -298,6 +270,37 @@ export default function Home4({ onePage = false, dark = false }) {
             height={243}
             alt="resonance template image"
           />
+        </div>
+      </section>
+      <section
+        className={`page-section ${
+          dark ? "bg-dark-2 light-content" : "bg-gradient-gray-light-1"
+        }`}
+      >
+        <div className="container position-relative">
+          <div className="row mb-70 mb-sm-50">
+            <div className="col-lg-8 offset-lg-2 text-center">
+              <h2 className="section-title mb-30 mb-xs-20">
+                İş hedefinize göre esnek teslimat modeli
+              </h2>
+              <p className="section-descr dark-white mb-0">
+                Yeni ürün, modernizasyon veya AI otomasyonu için aynı netlikle
+                ilerleriz: kapsamı sadeleştirir, teknik kararı iş önceliğine
+                bağlar ve düzenli teslimat ritmi kurarız.
+              </p>
+            </div>
+          </div>
+          <div className="row mt-n30">
+            {deliveryModels.map((item, i) => (
+              <div key={i} className="col-md-4 d-flex align-items-stretch mt-30">
+                <div className="alt-features-item box-shadow mt-0 w-100">
+                  <div className="section-caption mb-15">{item.label}</div>
+                  <h3 className="alt-features-title mb-20">{item.title}</h3>
+                  <div className="alt-features-descr">{item.text}</div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
       <section
