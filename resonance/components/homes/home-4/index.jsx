@@ -12,25 +12,6 @@ import Link from "next/link";
 import Testimonials2 from "./Testimonials2";
 import Image from "next/image";
 export default function Home4({ onePage = false, dark = false }) {
-  const solutionAreas = [
-    {
-      title: "Kurumsal Web Çözümleri",
-      text: "Tanıtım siteleri, müşteri portalları, içerik sistemleri ve ürün odaklı web uygulamaları.",
-    },
-    {
-      title: "Backend ve API Sistemleri",
-      text: "Rol bazlı erişim, gerçek zamanlı veri, ödeme/ERP/CRM entegrasyonları ve güvenli servis mimarisi.",
-    },
-    {
-      title: "Mobil Uygulama Çözümleri",
-      text: "Saha ekipleri, müşteri deneyimi, üyelik sistemleri ve bildirim odaklı mobil ürünler.",
-    },
-    {
-      title: "AI ve Otomasyon Çözümleri",
-      text: "LLM destekli asistanlar, doküman işleme, raporlama, tahminleme ve süreç otomasyonu.",
-    },
-  ];
-
   const deliveryModels = [
     {
       label: "Keşif ve Yol Haritası",
@@ -95,8 +76,8 @@ export default function Home4({ onePage = false, dark = false }) {
           />
         </div>
         {/* End Decorative Line */}
-        <div className="container position-relative">
-          <div className="row mb-70 mb-sm-50">
+        <div className="container position-relative pt-30 pt-md-20 pt-sm-10">
+          <div className="row mb-90 mb-md-70 mb-sm-60">
             <div className="col-md-10 offset-md-1 col-lg-8 offset-lg-2 text-center">
               <h2 className="section-title mb-40 mb-xs-30">
                 Özel Yazılım Çözümlerinde Güvenilir İş Ortağınız
@@ -221,16 +202,6 @@ export default function Home4({ onePage = false, dark = false }) {
                 hızlandırır.
               </p>
             </div>
-          </div>
-          <div className="row mt-n30 mb-70 mb-sm-50">
-            {solutionAreas.map((item, i) => (
-              <div key={i} className="col-md-6 col-xl-3 d-flex align-items-stretch mt-30">
-                <div className="alt-features-item box-shadow mt-0 w-100">
-                  <h3 className="alt-features-title mb-10">{item.title}</h3>
-                  <div className="alt-features-descr">{item.text}</div>
-                </div>
-              </div>
-            ))}
           </div>
         </div>
         <Service />
