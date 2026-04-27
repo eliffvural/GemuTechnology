@@ -33,19 +33,23 @@ export default function Home4({ onePage = false, dark = false }) {
   const technologyStack = [
     {
       title: "Frontend",
-      items: ["Next.js", "React", "SEO", "Core Web Vitals"],
+      text: "Hızlı, SEO uyumlu ve dönüşüm odaklı kullanıcı arayüzleri.",
+      items: ["Next.js", "React", "Core Web Vitals"],
     },
     {
       title: "Backend",
-      items: ["Node.js", "REST/GraphQL", "Auth", "API Gateway"],
+      text: "Güvenli servis katmanları, API tasarımı ve entegrasyon altyapısı.",
+      items: ["Node.js", "REST/GraphQL", "Auth"],
     },
     {
       title: "Veri",
-      items: ["Supabase", "PostgreSQL", "RLS", "Analytics"],
+      text: "Ölçeklenebilir veri modeli, erişim kontrolü ve raporlama temeli.",
+      items: ["Supabase", "PostgreSQL", "RLS"],
     },
     {
       title: "AI",
-      items: ["GPT/Gemini", "Computer Vision", "RAG", "Workflow Automation"],
+      text: "Akıllı asistanlar, otomasyon akışları ve karar destek sistemleri.",
+      items: ["GPT/Gemini", "RAG", "Computer Vision"],
     },
   ];
 
@@ -347,12 +351,12 @@ export default function Home4({ onePage = false, dark = false }) {
           <div className="row align-items-center">
             <div className="col-lg-5 mb-md-50">
               <h2 className="section-title mb-40 mb-xs-30">
-                Modern teknoloji yığını, net iş çıktısı
+                Doğru teknoloji, sürdürülebilir ürün
               </h2>
               <p className="section-descr dark-white mb-40 mb-sm-30">
-                Teknoloji tercihini trend olduğu için değil, ürününüzün büyüme
-                senaryosuna hizmet ettiği için yapıyoruz. Her katmanda performans,
-                güvenlik ve bakım kolaylığını birlikte değerlendiriyoruz.
+                Teknoloji seçimini yalnızca geliştirme hızı için değil; bakım,
+                güvenlik, performans ve ekip devri kolaylığı için birlikte
+                değerlendiriyoruz.
               </p>
               <div className="row mt-n10">
                 {businessOutcomes.map((item, i) => (
@@ -369,14 +373,16 @@ export default function Home4({ onePage = false, dark = false }) {
               <div className="row mt-n30">
                 {technologyStack.map((group, i) => (
                   <div key={i} className="col-sm-6 d-flex align-items-stretch mt-30">
-                    <div className="alt-features-item box-shadow text-center mt-0 w-100">
-                      <h3 className="alt-features-title">{group.title}</h3>
-                      <div className="mt-20">
-                        {group.items.map((item) => (
-                          <span key={item} className="services-8-category me-1 mb-1 d-inline-block">
-                            {item}
-                          </span>
-                        ))}
+                    <div className="alt-features-item box-shadow mt-0 w-100">
+                      <div className="section-caption mb-15">
+                        Katman {String(i + 1).padStart(2, "0")}
+                      </div>
+                      <h3 className="alt-features-title mb-15">{group.title}</h3>
+                      <div className="alt-features-descr mb-20">
+                        {group.text}
+                      </div>
+                      <div className="section-caption mb-0">
+                        {group.items.join(" / ")}
                       </div>
                     </div>
                   </div>
