@@ -135,7 +135,7 @@ export default function CorporateAboutPage() {
               className="page-section bg-scroll light-content"
               style={{
                 backgroundImage:
-                  "url(/assets/images/demo-corporate/section-bg-1.jpg)",
+                  "url(/assets/images/demo-corporate/section-bg-1-gemu.png)",
               }}
             >
               {/* Desktop Overlay */}

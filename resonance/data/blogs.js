@@ -89,7 +89,7 @@ export const blogs3 = [
 export const blogs4 = [
   {
     id: 10,
-    imageUrl: "/assets/images/demo-corporate/blog/post-prev-1.jpg",
+    imageUrl: "/assets/images/demo-corporate/blog/post-prev-1-gemu.png",
     title: "Kurumsal Yazılım Projelerinde Doğru Mimari Nasıl Seçilir?",
     description:
       "Ürün hedefi, ekip yapısı, güvenlik beklentisi ve büyüme planı bir araya geldiğinde doğru mimari kararları nasıl verilir?",
@@ -99,7 +99,7 @@ export const blogs4 = [
   },
   {
     id: 11,
-    imageUrl: "/assets/images/demo-corporate/blog/post-prev-2.jpg",
+    imageUrl: "/assets/images/demo-corporate/blog/post-prev-2-gemu.png",
     title: "AI ve Otomasyon ile Operasyonel Verimlilik Nasıl Artırılır?",
     description:
       "LLM entegrasyonları, akıllı iş akışları ve veri odaklı otomasyonlarla ekiplerin tekrar eden iş yükünü azaltma yolları.",
@@ -707,7 +707,7 @@ export const blogs15 = [
 export const blogs16 = [
   {
     id: 77,
-    imgUrl: "/assets/images/demo-corporate/blog/post-prev-1.jpg",
+    imgUrl: "/assets/images/demo-corporate/blog/post-prev-1-gemu.png",
     title: "Content Marketing Steps That Will Help You to Grow Your Business",
     date: "February 13, 2022",
     category: "Articles",
@@ -716,7 +716,7 @@ export const blogs16 = [
   },
   {
     id: 78,
-    imgUrl: "/assets/images/demo-corporate/blog/post-prev-2.jpg",
+    imgUrl: "/assets/images/demo-corporate/blog/post-prev-2-gemu.png",
     title: "Top Five Trends for Small Investment Companies Marketing",
     date: "February 11, 2023",
     category: "Tutorials",

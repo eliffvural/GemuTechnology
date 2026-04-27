@@ -54,7 +54,7 @@ export default function Contact() {
             className="bg-color-primary-1 bg-color-alpha-90 bg-image bg-scroll light-content w-100 round overflow-hidden px-4 px-sm-5 py-5"
             style={{
               backgroundImage:
-                "url(/assets/images/demo-corporate/section-bg-4.jpg)",
+                "url(/assets/images/demo-corporate/section-bg-4-gemu.png)",
             }}
           >
             {/* Address */}

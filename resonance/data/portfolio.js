@@ -239,14 +239,14 @@ export const portfolios3 = [
 export const portfolios4 = [
   {
     id: 25,
-    imageSrc: "/assets/images/demo-corporate/portfolio/project-1.jpg",
+    imageSrc: "/assets/images/demo-corporate/portfolio/project-1-gemu.png",
     title: "B2B Sipariş Portalı ile Operasyon Süresi Azaltıldı",
     number: "70%",
     description: "daha hızlı sipariş yönetimi",
   },
   {
     id: 26,
-    imageSrc: "/assets/images/demo-corporate/portfolio/project-2.jpg",
+    imageSrc: "/assets/images/demo-corporate/portfolio/project-2-gemu.png",
     title:
       "Mobil Saha Uygulamasıyla Satış ve Servis Ekipleri Tek Platformda Toplandı",
     number: "3x",
@@ -254,7 +254,7 @@ export const portfolios4 = [
   },
   {
     id: 27,
-    imageSrc: "/assets/images/demo-corporate/portfolio/project-3.jpg",
+    imageSrc: "/assets/images/demo-corporate/portfolio/project-3-gemu.png",
     title: "AI Destekli Destek Sistemiyle Talepler Önceliklendirildi",
     number: "24/7",
     description: "akıllı destek otomasyonu",
@@ -577,7 +577,7 @@ export const portfolios11 = [
   {
     id: 65,
     title: "How Marketing Wire Support Increased Data Accuracy by 70%",
-    imageUrl: "/assets/images/demo-corporate/portfolio/project-1.jpg",
+    imageUrl: "/assets/images/demo-corporate/portfolio/project-1-gemu.png",
     number: "70%",
     description: "growth with Resonance",
   },
@@ -585,14 +585,14 @@ export const portfolios11 = [
     id: 66,
     title:
       "How Surface Mobility Increased Sales 3X During the Latest Six Months",
-    imageUrl: "/assets/images/demo-corporate/portfolio/project-2.jpg",
+    imageUrl: "/assets/images/demo-corporate/portfolio/project-2-gemu.png",
     number: "3x",
     description: "sales increased with Resonance",
   },
   {
     id: 67,
     title: "How Gen Machine Uses Automations to Grow Their Subscriber Base",
-    imageUrl: "/assets/images/demo-corporate/portfolio/project-3.jpg",
+    imageUrl: "/assets/images/demo-corporate/portfolio/project-3-gemu.png",
     number: "Zero",
     description: "negative reviews with Resonance",
   },

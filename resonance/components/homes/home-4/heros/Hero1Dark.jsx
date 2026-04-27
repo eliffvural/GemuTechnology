@@ -102,7 +102,7 @@ export default function Hero1Dark() {
               {/* Main Image */}
               <div className="composition-8-image bg-dark-3">
                 <Image
-                  src="/assets/images/demo-corporate/hs-image-2.jpg"
+                  src="/assets/images/demo-corporate/hs-image-2-gemu.png"
                   width={706}
                   height={800}
                   alt="Image Description"

@@ -147,7 +147,7 @@ export default function Home4({ onePage = false, dark = false }) {
         className="page-section bg-scroll light-content"
         style={{
           backgroundImage:
-            "url(/assets/images/demo-corporate/section-bg-1.jpg)",
+            "url(/assets/images/demo-corporate/section-bg-1-gemu.png)",
         }}
       >
         {/* Desktop Overlay */}
@@ -442,7 +442,7 @@ export default function Home4({ onePage = false, dark = false }) {
         className="page-section bg-primary-1 bg-color-alpha-90 bg-scroll light-content"
         style={{
           backgroundImage:
-            "url(/assets/images/demo-corporate/section-bg-2.jpg)",
+            "url(/assets/images/demo-corporate/section-bg-2-gemu.png)",
         }}
       >
         <Steps />
@@ -459,7 +459,7 @@ export default function Home4({ onePage = false, dark = false }) {
         className="page-section bg-scroll light-content"
         style={{
           backgroundImage:
-            "url(/assets/images/demo-corporate/section-bg-3.jpg)",
+            "url(/assets/images/demo-corporate/section-bg-3-gemu.png)",
         }}
       >
         {/* Desktop Overlay */}
