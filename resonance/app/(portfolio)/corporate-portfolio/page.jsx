@@ -7,11 +7,12 @@ import Image from "next/image";
 import { corporateMultipage } from "@/data/menu";
 import Link from "next/link";
 import { getPublishedCaseStudies } from "@/lib/supabase/content";
+import { portfolios4 } from "@/data/portfolio";
 
 export const metadata = {
   title: "Projeler | Gemu Technology",
   description:
-    "Gemu Technology proje vitrini. Projeleriniz yayına hazır olduğunda bu alandan kolayca yayınlayabilirsiniz.",
+    "Gemu Technology vaka çalışmaları: kurumsal web, backend, mobil uygulama, AI ve otomasyon projelerinde problem, çözüm ve sonuç odaklı yazılım üretimi.",
 };
 
 const portfolioHighlights = [
@@ -21,38 +22,40 @@ const portfolioHighlights = [
   "AI ve otomasyon uygulamaları",
 ];
 
-const portfolioPlaceholders = [
-  {
-    title: "Proje Kartı 01",
-    description: "Proje adı, kapsamı ve kullanılan teknolojiler burada yer alacak.",
-  },
-  {
-    title: "Proje Kartı 02",
-    description: "Müşteri hedefi, çözülen problem ve iş çıktıları burada sunulacak.",
-  },
-  {
-    title: "Proje Kartı 03",
-    description: "Performans, ölçeklenebilirlik ve operasyonel katkı metrikleri eklenecek.",
-  },
-  {
-    title: "Proje Kartı 04",
-    description: "Sektöre özel çözüm yaklaşımı ve teslimat modeli anlatılacak.",
-  },
-  {
-    title: "Proje Kartı 05",
-    description: "Vaka çalışması formatında süreç, mimari ve sonuç paylaşılacak.",
-  },
-  {
-    title: "Proje Kartı 06",
-    description: "Proje görseli, kısa özet ve detay sayfası bağlantısı eklenecek.",
-  },
-];
+const normalizeProject = (project, index) => ({
+  title: project.title,
+  eyebrow: project.eyebrow || project.serviceType || "Yazılım hizmeti",
+  industry: project.industry || "Kurumsal operasyonlar",
+  problem:
+    project.problem ||
+    "İş sürecindeki manuel adımlar, veri dağınıklığı veya ölçeklenme ihtiyacı yazılım çözümüyle netleştirildi.",
+  solution:
+    project.solution ||
+    project.description ||
+    "İhtiyaca uygun ürün kapsamı, geliştirme planı ve sürdürülebilir yazılım mimarisi birlikte kurgulandı.",
+  result:
+    project.result ||
+    "Çalışan, yönetilebilir ve büyümeye hazır bir dijital ürün yapısı oluşturuldu.",
+  number: project.number || project.resultMetric || "Net",
+  description: project.description || "ölçülebilir iş çıktısı",
+  imageUrl:
+    project.imageUrl ||
+    project.imageSrc ||
+    `/assets/images/demo-corporate/portfolio/project-${(index % 3) + 1}-gemu.png`,
+  tags: project.tags || [
+    project.serviceType || "Yazılım geliştirme",
+    "Ürün kapsamı",
+    "Teslimat planı",
+  ],
+});
 
 export default async function CorporatePortfolioPage() {
   const supabaseProjects = await getPublishedCaseStudies();
-  const projects = supabaseProjects.length
-    ? supabaseProjects
-    : portfolioPlaceholders;
+  const projects = (supabaseProjects.length ? supabaseProjects : portfolios4).map(
+    normalizeProject
+  );
+  const featuredProject = projects[0];
+  const secondaryProjects = projects.slice(1);
 
   return (
     <>
@@ -91,7 +94,8 @@ export default async function CorporatePortfolioPage() {
                       className="hs-descr mb-0 wow fadeIn"
                       data-wow-delay="0.2s"
                     >
-                      Yayına alacağımız projeleri burada vaka odaklı bir yapı ile sergileyeceğiz.
+                      Yazılım projelerini problem, çözüm ve sonuç odağında
+                      vaka çalışması formatında inceliyoruz.
                     </p>
                   </div>
                 </div>
@@ -130,60 +134,78 @@ export default async function CorporatePortfolioPage() {
                       {/* End Features List */}
                     </div>
                   </div>
-                  <div className="mb-40 mb-sm-30 text-center">
-                    <h2 className="section-title-small mb-10">Projelerimiz</h2>
-                    <p className="section-descr-small mb-0">
-                      Yayındaki vaka çalışmalarını Supabase üzerinden yönetebilirsiniz.
-                      Henüz içerik eklenmediyse bu alan şablon kartlarla görünür.
-                    </p>
-                  </div>
-                  {/* Portfolio Grid */}
-                  <div className="row mt-n50 mt-sm-n40">
-                    {/* Portfolio Item */}
-                    {projects.map((elm, i) => (
-                      <div key={i} className="col-md-6 col-lg-4 mt-50 mt-sm-40">
-                        <div className="portfolio-5-link">
-                          {elm.imageUrl ? (
-                            <div className="portfolio-5-image">
-                              <Image
-                                src={elm.imageUrl}
-                                width={660}
-                                height={472}
-                                alt={elm.title}
-                              />
+                  <div className="case-study-feature mb-70 mb-sm-50">
+                    <div className="row align-items-stretch">
+                      <div className="col-lg-6">
+                        <div className="case-study-feature-image">
+                          <Image
+                            src={featuredProject.imageUrl}
+                            width={760}
+                            height={520}
+                            alt={featuredProject.title}
+                          />
+                        </div>
+                      </div>
+                      <div className="col-lg-6 d-flex">
+                        <div className="case-study-feature-content">
+                          <div className="case-study-eyebrow">
+                            {featuredProject.eyebrow}
+                          </div>
+                          <h2>{featuredProject.title}</h2>
+                          <p>{featuredProject.solution}</p>
+                          <div className="case-study-meta">
+                            <div>
+                              <span>Sektör</span>
+                              <strong>{featuredProject.industry}</strong>
                             </div>
-                          ) : (
-                            <div
-                              className="portfolio-5-image bg-gray-light-2 d-flex align-items-center justify-content-center"
-                              style={{ minHeight: 260 }}
-                            >
-                              <div className="text-center p-4">
-                                <div className="mb-10 opacity-07">
-                                  <i className="mi-image size-24" />
-                                </div>
-                                <div className="section-descr-small">
-                                  Proje görseli buraya eklenecek
-                                </div>
-                              </div>
+                            <div>
+                              <span>Sonuç</span>
+                              <strong>
+                                {featuredProject.number} {featuredProject.description}
+                              </strong>
                             </div>
-                          )}
-                          <h3 className="portfolio-5-title">
-                            <span>{elm.title}</span>
-                          </h3>
-                          {elm.resultMetric && (
-                            <div className="portfolio-5-number">
-                              {elm.resultMetric}
-                            </div>
-                          )}
-                          <div className="portfolio-5-number-descr">
-                            {elm.description}
+                          </div>
+                          <div className="case-study-tags">
+                            {featuredProject.tags.map((tag) => (
+                              <span key={tag}>{tag}</span>
+                            ))}
                           </div>
                         </div>
                       </div>
+                    </div>
+                  </div>
+                  <div className="mb-40 mb-sm-30 text-center">
+                    <h2 className="section-title-small mb-10">
+                      Seçili Vaka Çalışmaları
+                    </h2>
+                    <p className="section-descr-small mb-0">
+                      Her projede önce ihtiyacı netleştiriyor, sonra çalışan yazılım
+                      çözümünü ve iş çıktısını birlikte görünür hale getiriyoruz.
+                    </p>
+                  </div>
+                  <div className="row mt-n30">
+                    {secondaryProjects.map((project) => (
+                      <div key={project.title} className="col-md-6 mt-30">
+                        <article className="case-study-detail-card">
+                          <div className="case-study-detail-top">
+                            <span>{project.eyebrow}</span>
+                            <strong>{project.number}</strong>
+                          </div>
+                          <h3>{project.title}</h3>
+                          <div className="case-study-detail-block">
+                            <span>İhtiyaç</span>
+                            <p>{project.problem}</p>
+                          </div>
+                          <div className="case-study-detail-block">
+                            <span>Çözüm</span>
+                            <p>{project.solution}</p>
+                          </div>
+                          <div className="case-study-detail-result">
+                            {project.description}
+                          </div>
+                        </article>
+                      </div>
                     ))}
-                    {/* End Portfolio Item */}
-
-                    {/* End Portfolio Item */}
                   </div>
                   {/* End Portfolio Grid */}
                 </div>

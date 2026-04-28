@@ -240,24 +240,50 @@ export const portfolios4 = [
   {
     id: 25,
     imageSrc: "/assets/images/demo-corporate/portfolio/project-1-gemu.png",
-    title: "B2B Sipariş Portalı ile Operasyon Süresi Azaltıldı",
+    title: "B2B Sipariş Portalı",
+    eyebrow: "Kurumsal web ve backend",
+    industry: "Toptan satış operasyonları",
+    problem:
+      "Bayi siparişleri e-posta ve manuel takip üzerinden ilerlediği için onay, stok kontrolü ve raporlama süreçleri yavaşlıyordu.",
+    solution:
+      "Rol bazlı müşteri portalı, sipariş akışı, yönetim paneli ve backend servisleri tek ürün mimarisi altında geliştirildi.",
+    result:
+      "Sipariş takibi sadeleşti, ekiplerin manuel kontrol yükü azaldı ve operasyon daha ölçülebilir hale geldi.",
     number: "70%",
     description: "daha hızlı sipariş yönetimi",
+    tags: ["Portal", "Sipariş akışı", "Yönetim paneli"],
   },
   {
     id: 26,
     imageSrc: "/assets/images/demo-corporate/portfolio/project-2-gemu.png",
-    title:
-      "Mobil Saha Uygulamasıyla Satış ve Servis Ekipleri Tek Platformda Toplandı",
+    title: "Mobil Saha Uygulaması",
+    eyebrow: "Mobil ürün geliştirme",
+    industry: "Saha satış ve servis ekipleri",
+    problem:
+      "Saha ekipleri müşteri notlarını, servis durumlarını ve geri dönüşleri farklı araçlarda tuttuğu için takip zorlaşıyordu.",
+    solution:
+      "Mobil uygulama, bildirim akışları, müşteri geçmişi ve backend entegrasyonu birlikte tasarlanarak tek operasyon ekranı oluşturuldu.",
+    result:
+      "Saha geri dönüşleri hızlandı, ekipler aynı veri üzerinde çalışmaya başladı ve yönetim görünürlüğü arttı.",
     number: "3x",
     description: "daha hızlı saha geri dönüşü",
+    tags: ["Mobil uygulama", "Bildirim", "Saha takibi"],
   },
   {
     id: 27,
     imageSrc: "/assets/images/demo-corporate/portfolio/project-3-gemu.png",
-    title: "AI Destekli Destek Sistemiyle Talepler Önceliklendirildi",
+    title: "AI Destekli Destek Sistemi",
+    eyebrow: "AI ve otomasyon",
+    industry: "Müşteri destek operasyonları",
+    problem:
+      "Destek talepleri yoğunlaştıkça önceliklendirme, sınıflandırma ve doğru ekibe yönlendirme süreçleri manuel kalıyordu.",
+    solution:
+      "Talep sınıflandırma, özetleme, önceliklendirme ve raporlama akışları mevcut destek sürecine AI katmanı olarak eklendi.",
+    result:
+      "Tekrarlayan değerlendirme yükü azaldı, talepler daha hızlı ayrıştırıldı ve destek ekibi kritik konulara odaklandı.",
     number: "24/7",
     description: "akıllı destek otomasyonu",
+    tags: ["AI sınıflandırma", "Otomasyon", "Raporlama"],
   },
 ];
 

@@ -8,10 +8,11 @@ export default function Portfolio() {
     <>
       <div className="row mb-70 mb-sm-50">
         <div className="col-lg-6 col-xl-5 mb-md-40">
-          <h2 className="section-title mb-40 mb-xs-30">Çözüm Senaryoları</h2>
+          <h2 className="section-title mb-40 mb-xs-30">Vaka Çalışmaları</h2>
           <p className="section-descr dark-white mb-0">
-            Yazılım hizmetlerimizi yalnızca ekran tasarımı olarak değil; süreç,
-            veri, entegrasyon ve sürdürülebilir büyüme odağında ele alıyoruz.
+            Yazılım hizmetlerimizi ihtiyaç, çözüm ve ölçülebilir sonuç odağında
+            ele alıyoruz. Her çalışma; ürün kapsamı, geliştirme süreci ve iş
+            çıktısı birlikte düşünülerek planlanır.
           </p>
         </div>
         <div className="col-lg-6 offset-xl-1 d-flex align-items-end pb-10">
@@ -40,7 +41,7 @@ export default function Portfolio() {
           <div key={index} className="col-md-6 col-lg-4 mt-50 mt-sm-40">
             <Link
               href="/projeler"
-              className="portfolio-5-link"
+              className="portfolio-5-link case-study-card"
             >
               <div className="portfolio-5-image">
                 <div className="portfolio-5-image-bg wow scalexIn" />
@@ -53,11 +54,15 @@ export default function Portfolio() {
                   />
                 </div>
               </div>
+              <div className="case-study-eyebrow">{item.eyebrow}</div>
               <h3 className="portfolio-5-title">
                 <span>{item.title}</span>
               </h3>
-              <div className="portfolio-5-number">{item.number}</div>
-              <div className="portfolio-5-number-descr">{item.description}</div>
+              <p className="case-study-summary">{item.solution}</p>
+              <div className="case-study-result">
+                <strong>{item.number}</strong>
+                <span>{item.description}</span>
+              </div>
             </Link>
           </div>
         ))}
