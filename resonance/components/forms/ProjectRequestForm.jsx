@@ -7,6 +7,7 @@ const serviceOptions = [
   "Backend ve API",
   "Mobil Uygulama",
   "AI ve Otomasyon",
+  "Teknik Danışmanlık ve Yol Haritası",
   "Modernizasyon ve Bakım",
 ];
 

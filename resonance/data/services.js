@@ -70,6 +70,16 @@ export const services2 = [
     delay: "0.3s",
     iconColorClass: "color-4",
   },
+  {
+    id: 5,
+    path: "M12 2l8 4v6c0 5.25-3.438 9.875-8 11-4.562-1.125-8-5.75-8-11V6l8-4zm0 2.236L6 7.236V12c0 4.05 2.43 7.726 6 8.858 3.57-1.132 6-4.808 6-8.858V7.236l-6-3zM11 7h2v7h-2V7zm0 9h2v2h-2v-2z",
+    title: "Teknik Danışmanlık ve Yol Haritası",
+    text: "Yeni ürün, modernizasyon veya AI entegrasyonu öncesinde kapsamı, teknik riskleri, doğru teknoloji seçimini ve uygulanabilir teslimat planını netleştiririz. Bu hizmet, yazılım geliştirme sürecinin karar alma katmanını güçlendirir.",
+    categories: ["Teknik fizibilite", "Mimari karar", "Teslimat planı"],
+    outcome: "Geliştirmeye hazır net plan",
+    delay: "0.45s",
+    iconColorClass: "color-3",
+  },
 ];
 
 export const serviceItems = [
