@@ -69,6 +69,10 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
         />
         <link
+          rel="shortcut icon"
+          href="/favicon.ico"
+        />
+        <link
           rel="icon"
           type="image/png"
           sizes="16x16"
