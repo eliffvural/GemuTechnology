@@ -68,8 +68,28 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap"
           rel="stylesheet"
         />
-        <link rel="icon" type="image/png" href="/assets/images/gemu/logo-large.png" />
-        <link rel="apple-touch-icon" href="/assets/images/gemu/logo-large.png" />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/assets/images/gemu/favicons/favicon-16.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/assets/images/gemu/favicons/favicon-32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="64x64"
+          href="/assets/images/gemu/favicons/favicon-64.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          href="/assets/images/gemu/favicons/favicon-64.png"
+        />
       </head>
       <body className="appear-animate body">{children}</body>
     </html>
