@@ -102,7 +102,7 @@ export default function Hero1() {
                     <span className="btn-icon color-3">
                       <i className="mi-user" aria-hidden="true" />
                     </span>
-                    <span>Stratejik Teknoloji Danışmanlığı</span>
+                    <span>Ürün Keşfi ve Yol Haritası</span>
                   </a>
                 </div>
                 <div className="mt-10">

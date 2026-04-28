@@ -67,8 +67,8 @@ export default function Home4({ onePage = false, dark = false }) {
       icon: "mi-compass",
     },
     {
-      label: "Yazılım Danışmanlığı",
-      text: "Mimari karar, teknoloji seçimi ve ekip yönlendirmesinde stratejik destek veririz.",
+      label: "Yazılım Mimarisi",
+      text: "Ürününüz için doğru yapı, veri modeli ve geliştirme yaklaşımını belirleriz.",
       icon: "mi-message",
     },
     {
@@ -225,9 +225,9 @@ export default function Home4({ onePage = false, dark = false }) {
               </h2>
               <p className="section-descr mb-0">
                 İhtiyacınızı birlikte anlar, doğru öncelikleri belirler ve işinize
-                uygun dijital çözümü planlarız. Amacımız yalnızca yazılım üretmek
-                değil; karar, süreç ve büyüme tarafında da güvenilir bir yol
-                arkadaşı olmaktır.
+                uygun yazılım çözümünü geliştiririz. Danışmanlık desteğini keşif,
+                mimari karar ve yol haritası aşamalarında kullanır; odağımızı
+                çalışan, sürdürülebilir ve büyümeye hazır ürün tesliminde tutarız.
               </p>
             </div>
           </div>
@@ -238,25 +238,26 @@ export default function Home4({ onePage = false, dark = false }) {
           <div className="row align-items-center">
             <div className="col-md-6 col-lg-5 mb-md-50 mb-sm-30">
               <h3 className="section-title mb-30">
-                Teknokent odağında uzmanlık ve danışmanlık
+                Teknokent odağında yazılım ve Ar-Ge
               </h3>
               <p className="text-gray mb-30">
                 Gemu Technology olarak Ar-Ge kültürünü pratik ürün geliştirme
-                disipliniyle birleştiriyoruz. Kurumlara yalnızca yazılım teslim
-                etmiyor; doğru mimari, doğru teknoloji ve sürdürülebilir büyüme
-                planı için danışmanlık da sağlıyoruz.
+                disipliniyle birleştiriyoruz. Kurumlara web, mobil, backend,
+                veri ve otomasyon katmanlarında yazılım hizmetleri sunuyor;
+                danışmanlık desteğini doğru kapsam, doğru mimari ve doğru
+                teknoloji seçimi için sürecin içine yerleştiriyoruz.
               </p>
               <div className="expertise-pill-row">
                 <span>Teknokent şirketi</span>
                 <span>Ar-Ge yaklaşımı</span>
-                <span>Stratejik danışmanlık</span>
+                <span>Yazılım teslimi</span>
               </div>
             </div>
             <div className="col-md-6 offset-lg-1 pt-10 pt-sm-0">
               <div className="expertise-motion-wrap">
                 <div className="expertise-motion-center">
                   <span>Gemu Technology</span>
-                  <strong>Ar-Ge, yazılım ve danışmanlık ekosistemi</strong>
+                  <strong>Ar-Ge destekli yazılım geliştirme ekosistemi</strong>
                 </div>
                 <div className="expertise-motion-grid">
                   {expertiseData.map((elm, i) => (
@@ -554,7 +555,7 @@ export default function Home4({ onePage = false, dark = false }) {
                 Gemu Technology Blog
               </h2>
               <p className="section-descr dark-white mb-50 mb-sm-40">
-                Dijital ürün, danışmanlık, otomasyon ve dönüşüm odaklı
+                Dijital ürün, yazılım geliştirme, otomasyon ve dönüşüm odaklı
                 içeriklerimizi keşfedin.
               </p>
               <div className="local-scroll">
@@ -608,10 +609,10 @@ export default function Home4({ onePage = false, dark = false }) {
                 Geleceği Birlikte İnşa Edelim
               </h2>
               <p className="section-descr dark-white mb-0">
-                Gemu Technology ile bir satış süreci değil, ölçeklenebilir bir dönüşüm
-                ortaklığı başlatın. Hedeflerinizi birlikte netleştirelim ve
-                kurumunuza en uygun teknoloji mimarisini stratejik olarak
-                kurgulayalım.
+                Gemu Technology ile ihtiyaçlarınıza uygun bir yazılım geliştirme
+                süreci başlatın. Hedeflerinizi birlikte netleştirelim, kapsamı
+                sadeleştirelim ve kurumunuza uygun dijital ürünü adım adım
+                geliştirelim.
               </p>
             </div>
           </div>{" "}

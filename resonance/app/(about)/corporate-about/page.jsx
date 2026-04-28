@@ -34,7 +34,7 @@ const aboutBenefits = [
   {
     title: "Ölçülebilir Etki",
     description:
-      "Yalnızca yazılım teslim etmiyor; performans, kullanıcı deneyimi ve operasyonel verimlilik metrikleriyle somut iş değeri oluşturuyoruz.",
+      "Yazılım teslimini performans, kullanıcı deneyimi ve operasyonel verimlilik metrikleriyle birlikte ele alarak somut iş değeri oluşturuyoruz.",
     svgPath:
       "M3 21h18v2H3v-2zm2-8h3v6H5v-6zm5-4h3v10h-3V9zm5-3h3v13h-3V6z",
   },
@@ -77,7 +77,7 @@ export default function CorporateAboutPage() {
                       className="hs-descr mb-0 wow fadeIn"
                       data-wow-delay="0.2s"
                     >
-                      Geleceğe hazır dijital ürünler için stratejik teknoloji ortağınız.
+                      Geleceğe hazır dijital ürünler geliştiren yazılım ekibiniz.
                     </p>
                   </div>
                 </div>

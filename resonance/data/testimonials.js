@@ -126,7 +126,7 @@ export const testimonialItems = [
   {
     imageSrc: "/assets/images/demo-corporate/testimonial-2.jpg",
     quote:
-      "Performans, güvenlik ve sürdürülebilirlik başlıklarında net kazanımlar elde ettik. Gemu Technology yalnızca geliştirme yapan bir ekip değil; ürün kararlarımıza stratejik katkı sunan güçlü bir teknoloji ortağı.",
+      "Performans, güvenlik ve sürdürülebilirlik başlıklarında net kazanımlar elde ettik. Gemu Technology geliştirme sürecinde kapsam, mimari ve teslimat kararlarımızı netleştiren güçlü bir yazılım ekibi oldu.",
     author: "Selin Karaca",
     position: "Ürün ve Teknoloji Müdürü",
   },

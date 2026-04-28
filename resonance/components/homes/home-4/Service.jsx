@@ -52,8 +52,8 @@ export default function Service() {
     <div className="container position-relative">
       <div className="consulting-flow mb-100 mb-md-80 mb-sm-70">
         <div className="consulting-flow-label">
-          <span>Danışmanlık akışı</span>
-          <strong>İhtiyaçtan sürdürülebilir çözüme</strong>
+          <span>Yazılım geliştirme süreci</span>
+          <strong>İhtiyaçtan çalışan dijital ürüne</strong>
         </div>
         <div className="consulting-flow-line" aria-hidden="true" />
         {services2.map((service) => (
