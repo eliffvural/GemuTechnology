@@ -23,6 +23,7 @@ const portfolioHighlights = [
 ];
 
 const normalizeProject = (project, index) => ({
+  slug: project.slug || project.id || `proje-${index + 1}`,
   title: project.title,
   eyebrow: project.eyebrow || project.serviceType || "Yazılım hizmeti",
   industry: project.industry || "Kurumsal operasyonlar",
@@ -137,14 +138,17 @@ export default async function CorporatePortfolioPage() {
                   <div className="case-study-feature mb-70 mb-sm-50">
                     <div className="row align-items-stretch">
                       <div className="col-lg-6">
-                        <div className="case-study-feature-image">
+                        <Link
+                          href={`/projeler/${featuredProject.slug}`}
+                          className="case-study-feature-image"
+                        >
                           <Image
                             src={featuredProject.imageUrl}
                             width={760}
                             height={520}
                             alt={featuredProject.title}
                           />
-                        </div>
+                        </Link>
                       </div>
                       <div className="col-lg-6 d-flex">
                         <div className="case-study-feature-content">
@@ -170,6 +174,14 @@ export default async function CorporatePortfolioPage() {
                               <span key={tag}>{tag}</span>
                             ))}
                           </div>
+                          <div className="mt-30">
+                            <Link
+                              href={`/projeler/${featuredProject.slug}`}
+                              className="btn btn-mod btn-color btn-medium btn-round btn-hover-anim"
+                            >
+                              <span>Vaka Detayını İncele</span>
+                            </Link>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -186,7 +198,10 @@ export default async function CorporatePortfolioPage() {
                   <div className="row mt-n30">
                     {secondaryProjects.map((project) => (
                       <div key={project.title} className="col-md-6 mt-30">
-                        <article className="case-study-detail-card">
+                        <Link
+                          href={`/projeler/${project.slug}`}
+                          className="case-study-detail-card"
+                        >
                           <div className="case-study-detail-top">
                             <span>{project.eyebrow}</span>
                             <strong>{project.number}</strong>
@@ -203,7 +218,7 @@ export default async function CorporatePortfolioPage() {
                           <div className="case-study-detail-result">
                             {project.description}
                           </div>
-                        </article>
+                        </Link>
                       </div>
                     ))}
                   </div>

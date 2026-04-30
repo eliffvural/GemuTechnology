@@ -64,6 +64,7 @@ export async function getPublishedCaseStudies() {
 
   return data.map((item) => ({
     id: item.slug || item.id,
+    slug: item.slug || item.id,
     title: item.title,
     description: item.summary || item.service_type || "Vaka çalışması",
     imageUrl: item.image_url,
@@ -71,4 +72,37 @@ export async function getPublishedCaseStudies() {
     industry: item.industry,
     resultMetric: item.result_metric,
   }));
+}
+
+export async function getPublishedCaseStudy(slug) {
+  const supabase = createSupabaseServerClient();
+
+  if (!supabase) {
+    return null;
+  }
+
+  const { data, error } = await supabase
+    .from("case_studies")
+    .select(
+      "id,title,slug,summary,content,image_url,service_type,industry,result_metric,published_at"
+    )
+    .eq("status", "published")
+    .eq("slug", slug)
+    .single();
+
+  if (error || !data) {
+    return null;
+  }
+
+  return {
+    id: data.slug || data.id,
+    slug: data.slug || data.id,
+    title: data.title,
+    description: data.summary || data.service_type || "Vaka çalışması",
+    content: data.content || "",
+    imageUrl: data.image_url,
+    serviceType: data.service_type,
+    industry: data.industry,
+    resultMetric: data.result_metric,
+  };
 }

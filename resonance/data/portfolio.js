@@ -239,6 +239,7 @@ export const portfolios3 = [
 export const portfolios4 = [
   {
     id: 25,
+    slug: "b2b-siparis-portali",
     imageSrc: "/assets/images/demo-corporate/portfolio/project-1-gemu.png",
     title: "B2B Sipariş Portalı",
     eyebrow: "Kurumsal web ve backend",
@@ -255,6 +256,7 @@ export const portfolios4 = [
   },
   {
     id: 26,
+    slug: "mobil-saha-uygulamasi",
     imageSrc: "/assets/images/demo-corporate/portfolio/project-2-gemu.png",
     title: "Mobil Saha Uygulaması",
     eyebrow: "Mobil ürün geliştirme",
@@ -271,6 +273,7 @@ export const portfolios4 = [
   },
   {
     id: 27,
+    slug: "ai-destekli-destek-sistemi",
     imageSrc: "/assets/images/demo-corporate/portfolio/project-3-gemu.png",
     title: "AI Destekli Destek Sistemi",
     eyebrow: "AI ve otomasyon",

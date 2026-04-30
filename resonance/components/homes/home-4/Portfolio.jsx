@@ -40,7 +40,7 @@ export default function Portfolio() {
         {portfolios4.map((item, index) => (
           <div key={index} className="col-md-6 col-lg-4 mt-50 mt-sm-40">
             <Link
-              href="/projeler"
+              href={`/projeler/${item.slug}`}
               className="portfolio-5-link case-study-card"
             >
               <div className="portfolio-5-image">
