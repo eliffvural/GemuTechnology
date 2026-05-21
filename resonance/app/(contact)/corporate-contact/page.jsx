@@ -10,7 +10,7 @@ import Map from "@/components/common/Map";
 import Faq from "@/components/common/Faq";
 
 export const metadata = {
-  title: "İletişim | Gemu Technology",
+  title: "İletişim",
   description:
     "Projenizi birlikte planlamak için Gemu Technology ile iletişime geçin.",
 };

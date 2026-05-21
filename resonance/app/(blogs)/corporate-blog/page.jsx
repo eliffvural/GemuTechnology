@@ -1,9 +1,6 @@
 import AnimatedText from "@/components/common/AnimatedText";
 import Footer4 from "@/components/footers/Footer4";
 import Header4 from "@/components/headers/Header4";
-import { categories } from "@/data/categories";
-import { tags } from "@/data/tags";
-import { archiveLinks } from "@/data/archeve";
 const onePage = false;
 const dark = false;
 import Image from "next/image";
@@ -11,15 +8,28 @@ import { corporateMultipage } from "@/data/menu";
 import Link from "next/link";
 import { blogs16, widgetPosts } from "@/data/blogs";
 import Pagination from "@/components/common/Pagination";
-import { comments } from "@/data/comments";
-import Form2 from "@/components/newsletterForms/Form2";
 import { getPublishedBlogPosts } from "@/lib/supabase/content";
 
 export const metadata = {
-  title: "Blog | Gemu Technology",
+  title: "Blog",
   description:
     "Gemu Technology blog: yazılım mimarisi, AI, otomasyon ve dijital ürün geliştirme içerikleri.",
 };
+
+const blogTopics = [
+  "Yazılım mimarisi",
+  "AI ve otomasyon",
+  "Ürün geliştirme",
+  "Modernizasyon",
+  "Veri güvenliği",
+];
+
+const editorialNotes = [
+  "Kurumsal ürün geliştirme pratikleri",
+  "Sürdürülebilir yazılım kararları",
+  "AI ve otomasyon kullanım senaryoları",
+];
+
 export default async function CorporateBlogPage() {
   const supabasePosts = await getPublishedBlogPosts();
   const posts = supabasePosts.length ? supabasePosts : blogs16;
@@ -86,7 +96,7 @@ export default async function CorporateBlogPage() {
                                 src={elm.imgUrl}
                                 width={610}
                                 height={436}
-                                alt="Image Description"
+                                alt={elm.title}
                               />
                             </Link>
                           </div>
@@ -122,17 +132,17 @@ export default async function CorporateBlogPage() {
                           <button
                             className="search-button animate"
                             type="submit"
-                            title="Start Search"
+                            title="Blogda ara"
                           >
                             <i className="mi-search size-18" />
                             <span className="visually-hidden">
-                              Start search
+                              Blogda ara
                             </span>
                           </button>
                           <input
                             type="text"
                             className="form-control input-lg search-field round"
-                            placeholder="Search..."
+                            placeholder="Blogda ara..."
                           />
                         </div>
                       </div>
@@ -140,15 +150,14 @@ export default async function CorporateBlogPage() {
                     {/* End Search Widget */}
                     {/* Widget */}
                     <div className="widget">
-                      <h3 className="widget-title">Categories</h3>
+                      <h3 className="widget-title">Konular</h3>
                       <div className="widget-body">
                         <ul className="clearlist widget-menu">
-                          {categories.map((category) => (
-                            <li key={category.id}>
+                          {blogTopics.map((topic) => (
+                            <li key={topic}>
                               <a href="#" title="">
-                                {category.name}
+                                {topic}
                               </a>
-                              <small> - {category.count} </small>
                             </li>
                           ))}
                         </ul>
@@ -157,12 +166,12 @@ export default async function CorporateBlogPage() {
                     {/* End Widget */}
                     {/* Widget */}
                     <div className="widget">
-                      <h3 className="widget-title">Tags</h3>
+                      <h3 className="widget-title">Odak Alanları</h3>
                       <div className="widget-body">
                         <div className="tags">
-                          {tags.map((tag) => (
-                            <a href="#" key={tag.id}>
-                              {tag.name}
+                          {blogTopics.map((topic) => (
+                            <a href="#" key={topic}>
+                              {topic}
                             </a>
                           ))}
                         </div>
@@ -171,7 +180,7 @@ export default async function CorporateBlogPage() {
                     {/* End Widget */}
                     {/* Widget */}
                     <div className="widget">
-                      <h3 className="widget-title">Latest posts</h3>
+                      <h3 className="widget-title">Öne Çıkanlar</h3>
                       <div className="widget-body">
                         <ul className="clearlist widget-posts">
                           {widgetPosts.map((post, index) => (
@@ -181,7 +190,7 @@ export default async function CorporateBlogPage() {
                                   src={post.imgUrl}
                                   height={140}
                                   style={{ height: "fit-content" }}
-                                  alt=""
+                                  alt={post.title}
                                   width={100}
                                   className="widget-posts-img"
                                 />
@@ -190,7 +199,7 @@ export default async function CorporateBlogPage() {
                                 <a href="#" title="">
                                   {post.title}
                                 </a>
-                                <span>Posted by {post.author}</span>
+                                <span>{post.author}</span>
                               </div>
                             </li>
                           ))}
@@ -200,16 +209,11 @@ export default async function CorporateBlogPage() {
                     {/* End Widget */}
                     {/* Widget */}
                     <div className="widget">
-                      <h3 className="widget-title">Comments</h3>
+                      <h3 className="widget-title">Editoryal Not</h3>
                       <div className="widget-body">
-                        <ul className="clearlist widget-comments">
-                          {comments.map((comment, index) => (
-                            <li key={index}>
-                              {comment.author} on{" "}
-                              <a href="#" title="">
-                                {comment.title}
-                              </a>
-                            </li>
+                        <ul className="clearlist widget-menu">
+                          {editorialNotes.map((note) => (
+                            <li key={note}>{note}</li>
                           ))}
                         </ul>
                       </div>
@@ -217,48 +221,33 @@ export default async function CorporateBlogPage() {
                     {/* End Widget */}
                     {/* Widget */}
                     <div className="widget">
-                      <h3 className="widget-title">Text widget</h3>
+                      <h3 className="widget-title">Kısaca Gemu</h3>
                       <div className="widget-body">
                         <div className="widget-text clearfix">
                           <Image
-                            src="/assets/images/blog/previews/post-prev-6.jpg"
-                            alt="Image Description"
+                            src="/assets/images/gemu/logo-large.png"
+                            alt="Gemu Technology logo"
                             style={{ height: "fit-content" }}
                             height={140}
                             width={100}
                             className="left img-left"
                           />
-                          Consectetur adipiscing elit. Quisque magna ante
-                          eleifend eleifend. Purus ut dignissim consectetur,
-                          nulla erat ultrices purus, ut consequat sem elit non
-                          sem. Quisque magna ante eleifend eleifend.
+                          Manisa Yunusemre merkezli yazılım ekibimiz; kurumsal
+                          web, backend, mobil uygulama, AI ve otomasyon
+                          alanlarında uygulanabilir dijital ürünler geliştirir.
                         </div>
                       </div>
                     </div>
                     {/* End Widget */}
                     {/* Widget */}
                     <div className="widget">
-                      <h3 className="widget-title">Archive</h3>
+                      <h3 className="widget-title">Yayın Planı</h3>
                       <div className="widget-body">
                         <ul className="clearlist widget-menu">
-                          {archiveLinks.map((link) => (
-                            <li key={link.id}>
-                              <a href="#" title="">
-                                {link.date}
-                              </a>
-                            </li>
-                          ))}
+                          <li>Ayda iki yeni teknik içerik</li>
+                          <li>Proje deneyimlerinden kısa notlar</li>
+                          <li>Yazılım kararları için pratik rehberler</li>
                         </ul>
-                      </div>
-                    </div>
-                    {/* End Widget */}
-                    {/* Widget */}
-                    <div className="widget mb-0">
-                      <h3 className="widget-title">Newsletter</h3>
-                      <div className="widget-body">
-                        <div className="widget-text clearfix">
-                          <Form2 />
-                        </div>
                       </div>
                     </div>
                     {/* End Widget */}

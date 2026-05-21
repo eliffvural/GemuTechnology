@@ -5,7 +5,7 @@ import Hero1 from "@/components/homes/home-4/heros/Hero1";
 import { corporateMultipage } from "@/data/menu";
 
 export const metadata = {
-  title: "Gemu Technology | Yazılım Hizmetleri ve Dijital Çözümler",
+  title: "Fikrinizi Ürüne Dönüştürelim",
   description:
     "Gemu Technology; kurumsal web, backend, mobil uygulama, yapay zeka ve otomasyon alanlarında uçtan uca yazılım çözümleri sunar.",
 };

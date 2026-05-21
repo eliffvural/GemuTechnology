@@ -1,48 +1,128 @@
-"use client";
-import { useEffect } from "react";
 import "swiper/css";
 import "../public/assets/css/styles.css";
 import "jarallax/dist/jarallax.min.css";
 import "swiper/css/effect-fade";
 
 import "photoswipe/dist/photoswipe.css";
-import { usePathname } from "next/navigation";
-import { parallaxMouseMovement, parallaxScroll } from "@/utlis/parallax";
-
 import "tippy.js/dist/tippy.css";
-import { init_wow } from "@/utlis/initWowjs";
-import { headerChangeOnScroll } from "@/utlis/changeHeaderOnScroll";
+import AppBootstrap from "@/components/common/AppBootstrap";
+
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://gemutechnology.com";
+
+export const metadata = {
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: "Gemu Technology | Yazılım Hizmetleri ve Dijital Çözümler",
+    template: "%s | Gemu Technology",
+  },
+  description:
+    "Gemu Technology; Manisa Yunusemre merkezli kurumsal web, backend, mobil uygulama, AI ve otomasyon çözümleri geliştiren yazılım şirketidir.",
+  applicationName: "Gemu Technology",
+  keywords: [
+    "Gemu Technology",
+    "Manisa yazılım şirketi",
+    "Yunusemre yazılım",
+    "kurumsal web geliştirme",
+    "backend API geliştirme",
+    "mobil uygulama geliştirme",
+    "AI otomasyon",
+    "teknik danışmanlık",
+    "Teknokent yazılım",
+  ],
+  authors: [{ name: "Gemu Technology" }],
+  creator: "Gemu Technology",
+  publisher: "Gemu Technology",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    locale: "tr_TR",
+    url: siteUrl,
+    siteName: "Gemu Technology",
+    title: "Gemu Technology | Yazılım Hizmetleri ve Dijital Çözümler",
+    description:
+      "Kurumsal web, backend, mobil uygulama, AI ve otomasyon hizmetleriyle fikrinizi çalışan dijital ürüne dönüştürüyoruz.",
+    images: [
+      {
+        url: "/assets/images/gemu/logo-horizontal-english.png",
+        width: 1693,
+        height: 571,
+        alt: "Gemu Technology logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Gemu Technology | Yazılım Hizmetleri",
+    description:
+      "Manisa Yunusemre merkezli yazılım hizmetleri, kurumsal web, backend, mobil uygulama, AI ve otomasyon çözümleri.",
+    images: ["/assets/images/gemu/logo-horizontal-english.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+  category: "technology",
+  other: {
+    "geo.region": "TR-45",
+    "geo.placename": "Yunusemre, Manisa",
+    "geo.position": "38.6191;27.4289",
+    ICBM: "38.6191, 27.4289",
+  },
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#176f86",
+};
+
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  name: "Gemu Technology",
+  url: siteUrl,
+  logo: `${siteUrl}/assets/images/gemu/logo-horizontal-english.png`,
+  image: `${siteUrl}/assets/images/demo-corporate/hs-image-2-gemu.png`,
+  email: "info@gemutechnology.com",
+  telephone: "+90 850 123 45 67",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Yunusemre",
+    addressRegion: "Manisa",
+    addressCountry: "TR",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: 38.6191,
+    longitude: 27.4289,
+  },
+  areaServed: [
+    { "@type": "AdministrativeArea", name: "Manisa" },
+    { "@type": "Country", name: "Türkiye" },
+  ],
+  knowsAbout: [
+    "Kurumsal web geliştirme",
+    "Backend ve API geliştirme",
+    "Mobil uygulama geliştirme",
+    "AI ve otomasyon",
+    "Teknik danışmanlık",
+  ],
+  sameAs: [],
+};
 
 export default function RootLayout({ children }) {
-  const path = usePathname();
-
-  useEffect(() => {
-    init_wow();
-    parallaxMouseMovement();
-    var mainNav = document.querySelector(".main-nav");
-    if (mainNav?.classList.contains("transparent")) {
-      mainNav.classList.add("js-transparent");
-    } else if (!mainNav?.classList?.contains("dark")) {
-      mainNav?.classList.add("js-no-transparent-white");
-    }
-
-    window.addEventListener("scroll", headerChangeOnScroll);
-    parallaxScroll();
-    return () => {
-      window.removeEventListener("scroll", headerChangeOnScroll);
-    };
-  }, [path]);
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      // Import the script only on the client side
-      import("bootstrap/dist/js/bootstrap.esm").then(() => {
-        // Module is imported, you can access any exported functionality if
-      });
-    }
-  }, []);
 
   return (
-    <html lang="en" className="no-mobile no-touch ">
+    <html lang="tr" className="no-mobile no-touch ">
       <head>
         <link
           href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
@@ -94,8 +174,17 @@ export default function RootLayout({ children }) {
           rel="apple-touch-icon"
           href="/assets/images/gemu/favicons/favicon-64.png"
         />
+        <link rel="manifest" href="/manifest.webmanifest" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationSchema),
+          }}
+        />
       </head>
-      <body className="appear-animate body">{children}</body>
+      <body className="appear-animate body">
+        <AppBootstrap>{children}</AppBootstrap>
+      </body>
     </html>
   );
 }

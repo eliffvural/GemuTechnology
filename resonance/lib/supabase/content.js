@@ -12,6 +12,37 @@ function formatDate(value) {
   }).format(new Date(value));
 }
 
+const blogImageFallbacks = [
+  "/assets/images/demo-corporate/blog/post-prev-1-gemu.png",
+  "/assets/images/demo-corporate/blog/post-prev-2-gemu.png",
+  "/assets/images/demo-corporate/blog/post-prev-3.jpg",
+  "/assets/images/demo-corporate/blog/post-prev-4.jpg",
+  "/assets/images/demo-corporate/blog/post-prev-5.jpg",
+  "/assets/images/demo-corporate/blog/post-prev-6.jpg",
+  "/assets/images/demo-corporate/blog/post-prev-7.jpg",
+  "/assets/images/demo-corporate/blog/post-prev-8.jpg",
+];
+
+function getLocalImage(value, fallback) {
+  if (typeof value === "string" && value.startsWith("/assets/images/")) {
+    return value;
+  }
+
+  return fallback;
+}
+
+function getCaseStudyFallbackImage(slug = "") {
+  if (slug.includes("mobil")) {
+    return "/assets/images/demo-corporate/portfolio/project-2-gemu.png";
+  }
+
+  if (slug.includes("ai") || slug.includes("otomasyon")) {
+    return "/assets/images/demo-corporate/portfolio/project-3-gemu.png";
+  }
+
+  return "/assets/images/demo-corporate/portfolio/project-1-gemu.png";
+}
+
 export async function getPublishedBlogPosts() {
   const supabase = createSupabaseServerClient();
 
@@ -31,9 +62,10 @@ export async function getPublishedBlogPosts() {
 
   return data.map((post, index) => ({
     id: post.slug || post.id,
-    imgUrl:
-      post.cover_image ||
-      `/assets/images/demo-corporate/blog/post-prev-${(index % 8) + 1}.jpg`,
+    imgUrl: getLocalImage(
+      post.cover_image,
+      blogImageFallbacks[index % blogImageFallbacks.length]
+    ),
     title: post.title,
     date: formatDate(post.published_at),
     category: post.category || "Yazılım",
@@ -67,7 +99,10 @@ export async function getPublishedCaseStudies() {
     slug: item.slug || item.id,
     title: item.title,
     description: item.summary || item.service_type || "Vaka çalışması",
-    imageUrl: item.image_url,
+    imageUrl: getLocalImage(
+      item.image_url,
+      getCaseStudyFallbackImage(item.slug || item.id)
+    ),
     serviceType: item.service_type,
     industry: item.industry,
     resultMetric: item.result_metric,
@@ -100,7 +135,10 @@ export async function getPublishedCaseStudy(slug) {
     title: data.title,
     description: data.summary || data.service_type || "Vaka çalışması",
     content: data.content || "",
-    imageUrl: data.image_url,
+    imageUrl: getLocalImage(
+      data.image_url,
+      getCaseStudyFallbackImage(data.slug || data.id)
+    ),
     serviceType: data.service_type,
     industry: data.industry,
     resultMetric: data.result_metric,

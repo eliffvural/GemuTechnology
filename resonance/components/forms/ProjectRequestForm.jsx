@@ -4,7 +4,7 @@ import { useState } from "react";
 
 const serviceOptions = [
   "Kurumsal Web Sistemi",
-  "Backend ve API",
+  "Kurumsal Süreç Yazılımı",
   "Mobil Uygulama",
   "AI ve Otomasyon",
   "Teknik Danışmanlık ve Yol Haritası",

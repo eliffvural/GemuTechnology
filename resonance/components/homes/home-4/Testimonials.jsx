@@ -22,7 +22,7 @@ export default function Testimonials() {
                     src={elm.imageSrc}
                     width={656}
                     height={800}
-                    alt="Image Description"
+                    alt={`${elm.author} müşteri hikayesi`}
                     className="wow scaleOutIn"
                   />
                 </div>
@@ -54,7 +54,7 @@ export default function Testimonials() {
                     src={elm.imageSrc}
                     width={656}
                     height={800}
-                    alt="Image Description"
+                    alt={`${elm.author} müşteri hikayesi`}
                     className="wow scaleOutIn"
                   />
                 </div>

@@ -11,7 +11,7 @@ import Cta from "@/components/homes/home-4/Cta";
 import Testimonials from "@/components/homes/home-4/Testimonials";
 
 export const metadata = {
-  title: "Hakkımızda | Gemu Technology",
+  title: "Hakkımızda",
   description:
     "Gemu Technology'nin yaklaşımını, çalışma modelini ve neden tercih edildiğini keşfedin.",
 };

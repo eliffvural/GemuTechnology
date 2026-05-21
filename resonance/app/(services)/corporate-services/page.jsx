@@ -11,7 +11,7 @@ const onePage = false;
 const dark = false;
 
 export const metadata = {
-  title: "Hizmetler | Gemu Technology",
+  title: "Hizmetler",
   description:
     "Gemu Technology'nin uçtan uca yazılım hizmetleri, uzmanlık alanları ve kurumsal teslimat yaklaşımı.",
 };
@@ -56,7 +56,7 @@ const solutionPackages = [
   {
     title: "Kurumsal Uygulama Geliştirme",
     description:
-      "Web, mobil, backend ve veri katmanlarını tek ürün mimarisinde geliştiririz.",
+      "Web, mobil ve kurum içi iş akışlarını tek ürün deneyiminde geliştiririz.",
   },
   {
     title: "AI Destekli Otomasyon",
@@ -124,7 +124,7 @@ export default function CorporateServicesPage() {
                 <div className="row mb-70 mb-sm-50">
                   <div className="col-md-8 offset-md-2 text-center">
                     <p className="section-descr mb-0">
-                      Kurumsal web, backend, mobil uygulama ve yapay zeka alanlarında
+                      Kurumsal web, mobil uygulama, süreç yazılımları ve yapay zeka alanlarında
                       teknik yetkinliğimizi iş hedeflerinizle birleştiriyor; ölçülebilir
                       sonuç üreten dijital ürünler geliştiriyoruz.
                     </p>
@@ -158,7 +158,7 @@ export default function CorporateServicesPage() {
                         src="/assets/images/demo-corporate/section-image-1.png"
                         width={100}
                         height={100}
-                        alt="Image Description"
+                        alt="Gemu Technology yazılım hizmetleri ikonu"
                       />
                     </div>
                     <p className="section-descr-medium mb-50 mb-sm-40">

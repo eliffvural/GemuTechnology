@@ -73,7 +73,7 @@ export default function Home4({ onePage = false, dark = false }) {
     },
     {
       label: "Ürün Geliştirme",
-      text: "Web, mobil, backend ve veri katmanlarını tek ürün mimarisi altında toplarız.",
+      text: "Web, mobil ve kurum içi iş akışlarını tek ürün mimarisi altında toplarız.",
       icon: "mi-layers",
     },
     {
@@ -97,7 +97,7 @@ export default function Home4({ onePage = false, dark = false }) {
             src="/assets/images/demo-corporate/decoration-2.svg"
             width={1600}
             height={513}
-            alt="resonance template image"
+            alt=""
             className="wow fadeIn"
             data-wow-delay="0.4s"
           />
@@ -242,8 +242,8 @@ export default function Home4({ onePage = false, dark = false }) {
               </h3>
               <p className="text-gray mb-30">
                 Gemu Technology olarak Ar-Ge kültürünü pratik ürün geliştirme
-                disipliniyle birleştiriyoruz. Kurumlara web, mobil, backend,
-                veri ve otomasyon katmanlarında yazılım hizmetleri sunuyor;
+                disipliniyle birleştiriyoruz. Kurumlara web, mobil, kurumsal
+                süreç yazılımları ve otomasyon alanlarında yazılım hizmetleri sunuyor;
                 danışmanlık desteğini doğru kapsam, doğru mimari ve doğru
                 teknoloji seçimi için sürecin içine yerleştiriyoruz.
               </p>
@@ -289,7 +289,7 @@ export default function Home4({ onePage = false, dark = false }) {
                   src="/assets/images/demo-corporate/section-image-1.png"
                   width={100}
                   height={100}
-                  alt="Image Description"
+                  alt="Gemu Technology proje planlama ikonu"
                 />
               </div>
               <p className="section-descr-medium mb-50 mb-sm-40">
@@ -310,7 +310,7 @@ export default function Home4({ onePage = false, dark = false }) {
                         <i className="mi-heart" />
                       </span>
                       <span data-btn-animate="y">
-                    <AnimateButton text={"Stratejik Değerlendirme Talep Edin"} />
+                    <AnimateButton text={"Proje Kapsamını Planlayalım"} />
                       </span>
                     </a>
                   </>
@@ -326,7 +326,7 @@ export default function Home4({ onePage = false, dark = false }) {
                         <i className="mi-heart" />
                       </span>
                       <span data-btn-animate="y">
-                        <AnimateButton text={"Stratejik Değerlendirme Talep Edin"} />
+                        <AnimateButton text={"Proje Kapsamını Planlayalım"} />
                       </span>
                     </Link>
                   </>
@@ -342,7 +342,7 @@ export default function Home4({ onePage = false, dark = false }) {
             src="/assets/images/demo-corporate/decoration-3.svg"
             width={1600}
             height={243}
-            alt="resonance template image"
+            alt=""
           />
         </div>
       </section>
@@ -598,7 +598,7 @@ export default function Home4({ onePage = false, dark = false }) {
             src="/assets/images/demo-corporate/decoration-4.svg"
             width={1600}
             height={206}
-            alt="resonance template image"
+            alt=""
           />
         </div>
         {/* End Decorative Line */}

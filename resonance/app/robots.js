@@ -1,0 +1,14 @@
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://gemutechnology.com";
+const siteHost = new URL(siteUrl).host;
+
+export default function robots() {
+  return {
+    rules: {
+      userAgent: "*",
+      allow: "/",
+      disallow: ["/admin"],
+    },
+    sitemap: `${siteUrl}/sitemap.xml`,
+    host: siteHost,
+  };
+}

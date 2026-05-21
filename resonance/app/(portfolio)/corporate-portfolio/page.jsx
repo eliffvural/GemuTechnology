@@ -10,7 +10,7 @@ import { getPublishedCaseStudies } from "@/lib/supabase/content";
 import { portfolios4 } from "@/data/portfolio";
 
 export const metadata = {
-  title: "Projeler | Gemu Technology",
+  title: "Projeler",
   description:
     "Gemu Technology vaka çalışmaları: kurumsal web, backend, mobil uygulama, AI ve otomasyon projelerinde problem, çözüm ve sonuç odaklı yazılım üretimi.",
 };
@@ -239,7 +239,7 @@ export default async function CorporatePortfolioPage() {
                           src="/assets/images/demo-corporate/section-image-1.png"
                           width={100}
                           height={100}
-                          alt="Image Description"
+                          alt="Gemu Technology proje planlama ikonu"
                         />
                       </div>
                       <p className="section-descr-medium mb-50 mb-sm-40">

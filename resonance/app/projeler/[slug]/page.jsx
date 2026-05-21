@@ -49,12 +49,12 @@ export async function generateMetadata({ params }) {
 
   if (!project) {
     return {
-      title: "Proje Bulunamadı | Gemu Technology",
+      title: "Proje Bulunamadı",
     };
   }
 
   return {
-    title: `${project.title} | Gemu Technology`,
+    title: project.title,
     description:
       project.description ||
       project.summary ||

@@ -853,6 +853,41 @@ html {
   }
 }
 
+@media (max-width: 1024px) {
+  .theme-corporate .main-nav.mobile-on .desktop-nav {
+    left: 12px;
+    right: 12px;
+    width: calc(100% - 24px);
+    padding: 0;
+    border: 1px solid rgba(13, 30, 48, 0.08);
+    border-radius: 14px;
+    background: rgba(250, 251, 253, 0.98);
+    box-shadow: 0 22px 55px rgba(15, 35, 52, 0.14);
+    overflow: hidden;
+  }
+
+  .theme-corporate .main-nav.mobile-on .desktop-nav > ul,
+  .theme-corporate .main-nav.mobile-on .desktop-nav ul {
+    background: transparent;
+  }
+
+  .theme-corporate .main-nav.mobile-on .desktop-nav ul li a {
+    padding: 14px 18px;
+    border-bottom: 1px solid rgba(13, 30, 48, 0.07);
+    color: #152232;
+  }
+
+  .theme-corporate .main-nav.mobile-on .desktop-nav ul li a:hover,
+  .theme-corporate .main-nav.mobile-on .desktop-nav ul li a.active {
+    color: #176f86;
+    background: rgba(23, 111, 134, 0.07);
+  }
+
+  .theme-corporate .main-nav.mobile-on .desktop-nav ul li:last-child a {
+    border-bottom: 0;
+  }
+}
+
 .light-content .consulting-flow-label,
 .light-content .consulting-flow-step {
   border-color: rgba(255, 255, 255, 0.12);

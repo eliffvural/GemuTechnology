@@ -67,7 +67,7 @@ export default function Hero1() {
                   src="/assets/images/demo-corporate/decoration-1.svg"
                   width={253}
                   height={304}
-                  alt="resonance template image"
+                  alt=""
                 />
               </div>
               {/* End Decorative Dots */}
@@ -77,7 +77,7 @@ export default function Hero1() {
                   src="/assets/images/demo-corporate/hs-image-2-gemu.png"
                   width={706}
                   height={800}
-                  alt="Image Description"
+                  alt="Gemu Technology yazılım geliştirme ekibi görseli"
                   className="wow fadeScaleOutIn"
                   data-wow-duration="1.3s"
                 />
