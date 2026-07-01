@@ -16,14 +16,14 @@ export const metadata = {
     template: "%s | Gemu Technology",
   },
   description:
-    "Gemu Technology; Manisa Yunusemre merkezli kurumsal web, backend, mobil uygulama, AI ve otomasyon çözümleri geliştiren yazılım şirketidir.",
+    "Gemu Technology; Manisa Yunusemre merkezli kurumsal web, mobil uygulama, kurumsal süreç yazılımları, AI ve otomasyon çözümleri geliştiren yazılım şirketidir.",
   applicationName: "Gemu Technology",
   keywords: [
     "Gemu Technology",
     "Manisa yazılım şirketi",
     "Yunusemre yazılım",
     "kurumsal web geliştirme",
-    "backend API geliştirme",
+    "kurumsal süreç yazılımı",
     "mobil uygulama geliştirme",
     "AI otomasyon",
     "teknik danışmanlık",
@@ -42,7 +42,7 @@ export const metadata = {
     siteName: "Gemu Technology",
     title: "Gemu Technology | Yazılım Hizmetleri ve Dijital Çözümler",
     description:
-      "Kurumsal web, backend, mobil uygulama, AI ve otomasyon hizmetleriyle fikrinizi çalışan dijital ürüne dönüştürüyoruz.",
+      "Kurumsal web, mobil uygulama, süreç yazılımları, AI ve otomasyon hizmetleriyle fikrinizi çalışan dijital ürüne dönüştürüyoruz.",
     images: [
       {
         url: "/assets/images/gemu/logo-horizontal-english.png",
@@ -56,7 +56,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Gemu Technology | Yazılım Hizmetleri",
     description:
-      "Manisa Yunusemre merkezli yazılım hizmetleri, kurumsal web, backend, mobil uygulama, AI ve otomasyon çözümleri.",
+      "Manisa Yunusemre merkezli yazılım hizmetleri, kurumsal web, mobil uygulama, süreç yazılımları, AI ve otomasyon çözümleri.",
     images: ["/assets/images/gemu/logo-horizontal-english.png"],
   },
   robots: {
@@ -111,7 +111,7 @@ const organizationSchema = {
   ],
   knowsAbout: [
     "Kurumsal web geliştirme",
-    "Backend ve API geliştirme",
+    "Kurumsal süreç yazılımı geliştirme",
     "Mobil uygulama geliştirme",
     "AI ve otomasyon",
     "Teknik danışmanlık",

@@ -3,7 +3,7 @@ export const portfolioItems = [
     id: 1,
     href: "strong-portfolio-single.html",
     imgSrc: "/assets/images/demo-strong/portfolio/1.jpg",
-    imgAlt: "Image Description",
+    imgAlt: "Gemu Technology görseli",
     title: "Rise of Design",
     descr: "Branding, UI/UX Design",
   },
@@ -11,7 +11,7 @@ export const portfolioItems = [
     id: 2,
     href: "strong-portfolio-single.html",
     imgSrc: "/assets/images/demo-strong/portfolio/2.jpg",
-    imgAlt: "Image Description",
+    imgAlt: "Gemu Technology görseli",
     title: "Amplitude",
     descr: "UI/UX Design, Development",
   },
@@ -19,7 +19,7 @@ export const portfolioItems = [
     id: 3,
     href: "strong-portfolio-single.html",
     imgSrc: "/assets/images/demo-strong/portfolio/3.jpg",
-    imgAlt: "Image Description",
+    imgAlt: "Gemu Technology görseli",
     title: "Medium Scene",
     descr: "Branding, Design",
   },
@@ -27,7 +27,7 @@ export const portfolioItems = [
     id: 4,
     href: "strong-portfolio-single.html",
     imgSrc: "/assets/images/demo-strong/portfolio/4.jpg",
-    imgAlt: "Image Description",
+    imgAlt: "Gemu Technology görseli",
     title: "Rise of Design",
     descr: "Branding, UI/UX Design",
   },
@@ -35,7 +35,7 @@ export const portfolioItems = [
     id: 5,
     href: "strong-portfolio-single.html",
     imgSrc: "/assets/images/demo-strong/portfolio/5.jpg",
-    imgAlt: "Image Description",
+    imgAlt: "Gemu Technology görseli",
     title: "Amplitude",
     descr: "UI/UX Design, Development",
   },
@@ -43,7 +43,7 @@ export const portfolioItems = [
     id: 6,
     href: "strong-portfolio-single.html",
     imgSrc: "/assets/images/demo-strong/portfolio/6.jpg",
-    imgAlt: "Image Description",
+    imgAlt: "Gemu Technology görseli",
     title: "Medium Scene",
     descr: "Branding, Design",
   },
@@ -146,7 +146,7 @@ export const portfolios2 = [
     imageUrl: "/assets/images/demo-bold/portfolio/1.jpg",
     title: "Medium Scene",
     description:
-      "Lorem ipsum dolor siter amet consectetur adipiscing elit sed do eiusmod tempor incididunt labore dolore magna aliqua.",
+      "Gemu Technology, kurumsal yazılım projelerinde ihtiyacı netleştirip çalışan dijital ürünlere dönüştürür.",
     link: "bold-portfolio-single.html",
     categories: ["development"],
   },
@@ -196,7 +196,7 @@ export const portfolios3 = [
     imgHeight: 848,
     title: "Medium Scene",
     description:
-      "Take maximus ligula semper metus pellente mattis. Maecenas volutpat, diam enim. Lorem ipsum dolor sit amet adipiscing elit.",
+      "Kurumlara özel yazılım projelerinde kapsam, tasarım ve teslimat sürecini birlikte planlarız.",
   },
   {
     id: 21,
@@ -205,7 +205,7 @@ export const portfolios3 = [
     imgHeight: 700,
     title: "Rise of Design",
     description:
-      "Maecenas volutpat, diam enim. Lorem ipsum dolor sit amet, cetere adipiscing elit. Maximus ligula semper metus pellentesque mattis.",
+      "Dijital ürünleri sürdürülebilir mimari, sade kullanıcı deneyimi ve ölçülebilir iş çıktısıyla ele alırız.",
   },
   {
     id: 22,
@@ -223,7 +223,7 @@ export const portfolios3 = [
     imgHeight: 700,
     title: "Rise of Design",
     description:
-      "Take maximus ligula semper metus pellente mattis. Maecenas volutpat, diam enim. Lorem ipsum dolor sit amet adipiscing elit.",
+      "Kurumlara özel yazılım projelerinde kapsam, tasarım ve teslimat sürecini birlikte planlarız.",
   },
   {
     id: 24,
@@ -242,12 +242,12 @@ export const portfolios4 = [
     slug: "b2b-siparis-portali",
     imageSrc: "/assets/images/demo-corporate/portfolio/project-1-gemu.png",
     title: "B2B Sipariş Portalı",
-    eyebrow: "Kurumsal web ve backend",
+    eyebrow: "Kurumsal web ve süreç yazılımı",
     industry: "Toptan satış operasyonları",
     problem:
       "Bayi siparişleri e-posta ve manuel takip üzerinden ilerlediği için onay, stok kontrolü ve raporlama süreçleri yavaşlıyordu.",
     solution:
-      "Rol bazlı müşteri portalı, sipariş akışı, yönetim paneli ve backend servisleri tek ürün mimarisi altında geliştirildi.",
+      "Rol bazlı müşteri portalı, sipariş akışı ve yönetim paneli tek ürün mimarisi altında geliştirildi.",
     result:
       "Sipariş takibi sadeleşti, ekiplerin manuel kontrol yükü azaldı ve operasyon daha ölçülebilir hale geldi.",
     number: "70%",
@@ -264,7 +264,7 @@ export const portfolios4 = [
     problem:
       "Saha ekipleri müşteri notlarını, servis durumlarını ve geri dönüşleri farklı araçlarda tuttuğu için takip zorlaşıyordu.",
     solution:
-      "Mobil uygulama, bildirim akışları, müşteri geçmişi ve backend entegrasyonu birlikte tasarlanarak tek operasyon ekranı oluşturuldu.",
+      "Mobil uygulama, bildirim akışları ve müşteri geçmişi birlikte tasarlanarak tek operasyon ekranı oluşturuldu.",
     result:
       "Saha geri dönüşleri hızlandı, ekipler aynı veri üzerinde çalışmaya başladı ve yönetim görünürlüğü arttı.",
     number: "3x",
@@ -561,42 +561,42 @@ export const portfolios10 = [
   {
     id: 59,
     imgSrc: "/assets/images/demo-strong/portfolio/1.jpg",
-    imgAlt: "Image Description",
+    imgAlt: "Gemu Technology görseli",
     title: "Rise of Design",
     description: "Branding, UI/UX Design",
   },
   {
     id: 60,
     imgSrc: "/assets/images/demo-strong/portfolio/2.jpg",
-    imgAlt: "Image Description",
+    imgAlt: "Gemu Technology görseli",
     title: "Amplitude",
     description: "UI/UX Design, Development",
   },
   {
     id: 61,
     imgSrc: "/assets/images/demo-strong/portfolio/3.jpg",
-    imgAlt: "Image Description",
+    imgAlt: "Gemu Technology görseli",
     title: "Medium Scene",
     description: "Branding, Design",
   },
   {
     id: 62,
     imgSrc: "/assets/images/demo-strong/portfolio/4.jpg",
-    imgAlt: "Image Description",
+    imgAlt: "Gemu Technology görseli",
     title: "Visual Stranger",
     description: "Branding, UI/UX Design",
   },
   {
     id: 63,
     imgSrc: "/assets/images/demo-strong/portfolio/5.jpg",
-    imgAlt: "Image Description",
+    imgAlt: "Gemu Technology görseli",
     title: "Super Awards",
     description: "UI/UX Design, Development",
   },
   {
     id: 64,
     imgSrc: "/assets/images/demo-strong/portfolio/6.jpg",
-    imgAlt: "Image Description",
+    imgAlt: "Gemu Technology görseli",
     title: "Design System",
     description: "Branding, Design",
   },
@@ -608,7 +608,7 @@ export const portfolios11 = [
     title: "How Marketing Wire Support Increased Data Accuracy by 70%",
     imageUrl: "/assets/images/demo-corporate/portfolio/project-1-gemu.png",
     number: "70%",
-    description: "growth with Resonance",
+    description: "Gemu ile ölçülebilir büyüme",
   },
   {
     id: 66,
@@ -616,14 +616,14 @@ export const portfolios11 = [
       "How Surface Mobility Increased Sales 3X During the Latest Six Months",
     imageUrl: "/assets/images/demo-corporate/portfolio/project-2-gemu.png",
     number: "3x",
-    description: "sales increased with Resonance",
+    description: "Gemu ile daha verimli satış süreci",
   },
   {
     id: 67,
     title: "How Gen Machine Uses Automations to Grow Their Subscriber Base",
     imageUrl: "/assets/images/demo-corporate/portfolio/project-3-gemu.png",
     number: "Zero",
-    description: "negative reviews with Resonance",
+    description: "Gemu ile daha kontrollü operasyon",
   },
   {
     id: 68,
@@ -631,21 +631,21 @@ export const portfolios11 = [
       "How Surface Mobility Increased Sales 3X During the Latest Six Months",
     imageUrl: "/assets/images/demo-corporate/portfolio/project-4.jpg",
     number: "2x",
-    description: "sales increased with Resonance",
+    description: "Gemu ile daha verimli satış süreci",
   },
   {
     id: 69,
     title: "How Gen Machine Uses Automations to Grow Their Subscriber Base",
     imageUrl: "/assets/images/demo-corporate/portfolio/project-5.jpg",
     number: "Zero",
-    description: "negative reviews with Resonance",
+    description: "Gemu ile daha kontrollü operasyon",
   },
   {
     id: 70,
     title: "How Marketing Wire Support Increased Data Accuracy by 70%",
     imageUrl: "/assets/images/demo-corporate/portfolio/project-6.jpg",
     number: "80%",
-    description: "growth with Resonance",
+    description: "Gemu ile ölçülebilir büyüme",
   },
 ];
 

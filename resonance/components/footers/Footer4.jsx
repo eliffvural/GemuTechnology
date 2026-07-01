@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer4() {
   const scrollToTop = (event) => {
@@ -32,7 +33,7 @@ export default function Footer4() {
           <div className="col-lg-4 mb-md-50">
             <Image
               src="/assets/images/gemu/logo-horizontal-english.png"
-              alt="Gemu Technologies"
+              alt="Gemu Technology"
               width={1693}
               height={571}
               className="gemu-footer-logo mb-20"
@@ -42,12 +43,12 @@ export default function Footer4() {
               dönüşüm çözümleri sunuyoruz.
             </p>
             <div className="local-scroll">
-              <a
+              <Link
                 href="/iletisim"
                 className="btn btn-mod btn-color btn-small btn-round btn-hover-anim"
               >
                 <span>Projenizi Konuşalım</span>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col-lg-8">
@@ -56,16 +57,16 @@ export default function Footer4() {
                 <h4 className="fw-title mb-20">Kurumsal</h4>
                 <ul className="fw-menu clearlist local-scroll">
                   <li>
-                    <a href="/">Ana Sayfa</a>
+                    <Link href="/">Ana Sayfa</Link>
                   </li>
                   <li>
-                    <a href="/hakkimizda">Hakkımızda</a>
+                    <Link href="/hakkimizda">Hakkımızda</Link>
                   </li>
                   <li>
-                    <a href="/hizmetler">Hizmetler</a>
+                    <Link href="/hizmetler">Hizmetler</Link>
                   </li>
                   <li>
-                    <a href="/projeler">Projeler</a>
+                    <Link href="/projeler">Projeler</Link>
                   </li>
                 </ul>
               </div>
@@ -73,16 +74,16 @@ export default function Footer4() {
                 <h4 className="fw-title mb-20">Yasal</h4>
                 <ul className="fw-menu clearlist">
                   <li>
-                    <a href="#">KVKK Aydınlatma Metni</a>
+                    <Link href="/kvkk-aydinlatma-metni">KVKK Aydınlatma Metni</Link>
                   </li>
                   <li>
-                    <a href="#">Açık Rıza Metni</a>
+                    <Link href="/acik-riza-metni">Açık Rıza Metni</Link>
                   </li>
                   <li>
-                    <a href="#">Gizlilik Politikası</a>
+                    <Link href="/gizlilik-politikasi">Gizlilik Politikası</Link>
                   </li>
                   <li>
-                    <a href="#">Çerez Politikası</a>
+                    <Link href="/cerez-politikasi">Çerez Politikası</Link>
                   </li>
                 </ul>
               </div>
@@ -97,7 +98,7 @@ export default function Footer4() {
                   </li>
                   <li>Manisa, Yunusemre</li>
                   <li>
-                    <a href="/iletisim">İletişim Formu</a>
+                    <Link href="/iletisim">İletişim Formu</Link>
                   </li>
                 </ul>
               </div>
@@ -111,9 +112,9 @@ export default function Footer4() {
           © {new Date().getFullYear()} Gemu Technology. Tüm hakları saklıdır.
         </div>
         <div className="col-md-4 text-md-end mb-md-40">
-          <a href="#" className="link-hover-anim">
+          <Link href="/hizmet-sartlari" className="link-hover-anim">
             Mesafeli Satış ve Hizmet Şartları
-          </a>
+          </Link>
         </div>
       </div>
       {/* End Footer Text */}

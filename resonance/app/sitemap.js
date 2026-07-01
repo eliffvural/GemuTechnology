@@ -10,6 +10,11 @@ const routes = [
   "/projeler/ai-destekli-destek-sistemi",
   "/blog",
   "/iletisim",
+  "/kvkk-aydinlatma-metni",
+  "/acik-riza-metni",
+  "/gizlilik-politikasi",
+  "/cerez-politikasi",
+  "/hizmet-sartlari",
 ];
 
 export default function sitemap() {

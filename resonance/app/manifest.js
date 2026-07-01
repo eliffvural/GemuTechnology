@@ -3,7 +3,7 @@ export default function manifest() {
     name: "Gemu Technology",
     short_name: "Gemu",
     description:
-      "Manisa Yunusemre merkezli yazılım hizmetleri, kurumsal web, backend, mobil uygulama, AI ve otomasyon çözümleri.",
+      "Manisa Yunusemre merkezli yazılım hizmetleri, kurumsal web, mobil uygulama, süreç yazılımları, AI ve otomasyon çözümleri.",
     start_url: "/",
     display: "standalone",
     background_color: "#ffffff",

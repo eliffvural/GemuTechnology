@@ -1,27 +1,28 @@
 "use client";
 import React, { useEffect, useState } from "react";
 
-export default function Hero7() {
-  const strings = [
-    `Grow your business with new online experience.`,
-    `Maximize your
+const heroStrings = [
+  `Grow your business with new online experience.`,
+  `Maximize your
                   online impact with our solutions.`,
-    `Redefine your strategy for
+  `Redefine your strategy for
                   long-term success.`,
-  ];
-  const [currentStr, setCurrentStr] = useState(strings[0]);
+];
+
+export default function Hero7() {
+  const [currentStr, setCurrentStr] = useState(heroStrings[0]);
   const [animatedText, setAnimatedText] = useState(true);
 
   useEffect(() => {
     const changeText = setInterval(() => {
       setAnimatedText(false);
       setCurrentStr((prev) => {
-        if (prev === strings[0]) {
-          return strings[1];
-        } else if (prev === strings[1]) {
-          return strings[2];
+        if (prev === heroStrings[0]) {
+          return heroStrings[1];
+        } else if (prev === heroStrings[1]) {
+          return heroStrings[2];
         } else {
-          return strings[0];
+          return heroStrings[0];
         }
       });
       setTimeout(() => {

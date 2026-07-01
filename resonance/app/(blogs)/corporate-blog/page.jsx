@@ -155,7 +155,7 @@ export default async function CorporateBlogPage() {
                         <ul className="clearlist widget-menu">
                           {blogTopics.map((topic) => (
                             <li key={topic}>
-                              <a href="#" title="">
+                              <a href="/blog" title="">
                                 {topic}
                               </a>
                             </li>
@@ -170,7 +170,7 @@ export default async function CorporateBlogPage() {
                       <div className="widget-body">
                         <div className="tags">
                           {blogTopics.map((topic) => (
-                            <a href="#" key={topic}>
+                            <a href="/blog" key={topic}>
                               {topic}
                             </a>
                           ))}
@@ -185,7 +185,7 @@ export default async function CorporateBlogPage() {
                         <ul className="clearlist widget-posts">
                           {widgetPosts.map((post, index) => (
                             <li key={index} className="clearfix">
-                              <a href="#">
+                              <a href="/blog">
                                 <Image
                                   src={post.imgUrl}
                                   height={140}
@@ -196,7 +196,7 @@ export default async function CorporateBlogPage() {
                                 />
                               </a>
                               <div className="widget-posts-descr">
-                                <a href="#" title="">
+                                <a href="/blog" title="">
                                   {post.title}
                                 </a>
                                 <span>{post.author}</span>
@@ -233,7 +233,7 @@ export default async function CorporateBlogPage() {
                             className="left img-left"
                           />
                           Manisa Yunusemre merkezli yazılım ekibimiz; kurumsal
-                          web, backend, mobil uygulama, AI ve otomasyon
+                          web, mobil uygulama, süreç yazılımları, AI ve otomasyon
                           alanlarında uygulanabilir dijital ürünler geliştirir.
                         </div>
                       </div>

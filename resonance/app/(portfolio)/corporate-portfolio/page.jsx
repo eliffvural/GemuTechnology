@@ -12,12 +12,12 @@ import { portfolios4 } from "@/data/portfolio";
 export const metadata = {
   title: "Projeler",
   description:
-    "Gemu Technology vaka çalışmaları: kurumsal web, backend, mobil uygulama, AI ve otomasyon projelerinde problem, çözüm ve sonuç odaklı yazılım üretimi.",
+    "Gemu Technology vaka çalışmaları: kurumsal web, mobil uygulama, süreç yazılımları, AI ve otomasyon projelerinde problem, çözüm ve sonuç odaklı yazılım üretimi.",
 };
 
 const portfolioHighlights = [
   "Kurumsal web platformları",
-  "Backend ve API mimarileri",
+  "Kurumsal süreç yazılımları",
   "Mobil uygulama projeleri",
   "AI ve otomasyon uygulamaları",
 ];

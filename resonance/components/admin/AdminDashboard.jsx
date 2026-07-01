@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { createSupabaseBrowserClient } from "@/lib/supabase/browser";
@@ -239,35 +239,7 @@ export default function AdminDashboard() {
   const [blogPosts, setBlogPosts] = useState([]);
   const [caseStudies, setCaseStudies] = useState([]);
 
-  useEffect(() => {
-    if (!supabase) {
-      setIsLoading(false);
-      setNotice({
-        type: "error",
-        message: "Supabase ortam değişkenleri eksik. .env.local dosyasını kontrol edin.",
-      });
-      return;
-    }
-
-    supabase.auth.getSession().then(({ data }) => {
-      setSession(data.session);
-      setIsLoading(false);
-    });
-
-    const { data } = supabase.auth.onAuthStateChange((_event, nextSession) => {
-      setSession(nextSession);
-    });
-
-    return () => data.subscription.unsubscribe();
-  }, [supabase]);
-
-  useEffect(() => {
-    if (session) {
-      loadDashboardData();
-    }
-  }, [session]);
-
-  async function loadDashboardData() {
+  const loadDashboardData = useCallback(async () => {
     if (!supabase) {
       return;
     }
@@ -298,7 +270,35 @@ export default function AdminDashboard() {
     setBlogPosts(blogResult.data || []);
     setCaseStudies(projectResult.data || []);
     setIsLoading(false);
-  }
+  }, [supabase]);
+
+  useEffect(() => {
+    if (!supabase) {
+      setIsLoading(false);
+      setNotice({
+        type: "error",
+        message: "Supabase ortam değişkenleri eksik. .env.local dosyasını kontrol edin.",
+      });
+      return;
+    }
+
+    supabase.auth.getSession().then(({ data }) => {
+      setSession(data.session);
+      setIsLoading(false);
+    });
+
+    const { data } = supabase.auth.onAuthStateChange((_event, nextSession) => {
+      setSession(nextSession);
+    });
+
+    return () => data.subscription.unsubscribe();
+  }, [supabase]);
+
+  useEffect(() => {
+    if (session) {
+      loadDashboardData();
+    }
+  }, [loadDashboardData, session]);
 
   async function handleLogin(event) {
     event.preventDefault();
