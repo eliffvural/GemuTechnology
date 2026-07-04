@@ -117,6 +117,22 @@ export default function Footer4() {
           </Link>
         </div>
       </div>
+      <div className="row pt-15 pb-10">
+        <div className="col-12 text-center">
+          <p className="mb-0 small opacity-07">
+            Bu site{" "}
+            <a
+              href="https://marithen.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="fw-semibold link-hover-anim"
+            >
+              Marithen Yazılım
+            </a>{" "}
+            tarafından geliştirilmiştir.
+          </p>
+        </div>
+      </div>
       {/* End Footer Text */}
     </div>
   );
