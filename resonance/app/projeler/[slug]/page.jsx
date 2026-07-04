@@ -1,7 +1,7 @@
 import Footer4 from "@/components/footers/Footer4";
 import Header4 from "@/components/headers/Header4";
 import { corporateMultipage } from "@/data/menu";
-import { portfolios4 } from "@/data/portfolio";
+import { portfolios4, getProjectCoverImage } from "@/data/portfolio";
 import { getPublishedCaseStudy } from "@/lib/supabase/content";
 import Image from "next/image";
 import Link from "next/link";
@@ -26,9 +26,10 @@ const normalizeProject = (project, index = 0) => ({
   number: project.number || project.resultMetric || "Net",
   description: project.description || "ölçülebilir iş çıktısı",
   imageUrl:
-    project.imageUrl ||
     project.imageSrc ||
-    `/assets/images/demo-corporate/portfolio/project-${(index % 3) + 1}-gemu.png`,
+    (project.slug ? getProjectCoverImage(project.slug) : null) ||
+    project.imageUrl ||
+    getProjectCoverImage("b2b-siparis-portali"),
   tags: project.tags || [
     project.serviceType || "Yazılım geliştirme",
     "Ürün kapsamı",

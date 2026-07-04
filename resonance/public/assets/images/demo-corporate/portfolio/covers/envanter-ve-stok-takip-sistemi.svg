@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="760" viewBox="0 0 1320 760" role="img" aria-label="Envanter proje görseli">
+  <defs>
+    <linearGradient id="bg-envanter-ve-stok-takip-sistemi" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b2e38"/>
+      <stop offset="55%" stop-color="#176f86"/>
+      <stop offset="100%" stop-color="#0f4c5c"/>
+    </linearGradient>
+    <radialGradient id="glow-envanter-ve-stok-takip-sistemi" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#f97316" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#f97316" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid-envanter-ve-stok-takip-sistemi" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1320" height="760" fill="url(#bg-envanter-ve-stok-takip-sistemi)"/>
+  <rect width="1320" height="760" fill="url(#glow-envanter-ve-stok-takip-sistemi)"/>
+  <rect width="1320" height="760" fill="url(#grid-envanter-ve-stok-takip-sistemi)"/>
+  <circle cx="180" cy="120" r="120" fill="#f97316" opacity="0.06"/>
+  <circle cx="1140" cy="640" r="160" fill="#f97316" opacity="0.05"/>
+  
+      <rect x="440" y="300" width="100" height="100" rx="8" fill="rgba(249,115,22,0.15)" stroke="#f97316" stroke-width="2"/>
+      <rect x="560" y="260" width="100" height="140" rx="8" fill="rgba(249,115,22,0.2)" stroke="#f97316" stroke-width="2"/>
+      <rect x="680" y="280" width="100" height="120" rx="8" fill="rgba(249,115,22,0.15)" stroke="#f97316" stroke-width="2"/>
+      <rect x="800" y="240" width="100" height="160" rx="8" fill="rgba(249,115,22,0.25)" stroke="#f97316" stroke-width="2"/>
+      <polyline points="500,420 560,380 660,400 760,360 860,340" stroke="#f97316" stroke-width="2.5" fill="none" opacity="0.7"/>
+      <circle cx="500" cy="420" r="6" fill="#f97316"/>
+      <circle cx="660" cy="400" r="6" fill="#f97316"/>
+      <circle cx="860" cy="340" r="6" fill="#f97316"/>
+    
+  <text x="80" y="680" fill="rgba(255,255,255,0.35)" font-size="13" font-family="system-ui,-apple-system,sans-serif" letter-spacing="0.12em">GEMU TECHNOLOGY</text>
+  <text x="1240" y="680" text-anchor="end" fill="#f97316" font-size="13" font-family="system-ui,-apple-system,sans-serif" font-weight="600">ENVANTER</text>
+</svg>

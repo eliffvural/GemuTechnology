@@ -236,11 +236,18 @@ export const portfolios3 = [
   },
 ];
 
+export const projectCoverBasePath =
+  "/assets/images/demo-corporate/portfolio/covers";
+
+export function getProjectCoverImage(slug) {
+  return `${projectCoverBasePath}/${slug}.svg`;
+}
+
 export const portfolios4 = [
   {
     id: 25,
     slug: "b2b-siparis-portali",
-    imageSrc: "/assets/images/demo-corporate/portfolio/project-1-gemu.png",
+    imageSrc: getProjectCoverImage("b2b-siparis-portali"),
     title: "B2B Sipariş Portalı",
     eyebrow: "Kurumsal web ve süreç yazılımı",
     industry: "Toptan satış operasyonları",
@@ -257,7 +264,7 @@ export const portfolios4 = [
   {
     id: 26,
     slug: "mobil-saha-uygulamasi",
-    imageSrc: "/assets/images/demo-corporate/portfolio/project-2-gemu.png",
+    imageSrc: getProjectCoverImage("mobil-saha-uygulamasi"),
     title: "Mobil Saha Uygulaması",
     eyebrow: "Mobil ürün geliştirme",
     industry: "Saha satış ve servis ekipleri",
@@ -274,7 +281,7 @@ export const portfolios4 = [
   {
     id: 27,
     slug: "ai-destekli-destek-sistemi",
-    imageSrc: "/assets/images/demo-corporate/portfolio/project-3-gemu.png",
+    imageSrc: getProjectCoverImage("ai-destekli-destek-sistemi"),
     title: "AI Destekli Destek Sistemi",
     eyebrow: "AI ve otomasyon",
     industry: "Müşteri destek operasyonları",
@@ -291,7 +298,7 @@ export const portfolios4 = [
   {
     id: 28,
     slug: "kurumsal-ai-agent-platformu",
-    imageSrc: "/assets/images/demo-corporate/portfolio/project-4.jpg",
+    imageSrc: getProjectCoverImage("kurumsal-ai-agent-platformu"),
     title: "Kurumsal AI Agent Platformu",
     eyebrow: "AI ve otomasyon",
     industry: "Kurumsal operasyon ve iç süreçler",
@@ -308,7 +315,7 @@ export const portfolios4 = [
   {
     id: 29,
     slug: "sesli-yapay-zeka-asistani",
-    imageSrc: "/assets/images/demo-corporate/portfolio/project-5.jpg",
+    imageSrc: getProjectCoverImage("sesli-yapay-zeka-asistani"),
     title: "Sesli Yapay Zeka Asistanı",
     eyebrow: "AI ve otomasyon",
     industry: "Çağrı merkezi ve müşteri hizmetleri",
@@ -325,7 +332,7 @@ export const portfolios4 = [
   {
     id: 30,
     slug: "akilli-dokuman-rag-sistemi",
-    imageSrc: "/assets/images/demo-corporate/portfolio/project-6.jpg",
+    imageSrc: getProjectCoverImage("akilli-dokuman-rag-sistemi"),
     title: "Akıllı Doküman ve RAG Sistemi",
     eyebrow: "AI ve otomasyon",
     industry: "Hukuk, finans ve kurumsal bilgi yönetimi",
@@ -342,7 +349,7 @@ export const portfolios4 = [
   {
     id: 31,
     slug: "kurumsal-ik-portali",
-    imageSrc: "/assets/images/demo-corporate/portfolio/project-1-gemu.png",
+    imageSrc: getProjectCoverImage("kurumsal-ik-portali"),
     title: "Kurumsal İK ve İç Portal",
     eyebrow: "Kurumsal süreç yazılımı",
     industry: "İnsan kaynakları ve kurum içi operasyonlar",
@@ -359,7 +366,7 @@ export const portfolios4 = [
   {
     id: 32,
     slug: "envanter-ve-stok-takip-sistemi",
-    imageSrc: "/assets/images/demo-corporate/portfolio/project-2-gemu.png",
+    imageSrc: getProjectCoverImage("envanter-ve-stok-takip-sistemi"),
     title: "Envanter ve Stok Takip Sistemi",
     eyebrow: "Kurumsal süreç yazılımı",
     industry: "Lojistik ve depo operasyonları",

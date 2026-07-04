@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="760" viewBox="0 0 1320 760" role="img" aria-label="İK Portal proje görseli">
+  <defs>
+    <linearGradient id="bg-kurumsal-ik-portali" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b2e38"/>
+      <stop offset="55%" stop-color="#176f86"/>
+      <stop offset="100%" stop-color="#0f4c5c"/>
+    </linearGradient>
+    <radialGradient id="glow-kurumsal-ik-portali" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#60a5fa" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#60a5fa" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid-kurumsal-ik-portali" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1320" height="760" fill="url(#bg-kurumsal-ik-portali)"/>
+  <rect width="1320" height="760" fill="url(#glow-kurumsal-ik-portali)"/>
+  <rect width="1320" height="760" fill="url(#grid-kurumsal-ik-portali)"/>
+  <circle cx="180" cy="120" r="120" fill="#60a5fa" opacity="0.06"/>
+  <circle cx="1140" cy="640" r="160" fill="#60a5fa" opacity="0.05"/>
+  
+      <rect x="420" y="220" width="480" height="320" rx="18" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+      <circle cx="520" cy="310" r="36" fill="rgba(96,165,250,0.2)" stroke="#60a5fa" stroke-width="2"/>
+      <circle cx="660" cy="310" r="36" fill="rgba(96,165,250,0.2)" stroke="#60a5fa" stroke-width="2"/>
+      <circle cx="800" cy="310" r="36" fill="rgba(96,165,250,0.2)" stroke="#60a5fa" stroke-width="2"/>
+      <rect x="480" y="380" width="360" height="12" rx="6" fill="rgba(255,255,255,0.15)"/>
+      <rect x="480" y="410" width="280" height="10" rx="5" fill="rgba(255,255,255,0.1)"/>
+      <rect x="480" y="440" width="320" height="10" rx="5" fill="rgba(255,255,255,0.08)"/>
+      <rect x="480" y="480" width="120" height="36" rx="10" fill="#60a5fa" opacity="0.85"/>
+    
+  <text x="80" y="680" fill="rgba(255,255,255,0.35)" font-size="13" font-family="system-ui,-apple-system,sans-serif" letter-spacing="0.12em">GEMU TECHNOLOGY</text>
+  <text x="1240" y="680" text-anchor="end" fill="#60a5fa" font-size="13" font-family="system-ui,-apple-system,sans-serif" font-weight="600">İK PORTAL</text>
+</svg>

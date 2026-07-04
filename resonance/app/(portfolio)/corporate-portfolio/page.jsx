@@ -6,8 +6,7 @@ const dark = false;
 import Image from "next/image";
 import { corporateMultipage } from "@/data/menu";
 import Link from "next/link";
-import { getPublishedCaseStudies } from "@/lib/supabase/content";
-import { portfolios4 } from "@/data/portfolio";
+import { portfolios4, getProjectCoverImage } from "@/data/portfolio";
 
 export const metadata = {
   title: "Projeler",
@@ -40,9 +39,10 @@ const normalizeProject = (project, index) => ({
   number: project.number || project.resultMetric || "Net",
   description: project.description || "ölçülebilir iş çıktısı",
   imageUrl:
-    project.imageUrl ||
     project.imageSrc ||
-    `/assets/images/demo-corporate/portfolio/project-${(index % 3) + 1}-gemu.png`,
+    (project.slug ? getProjectCoverImage(project.slug) : null) ||
+    project.imageUrl ||
+    getProjectCoverImage("b2b-siparis-portali"),
   tags: project.tags || [
     project.serviceType || "Yazılım geliştirme",
     "Ürün kapsamı",
@@ -50,11 +50,8 @@ const normalizeProject = (project, index) => ({
   ],
 });
 
-export default async function CorporatePortfolioPage() {
-  const supabaseProjects = await getPublishedCaseStudies();
-  const projects = (supabaseProjects.length ? supabaseProjects : portfolios4).map(
-    normalizeProject
-  );
+export default function CorporatePortfolioPage() {
+  const projects = portfolios4.map(normalizeProject);
   const featuredProject = projects[0];
   const secondaryProjects = projects.slice(1);
 
