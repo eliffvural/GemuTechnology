@@ -1,14 +1,12 @@
 import AnimateButton from "@/components/common/AnimateButton";
 import Footer4 from "@/components/footers/Footer4";
 import Header4 from "@/components/headers/Header4";
-import Testimonials2 from "@/components/homes/home-4/Testimonials2";
 const onePage = false;
 const dark = false;
 import Image from "next/image";
 import { corporateMultipage } from "@/data/menu";
 import Link from "next/link";
 import Cta from "@/components/homes/home-4/Cta";
-import Testimonials from "@/components/homes/home-4/Testimonials";
 
 export const metadata = {
   title: "Hakkımızda",
@@ -111,9 +109,6 @@ export default function CorporateAboutPage() {
                     </p>
                   </div>
                 </div>
-                {/* Testimonials Grid */}
-                <Testimonials2 />
-                {/* End Testimonials Grid */}
                 <div className="local-scroll text-center">
                   <Link
                     href={`/hizmetler${dark ? "-dark" : ""}`}
@@ -225,15 +220,6 @@ export default function CorporateAboutPage() {
                 </div>
               </section>
             </>
-            <hr className={`mt-0 mb-0 ${dark ? "white" : ""} `} />
-            <section
-              className={`page-section  scrollSpysection  ${
-                dark ? "bg-dark-1 light-content" : ""
-              } `}
-              id="clients-stories"
-            >
-              <Testimonials />
-            </section>
             <hr className={`mt-0 mb-0 ${dark ? "white" : ""} `} />
           </main>
           <footer className="footer-2 pb-50">

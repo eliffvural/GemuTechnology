@@ -288,6 +288,91 @@ export const portfolios4 = [
     description: "akıllı destek otomasyonu",
     tags: ["AI sınıflandırma", "Otomasyon", "Raporlama"],
   },
+  {
+    id: 28,
+    slug: "kurumsal-ai-agent-platformu",
+    imageSrc: "/assets/images/demo-corporate/portfolio/project-4.jpg",
+    title: "Kurumsal AI Agent Platformu",
+    eyebrow: "AI ve otomasyon",
+    industry: "Kurumsal operasyon ve iç süreçler",
+    problem:
+      "Ekipler tekrarlayan sorular, veri sorgulama ve görev atama işlerini e-posta, sohbet ve tablolar arasında manuel yürüttüğü için süreçler yavaşlıyordu.",
+    solution:
+      "Rol bazlı AI agent'lar; CRM, ERP ve iç bilgi kaynaklarına bağlanarak talep toplama, görev yönlendirme ve süreç takibini tek platformda birleştirdi.",
+    result:
+      "Tekrarlayan iş yükü azaldı, ekip içi yanıt süreleri kısaldı ve operasyonel kararlar daha hızlı alındı.",
+    number: "60%",
+    description: "daha hızlı iç süreç yönetimi",
+    tags: ["AI Agent", "Görev otomasyonu", "Entegrasyon"],
+  },
+  {
+    id: 29,
+    slug: "sesli-yapay-zeka-asistani",
+    imageSrc: "/assets/images/demo-corporate/portfolio/project-5.jpg",
+    title: "Sesli Yapay Zeka Asistanı",
+    eyebrow: "AI ve otomasyon",
+    industry: "Çağrı merkezi ve müşteri hizmetleri",
+    problem:
+      "Telefon kanalındaki yüksek talep hacmi, mesai dışı dönemlerde geç yanıt ve tekrarlayan sorular için yoğun operatör yükü oluşuyordu.",
+    solution:
+      "Doğal dil anlama destekli sesli asistan; arama karşılama, randevu oluşturma, bilgi sorgulama ve doğru ekibe yönlendirme akışlarıyla entegre edildi.",
+    result:
+      "Sık sorulan talepler otomatik karşılandı, mesai dışı erişilebilirlik sağlandı ve operatörler yalnızca kritik görüşmelere odaklandı.",
+    number: "7/24",
+    description: "sesli müşteri erişimi",
+    tags: ["Sesli AI", "Doğal dil", "Çağrı yönetimi"],
+  },
+  {
+    id: 30,
+    slug: "akilli-dokuman-rag-sistemi",
+    imageSrc: "/assets/images/demo-corporate/portfolio/project-6.jpg",
+    title: "Akıllı Doküman ve RAG Sistemi",
+    eyebrow: "AI ve otomasyon",
+    industry: "Hukuk, finans ve kurumsal bilgi yönetimi",
+    problem:
+      "Sözleşmeler, teknik dokümanlar ve prosedürler farklı formatlarda saklandığı için bilgiye erişim yavaş ve hataya açıktı.",
+    solution:
+      "Doküman indeksleme, semantik arama ve RAG mimarisi ile ekiplerin kurumsal bilgi tabanına doğal dilde soru sorabildiği akıllı sistem geliştirildi.",
+    result:
+      "Bilgi bulma süresi kısaldı, doküman analizi hızlandı ve ekipler aynı kaynak üzerinden tutarlı yanıt aldı.",
+    number: "4x",
+    description: "daha hızlı doküman erişimi",
+    tags: ["RAG", "Doküman AI", "Semantik arama"],
+  },
+  {
+    id: 31,
+    slug: "kurumsal-ik-portali",
+    imageSrc: "/assets/images/demo-corporate/portfolio/project-1-gemu.png",
+    title: "Kurumsal İK ve İç Portal",
+    eyebrow: "Kurumsal süreç yazılımı",
+    industry: "İnsan kaynakları ve kurum içi operasyonlar",
+    problem:
+      "İzin, performans, duyuru ve ekip takibi farklı araçlarda yüründüğü için kurum içi görünürlük zayıftı.",
+    solution:
+      "Rol bazlı iç portal, onay akışları, performans ekranları ve yönetim dashboard'u tek platformda birleştirildi.",
+    result:
+      "İK süreçleri sadeleşti, ekip yönetimi tek ekrandan izlenebilir hale geldi ve kurum içi iletişim güçlendi.",
+    number: "50%",
+    description: "daha az manuel İK işlemi",
+    tags: ["İK portalı", "Onay akışı", "Dashboard"],
+  },
+  {
+    id: 32,
+    slug: "envanter-ve-stok-takip-sistemi",
+    imageSrc: "/assets/images/demo-corporate/portfolio/project-2-gemu.png",
+    title: "Envanter ve Stok Takip Sistemi",
+    eyebrow: "Kurumsal süreç yazılımı",
+    industry: "Lojistik ve depo operasyonları",
+    problem:
+      "Stok hareketleri, sayım sonuçları ve tedarik talepleri farklı tablolarda tutulduğu için envanter görünürlüğü düşüktü.",
+    solution:
+      "Depo, tedarik ve satış ekiplerinin aynı stok verisi üzerinde çalıştığı gerçek zamanlı envanter yönetim paneli geliştirildi.",
+    result:
+      "Stok doğruluğu arttı, tedarik planlaması hızlandı ve operasyon ekipleri tek kaynak üzerinden çalışmaya başladı.",
+    number: "35%",
+    description: "daha az stok sapması",
+    tags: ["Envanter", "Depo yönetimi", "Gerçek zamanlı takip"],
+  },
 ];
 
 export const portfolios5 = [

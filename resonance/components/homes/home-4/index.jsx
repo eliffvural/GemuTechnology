@@ -4,12 +4,10 @@ import Cta from "./Cta";
 import Service from "./Service";
 import Portfolio from "./Portfolio";
 import Steps from "./Steps";
-import Testimonials from "./Testimonials";
 import Blog from "../home-4/Blog";
 import Contact from "./Contact";
 import AnimateButton from "@/components/common/AnimateButton";
 import Link from "next/link";
-import Testimonials2 from "./Testimonials2";
 import Image from "next/image";
 export default function Home4({ onePage = false, dark = false }) {
   const deliveryModels = [
@@ -118,9 +116,6 @@ export default function Home4({ onePage = false, dark = false }) {
               </p>
             </div>
           </div>
-          {/* Testimonials Grid */}
-          <Testimonials2 />
-          {/* End Testimonials Grid */}
           <div className="local-scroll text-center">
             {onePage ? (
               <>
@@ -439,7 +434,7 @@ export default function Home4({ onePage = false, dark = false }) {
             {onePage ? (
               <>
                 <a
-                  href="#clients-stories"
+                  href="#contact"
                   className={`btn btn-mod ${
                     dark ? "btn-dark" : "btn-w"
                   } btn-with-icon btn-circle`}
@@ -448,7 +443,7 @@ export default function Home4({ onePage = false, dark = false }) {
                     <i className="mi-link-alt" />
                   </span>
                   <span data-btn-animate="y">
-                    <AnimateButton text={"Müşteri Başarı Hikayelerini İnceleyin"} />
+                    <AnimateButton text={"Projenizi Konuşalım"} />
                   </span>
                 </a>
               </>
@@ -480,14 +475,6 @@ export default function Home4({ onePage = false, dark = false }) {
         }}
       >
         <Steps />
-      </section>
-      <section
-        className={`page-section  scrollSpysection  ${
-          dark ? "bg-dark-1 light-content" : ""
-        } `}
-        id="clients-stories"
-      >
-        <Testimonials />
       </section>
       <section
         className="page-section bg-scroll light-content"
