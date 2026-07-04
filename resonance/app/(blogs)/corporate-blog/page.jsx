@@ -8,7 +8,6 @@ import { corporateMultipage } from "@/data/menu";
 import Link from "next/link";
 import { blogs16, widgetPosts } from "@/data/blogs";
 import Pagination from "@/components/common/Pagination";
-import { getPublishedBlogPosts } from "@/lib/supabase/content";
 
 export const metadata = {
   title: "Blog",
@@ -30,9 +29,8 @@ const editorialNotes = [
   "AI ve otomasyon kullanım senaryoları",
 ];
 
-export default async function CorporateBlogPage() {
-  const supabasePosts = await getPublishedBlogPosts();
-  const posts = supabasePosts.length ? supabasePosts : blogs16;
+export default function CorporateBlogPage() {
+  const posts = blogs16;
 
   return (
     <>

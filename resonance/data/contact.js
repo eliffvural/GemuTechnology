@@ -1,4 +1,18 @@
+export const companyPhone = "+90 (850) 123 45 67";
+export const companyPhoneHref = "tel:+908501234567";
+export const companyEmail = "info@gemutechnology.com";
+export const companyEmailHref = "mailto:info@gemutechnology.com";
+
 export const contactItems = [
+  {
+    iconClass: "mi-mobile",
+    title: "Telefon",
+    text: companyPhone,
+    link: {
+      url: companyPhoneHref,
+      text: "Hemen Ara",
+    },
+  },
   {
     iconClass: "mi-location",
     title: "Ofis",
@@ -13,19 +27,10 @@ export const contactItems = [
   {
     iconClass: "mi-email",
     title: "E-posta",
-    text: "info@gemutechnology.com",
+    text: companyEmail,
     link: {
-      url: "mailto:info@gemutechnology.com",
+      url: companyEmailHref,
       text: "E-posta Gönder",
-    },
-  },
-  {
-    iconClass: "mi-mobile",
-    title: "Telefon",
-    text: "+90 (850) 123 45 67",
-    link: {
-      url: "tel:+908501234567",
-      text: "Hemen Ara",
     },
   },
 ];

@@ -2,7 +2,6 @@ import Footer4 from "@/components/footers/Footer4";
 import Header4 from "@/components/headers/Header4";
 import { corporateMultipage } from "@/data/menu";
 import { portfolios4, getProjectCoverImage } from "@/data/portfolio";
-import { getPublishedCaseStudy } from "@/lib/supabase/content";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -45,8 +44,7 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }) {
   const { slug } = await params;
-  const staticProject = portfolios4.find((project) => project.slug === slug);
-  const project = staticProject || (await getPublishedCaseStudy(slug));
+  const project = portfolios4.find((item) => item.slug === slug);
 
   if (!project) {
     return {
@@ -65,9 +63,7 @@ export async function generateMetadata({ params }) {
 
 export default async function ProjectDetailPage({ params }) {
   const { slug } = await params;
-  const staticProject = portfolios4.find((project) => project.slug === slug);
-  const remoteProject = staticProject ? null : await getPublishedCaseStudy(slug);
-  const project = staticProject || remoteProject;
+  const project = portfolios4.find((item) => item.slug === slug);
 
   if (!project) {
     notFound();

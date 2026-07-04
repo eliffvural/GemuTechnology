@@ -98,7 +98,7 @@ export default function Footer4() {
                   </li>
                   <li>Manisa Teknokent</li>
                   <li>
-                    <Link href="/iletisim">İletişim Formu</Link>
+                    <a href="tel:+908501234567">Bizi Arayın</a>
                   </li>
                 </ul>
               </div>

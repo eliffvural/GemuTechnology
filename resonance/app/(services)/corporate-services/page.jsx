@@ -250,12 +250,12 @@ export default function CorporateServicesPage() {
                 <div className="row mb-70 mb-sm-50">
                   <div className="col-lg-5 mb-md-30">
                     <h2 className="section-title mb-30">
-                      Proje talebinizi detaylandıralım
+                      Projenizi telefonda konuşalım
                     </h2>
                     <p className="section-descr dark-white mb-0">
-                      İhtiyacınızı birkaç bilgiyle paylaşın; kapsam, zamanlama ve
-                      doğru teknik yaklaşım için size net bir yol haritası ile
-                      dönüş yapalım.
+                      İhtiyacınızı doğrudan bizi arayarak paylaşın; kapsam,
+                      zamanlama ve doğru teknik yaklaşım için birlikte net bir
+                      yol haritası oluşturalım.
                     </p>
                   </div>
                   <div className="col-lg-7">

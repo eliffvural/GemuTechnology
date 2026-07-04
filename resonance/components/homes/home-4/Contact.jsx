@@ -1,204 +1,80 @@
-"use client";
-import { contactItems } from "@/data/contact";
-import React, { useState } from "react";
-import Image from "next/image";
+import { companyPhone, companyPhoneHref, contactItems } from "@/data/contact";
+import React from "react";
+
 export default function Contact() {
-  const [status, setStatus] = useState({ type: "", message: "" });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-
-  async function handleSubmit(event) {
-    event.preventDefault();
-    setIsSubmitting(true);
-    setStatus({ type: "", message: "" });
-
-    const formData = new FormData(event.currentTarget);
-    const payload = {
-      name: formData.get("name"),
-      email: formData.get("email"),
-      message: formData.get("message"),
-      source_page:
-        typeof window !== "undefined" ? window.location.pathname : "website",
-    };
-
-    try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
-      });
-      const result = await response.json();
-
-      if (!response.ok) {
-        throw new Error(result.message);
-      }
-
-      event.currentTarget.reset();
-      setStatus({ type: "success", message: result.message });
-    } catch (error) {
-      setStatus({
-        type: "error",
-        message:
-          error.message || "Mesaj gönderilemedi. Lütfen daha sonra tekrar deneyin.",
-      });
-    } finally {
-      setIsSubmitting(false);
-    }
-  }
-
   return (
-    <>
-      <div className="row wow fadeInUp">
-        {/* Left Column */}
-        <div className="col-lg-5 mb-md-50 mb-sm-30 d-flex align-items-strech">
-          <div
-            className="gemu-contact-info-card bg-image bg-scroll light-content w-100 round overflow-hidden px-4 px-sm-5 py-5"
-            style={{
-              backgroundImage:
-                "url(/assets/images/demo-corporate/section-bg-4-gemu.png)",
-            }}
-          >
-            {/* Address */}
-            {contactItems.map((item, index) => (
-              <React.Fragment key={index}>
-                <div
-                  className={`contact-item ${
-                    index !== 3 ? "mb-40 mb-sm-20" : ""
-                  }`}
-                >
-                  <div className="ci-icon">
-                    <i className={item.iconClass} />
-                  </div>
-                  <h4 className="ci-title">{item.title}</h4>
-                  <div className="ci-text large">{item.text}</div>
-                  <div className="ci-link">
-                    <a
-                      href={item.link.url}
-                      target={item.link.target}
-                      rel={item.link.rel}
-                    >
-                      {item.link.text}
-                    </a>
-                  </div>
-                </div>{" "}
-                {index !== contactItems.length - 1 && (
-                  <hr className="mt-0 mb-40 mb-sm-20 opacity-02" />
-                )}
-              </React.Fragment>
-            ))}
-            {/* End Phone */}
-          </div>
-        </div>
-        {/* End Left Column */}
-        {/* Right Column */}
-	        <div className="col-lg-7 d-flex align-items-strech">
-	          <div className="border-color-primary-1 round w-100 px-4 px-sm-5 py-5 compact-contact-panel">
-            <h3 className="section-title-small mt-n10 mb-40 mb-sm-30">
-              Projenizi birlikte değerlendirelim
-            </h3>
-            {/* Contact Form */}
-            <form
-              onSubmit={handleSubmit}
-              className="form contact-form"
-              id="contact_form"
-            >
-              <div className="row">
-                <div className="col-md-6">
-                  {/* Name */}
-                  <div className="form-group">
-                    <label htmlFor="name">Ad Soyad</label>
-                    <input
-                      type="text"
-                      name="name"
-                      id="name"
-                      className="input-lg round form-control"
-                      placeholder="Adınızı ve soyadınızı yazın"
-                      pattern=".{3,100}"
-                      required
-                      aria-required="true"
-                    />
-                  </div>
-                  {/* End Name */}
-                </div>
-                <div className="col-md-6">
-                  {/* Email */}
-                  <div className="form-group">
-                    <label htmlFor="email">E-posta</label>
-                    <input
-                      type="email"
-                      name="email"
-                      id="email"
-                      className="input-lg round form-control"
-                      placeholder="E-posta adresinizi yazın"
-                      pattern=".{5,100}"
-                      required
-                      aria-required="true"
-                    />
-                  </div>
-                  {/* End Email */}
-                </div>
-              </div>
-              {/* Message */}
-              <div className="form-group">
-                <label htmlFor="message">Mesajınız</label>
-	                <textarea
-	                  name="message"
-	                  id="message"
-	                  className="input-lg round form-control contact-message-field"
-	                  placeholder="Proje kapsamını ve ihtiyaçlarınızı paylaşın"
-	                  required
-                  minLength={10}
-                />
-              </div>
-              <div className="row">
-                <div className="col-md-6 col-xl-7 d-flex align-items-center">
-                  {/* Inform Tip */}
-                  <div className="form-tip w-100 pt-3">
-                    <i className="icon-info size-16" />
-                    Tüm alanların doldurulması zorunludur. Formu göndererek{" "}
-                    <a href="#">KVKK Aydınlatma Metni</a> ve{" "}
-                    <a href="#">Gizlilik Politikası</a> koşullarını kabul etmiş olursunuz.
-                  </div>
-                  {/* End Inform Tip */}
-                </div>
-                <div className="col-md-6 col-xl-5 mt-sm-20">
-                  {/* Send Button */}
-                  <div className="pt-3 text-md-end">
-                    <button
-                      type="submit"
-                      className="submit_btn btn btn-mod btn-color btn-large btn-round btn-hover-anim"
-                      id="submit_btn"
-                      aria-controls="result"
-                      disabled={isSubmitting}
-                    >
-                      <span>
-                        {isSubmitting ? "Gönderiliyor..." : "Mesajı Gönder"}
-                      </span>
-                    </button>
-                  </div>
-                  {/* End Send Button */}
-                </div>
-              </div>
+    <div className="row wow fadeInUp">
+      <div className="col-lg-5 mb-md-50 mb-sm-30 d-flex align-items-strech">
+        <div
+          className="gemu-contact-info-card bg-image bg-scroll light-content w-100 round overflow-hidden px-4 px-sm-5 py-5"
+          style={{
+            backgroundImage:
+              "url(/assets/images/demo-corporate/section-bg-4-gemu.png)",
+          }}
+        >
+          {contactItems.map((item, index) => (
+            <React.Fragment key={index}>
               <div
-                id="result"
-                role="region"
-                aria-live="polite"
-                aria-atomic="true"
-                className={`mt-20 ${
-                  status.type === "success"
-                    ? "text-success"
-                    : status.type === "error"
-                      ? "text-danger"
-                      : ""
+                className={`contact-item ${
+                  index !== contactItems.length - 1 ? "mb-40 mb-sm-20" : ""
                 }`}
               >
-                {status.message}
+                <div className="ci-icon">
+                  <i className={item.iconClass} />
+                </div>
+                <h4 className="ci-title">{item.title}</h4>
+                <div className="ci-text large">{item.text}</div>
+                <div className="ci-link">
+                  <a
+                    href={item.link.url}
+                    target={item.link.target}
+                    rel={item.link.rel}
+                  >
+                    {item.link.text}
+                  </a>
+                </div>
               </div>
-            </form>
-            {/* End Contact Form */}
+              {index !== contactItems.length - 1 && (
+                <hr className="mt-0 mb-40 mb-sm-20 opacity-02" />
+              )}
+            </React.Fragment>
+          ))}
+        </div>
+      </div>
+
+      <div className="col-lg-7 d-flex align-items-strech">
+        <div className="border-color-primary-1 round w-100 px-4 px-sm-5 py-5 compact-contact-panel d-flex flex-column justify-content-center">
+          <h3 className="section-title-small mt-n10 mb-20">
+            Projenizi birlikte değerlendirelim
+          </h3>
+          <p className="section-descr dark-white mb-40 mb-sm-30">
+            İletişim formu yerine doğrudan bizi arayın. Proje kapsamını,
+            ihtiyaçlarınızı ve zaman planınızı telefonda birlikte netleştirelim.
+          </p>
+
+          <div className="mb-30">
+            <div className="ci-icon mb-20">
+              <i className="mi-mobile size-32" />
+            </div>
+            <div className="h2 mb-10">{companyPhone}</div>
+            <p className="mb-0 opacity-08">
+              Hafta içi 09:00 – 18:00 arasında ulaşabilirsiniz.
+            </p>
+          </div>
+
+          <div className="local-scroll">
+            <a
+              href={companyPhoneHref}
+              className="btn btn-mod btn-color btn-large btn-round btn-hover-anim"
+            >
+              <span>
+                <i className="mi-mobile me-2" aria-hidden="true" />
+                Hemen Ara
+              </span>
+            </a>
           </div>
         </div>
-        {/* End Right Column */}
       </div>
-    </>
+    </div>
   );
 }

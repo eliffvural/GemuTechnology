@@ -73,7 +73,7 @@ export const qualities = [
 
 export const features = [
   { id: 1, text: "Fikirden canlıya uçtan uca yazılım geliştirme" },
-  { id: 2, text: "Next.js, Node.js, Supabase ve AI odaklı modern mimari" },
+  { id: 2, text: "Next.js, Node.js ve AI odaklı modern mimari" },
   { id: 3, text: "Güvenlik, performans ve operasyonel süreklilik standartları" },
 ];
 

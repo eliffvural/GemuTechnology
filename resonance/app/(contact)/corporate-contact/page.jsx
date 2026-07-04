@@ -12,7 +12,7 @@ import Faq from "@/components/common/Faq";
 export const metadata = {
   title: "İletişim",
   description:
-    "Projenizi birlikte planlamak için Gemu Technology ile iletişime geçin.",
+    "Projenizi birlikte planlamak için Gemu Technology'yi arayın.",
 };
 export default function CorporateContactPage() {
   return (
@@ -52,7 +52,7 @@ export default function CorporateContactPage() {
                       className="hs-descr mb-0 wow fadeIn"
                       data-wow-delay="0.2s"
                     >
-                      Hedeflerinizi konuşalım, doğru ürün yol haritasını birlikte oluşturalım.
+                      Hedeflerinizi telefonda konuşalım, doğru ürün yol haritasını birlikte oluşturalım.
                     </p>
                   </div>
                 </div>
@@ -70,7 +70,7 @@ export default function CorporateContactPage() {
                   <div className="col-md-10 offset-md-1 col-lg-8 offset-lg-2 text-center">
                     <p className="section-descr dark-white mb-0">
                       Projenizin ihtiyaçlarını, teknik kapsamını ve teslimat planını
-                      birlikte netleştirelim. İlk görüşmeden itibaren şeffaf,
+                      telefonda birlikte netleştirelim. Bizi arayın; şeffaf,
                       ölçülebilir ve sonuç odaklı bir iş birliği süreci yürütüyoruz.
                     </p>
                   </div>
