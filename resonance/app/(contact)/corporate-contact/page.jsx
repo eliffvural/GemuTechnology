@@ -52,7 +52,7 @@ export default function CorporateContactPage() {
                       className="hs-descr mb-0 wow fadeIn"
                       data-wow-delay="0.2s"
                     >
-                      Hedeflerinizi telefonda konuşalım, doğru ürün yol haritasını birlikte oluşturalım.
+                      Sorularınız için bizimle iletişime geçin.
                     </p>
                   </div>
                 </div>
@@ -69,9 +69,9 @@ export default function CorporateContactPage() {
                 <div className="row mb-80 mb-sm-60">
                   <div className="col-md-10 offset-md-1 col-lg-8 offset-lg-2 text-center">
                     <p className="section-descr dark-white mb-0">
-                      Projenizin ihtiyaçlarını, teknik kapsamını ve teslimat planını
-                      telefonda birlikte netleştirelim. Bizi arayın; şeffaf,
-                      ölçülebilir ve sonuç odaklı bir iş birliği süreci yürütüyoruz.
+                      Proje ihtiyaçlarınız, teknik kapsam ve teslimat planı
+                      hakkında bilgi almak için iletişim bilgilerimizi
+                      kullanabilirsiniz.
                     </p>
                   </div>
                 </div>{" "}

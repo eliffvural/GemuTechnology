@@ -1,35 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="760" viewBox="0 0 1320 760" role="img" aria-label="AI Destek proje görseli">
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="760" viewBox="0 0 1320 760" role="img" aria-label="AI Destekli Destek Sistemi">
   <defs>
     <linearGradient id="bg-ai-destekli-destek-sistemi" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0b2e38"/>
-      <stop offset="55%" stop-color="#176f86"/>
-      <stop offset="100%" stop-color="#0f4c5c"/>
+      <stop offset="0%" stop-color="#2e1f5e"/>
+      <stop offset="100%" stop-color="#4c3d8f"/>
     </linearGradient>
-    <radialGradient id="glow-ai-destekli-destek-sistemi" cx="50%" cy="40%" r="60%">
-      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.18"/>
+    <radialGradient id="orb1-ai-destekli-destek-sistemi" cx="80%" cy="20%" r="45%">
+      <stop offset="0%" stop-color="#c4b5fd" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#c4b5fd" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orb2-ai-destekli-destek-sistemi" cx="15%" cy="85%" r="40%">
+      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.2"/>
       <stop offset="100%" stop-color="#a78bfa" stop-opacity="0"/>
     </radialGradient>
-    <pattern id="grid-ai-destekli-destek-sistemi" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
-    </pattern>
+    <linearGradient id="shine-ai-destekli-destek-sistemi" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="blur-ai-destekli-destek-sistemi" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="40"/>
+    </filter>
   </defs>
+
   <rect width="1320" height="760" fill="url(#bg-ai-destekli-destek-sistemi)"/>
-  <rect width="1320" height="760" fill="url(#glow-ai-destekli-destek-sistemi)"/>
-  <rect width="1320" height="760" fill="url(#grid-ai-destekli-destek-sistemi)"/>
-  <circle cx="180" cy="120" r="120" fill="#a78bfa" opacity="0.06"/>
-  <circle cx="1140" cy="640" r="160" fill="#a78bfa" opacity="0.05"/>
-  
-      <rect x="400" y="240" width="520" height="280" rx="20" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
-      <rect x="430" y="280" width="200" height="56" rx="16" fill="rgba(255,255,255,0.1)"/>
-      <rect x="650" y="280" width="230" height="56" rx="16" fill="rgba(167,139,250,0.25)" stroke="#a78bfa" stroke-width="1.5"/>
-      <rect x="430" y="360" width="280" height="56" rx="16" fill="rgba(255,255,255,0.08)"/>
-      <rect x="730" y="360" width="150" height="56" rx="16" fill="rgba(167,139,250,0.25)" stroke="#a78bfa" stroke-width="1.5"/>
-      <circle cx="780" cy="308" r="8" fill="#a78bfa"/>
-      <circle cx="800" cy="388" r="8" fill="#a78bfa"/>
-      <path d="M560 200 L580 230 L610 210 L630 250" stroke="#a78bfa" stroke-width="2" fill="none" opacity="0.6"/>
-      <text x="660" y="520" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-size="14" font-family="system-ui,sans-serif">24/7 AI</text>
-    
-  <text x="80" y="680" fill="rgba(255,255,255,0.35)" font-size="13" font-family="system-ui,-apple-system,sans-serif" letter-spacing="0.12em">GEMU TECHNOLOGY</text>
-  <text x="1240" y="680" text-anchor="end" fill="#a78bfa" font-size="13" font-family="system-ui,-apple-system,sans-serif" font-weight="600">AI DESTEK</text>
+  <rect width="1320" height="760" fill="url(#orb1-ai-destekli-destek-sistemi)"/>
+  <rect width="1320" height="760" fill="url(#orb2-ai-destekli-destek-sistemi)"/>
+
+  <ellipse cx="1080" cy="140" rx="220" ry="180" fill="#c4b5fd" opacity="0.12" filter="url(#blur-ai-destekli-destek-sistemi)"/>
+  <ellipse cx="200" cy="620" rx="260" ry="200" fill="#a78bfa" opacity="0.1" filter="url(#blur-ai-destekli-destek-sistemi)"/>
+
+  <rect x="0" y="0" width="1320" height="760" fill="url(#shine-ai-destekli-destek-sistemi)" transform="rotate(-8 660 380)"/>
+
+  <rect x="90" y="90" width="180" height="42" rx="21" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"/>
+  <text x="180" y="117" text-anchor="middle" fill="#ffffff" font-size="15" font-family="system-ui,-apple-system,sans-serif" font-weight="600" letter-spacing="0.06em">AI &amp; OTOMASYON</text>
+
+  <text x="90" y="320" fill="#ffffff" font-size="52" font-family="system-ui,-apple-system,sans-serif" font-weight="700" letter-spacing="-0.02em">
+    <tspan x="90" dy="0">AI Destekli Destek</tspan><tspan x="90" dy="58">Sistemi</tspan>
+  </text>
+
+  <rect x="90" y="500" width="280" height="110" rx="20" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.18)" stroke-width="1.5"/>
+  <text x="120" y="555" fill="#c4b5fd" font-size="42" font-family="system-ui,-apple-system,sans-serif" font-weight="700">24/7</text>
+  <text x="120" y="590" fill="rgba(255,255,255,0.75)" font-size="16" font-family="system-ui,-apple-system,sans-serif">akıllı destek</text>
+
+  <circle cx="1150" cy="580" r="90" fill="none" stroke="#c4b5fd" stroke-width="2" opacity="0.35"/>
+  <circle cx="1150" cy="580" r="60" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
+  <circle cx="1150" cy="580" r="8" fill="#c4b5fd"/>
+
+  <text x="90" y="700" fill="rgba(255,255,255,0.35)" font-size="13" font-family="system-ui,-apple-system,sans-serif" letter-spacing="0.14em">GEMU TECHNOLOGY</text>
 </svg>

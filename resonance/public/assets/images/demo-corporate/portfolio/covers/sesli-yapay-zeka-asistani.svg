@@ -1,34 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="760" viewBox="0 0 1320 760" role="img" aria-label="Sesli AI proje görseli">
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="760" viewBox="0 0 1320 760" role="img" aria-label="Sesli Yapay Zeka Asistanı">
   <defs>
     <linearGradient id="bg-sesli-yapay-zeka-asistani" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0b2e38"/>
-      <stop offset="55%" stop-color="#176f86"/>
-      <stop offset="100%" stop-color="#0f4c5c"/>
+      <stop offset="0%" stop-color="#4a1d2e"/>
+      <stop offset="100%" stop-color="#8b3a52"/>
     </linearGradient>
-    <radialGradient id="glow-sesli-yapay-zeka-asistani" cx="50%" cy="40%" r="60%">
-      <stop offset="0%" stop-color="#fb7185" stop-opacity="0.18"/>
+    <radialGradient id="orb1-sesli-yapay-zeka-asistani" cx="80%" cy="20%" r="45%">
+      <stop offset="0%" stop-color="#fda4af" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#fda4af" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orb2-sesli-yapay-zeka-asistani" cx="15%" cy="85%" r="40%">
+      <stop offset="0%" stop-color="#fb7185" stop-opacity="0.2"/>
       <stop offset="100%" stop-color="#fb7185" stop-opacity="0"/>
     </radialGradient>
-    <pattern id="grid-sesli-yapay-zeka-asistani" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
-    </pattern>
+    <linearGradient id="shine-sesli-yapay-zeka-asistani" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="blur-sesli-yapay-zeka-asistani" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="40"/>
+    </filter>
   </defs>
+
   <rect width="1320" height="760" fill="url(#bg-sesli-yapay-zeka-asistani)"/>
-  <rect width="1320" height="760" fill="url(#glow-sesli-yapay-zeka-asistani)"/>
-  <rect width="1320" height="760" fill="url(#grid-sesli-yapay-zeka-asistani)"/>
-  <circle cx="180" cy="120" r="120" fill="#fb7185" opacity="0.06"/>
-  <circle cx="1140" cy="640" r="160" fill="#fb7185" opacity="0.05"/>
-  
-      <rect x="610" y="260" width="100" height="160" rx="50" fill="rgba(251,113,133,0.15)" stroke="#fb7185" stroke-width="2"/>
-      <rect x="635" y="290" width="50" height="80" rx="25" fill="rgba(255,255,255,0.08)" stroke="rgba(251,113,133,0.5)" stroke-width="1.5"/>
-      <line x1="660" y1="420" x2="660" y2="460" stroke="#fb7185" stroke-width="3"/>
-      <ellipse cx="660" cy="472" rx="30" ry="8" fill="rgba(251,113,133,0.3)"/>
-      <path d="M480 340 Q500 300 520 340 Q540 380 560 340" stroke="#fb7185" stroke-width="2.5" fill="none" opacity="0.7"/>
-      <path d="M760 340 Q780 300 800 340 Q820 380 840 340" stroke="#fb7185" stroke-width="2.5" fill="none" opacity="0.7"/>
-      <path d="M440 360 Q460 320 480 360 Q500 400 520 360" stroke="#fb7185" stroke-width="2" fill="none" opacity="0.4"/>
-      <path d="M800 360 Q820 320 840 360 Q860 400 880 360" stroke="#fb7185" stroke-width="2" fill="none" opacity="0.4"/>
-    
-  <text x="80" y="680" fill="rgba(255,255,255,0.35)" font-size="13" font-family="system-ui,-apple-system,sans-serif" letter-spacing="0.12em">GEMU TECHNOLOGY</text>
-  <text x="1240" y="680" text-anchor="end" fill="#fb7185" font-size="13" font-family="system-ui,-apple-system,sans-serif" font-weight="600">SESLI AI</text>
+  <rect width="1320" height="760" fill="url(#orb1-sesli-yapay-zeka-asistani)"/>
+  <rect width="1320" height="760" fill="url(#orb2-sesli-yapay-zeka-asistani)"/>
+
+  <ellipse cx="1080" cy="140" rx="220" ry="180" fill="#fda4af" opacity="0.12" filter="url(#blur-sesli-yapay-zeka-asistani)"/>
+  <ellipse cx="200" cy="620" rx="260" ry="200" fill="#fb7185" opacity="0.1" filter="url(#blur-sesli-yapay-zeka-asistani)"/>
+
+  <rect x="0" y="0" width="1320" height="760" fill="url(#shine-sesli-yapay-zeka-asistani)" transform="rotate(-8 660 380)"/>
+
+  <rect x="90" y="90" width="180" height="42" rx="21" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"/>
+  <text x="180" y="117" text-anchor="middle" fill="#ffffff" font-size="15" font-family="system-ui,-apple-system,sans-serif" font-weight="600" letter-spacing="0.06em">SESLI AI</text>
+
+  <text x="90" y="320" fill="#ffffff" font-size="52" font-family="system-ui,-apple-system,sans-serif" font-weight="700" letter-spacing="-0.02em">
+    <tspan x="90" dy="0">Sesli Yapay Zeka</tspan><tspan x="90" dy="58">Asistanı</tspan>
+  </text>
+
+  <rect x="90" y="500" width="280" height="110" rx="20" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.18)" stroke-width="1.5"/>
+  <text x="120" y="555" fill="#fda4af" font-size="42" font-family="system-ui,-apple-system,sans-serif" font-weight="700">7/24</text>
+  <text x="120" y="590" fill="rgba(255,255,255,0.75)" font-size="16" font-family="system-ui,-apple-system,sans-serif">müşteri erişimi</text>
+
+  <circle cx="1150" cy="580" r="90" fill="none" stroke="#fda4af" stroke-width="2" opacity="0.35"/>
+  <circle cx="1150" cy="580" r="60" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
+  <circle cx="1150" cy="580" r="8" fill="#fda4af"/>
+
+  <text x="90" y="700" fill="rgba(255,255,255,0.35)" font-size="13" font-family="system-ui,-apple-system,sans-serif" letter-spacing="0.14em">GEMU TECHNOLOGY</text>
 </svg>

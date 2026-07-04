@@ -249,13 +249,10 @@ export default function CorporateServicesPage() {
               <div className="container position-relative">
                 <div className="row mb-70 mb-sm-50">
                   <div className="col-lg-5 mb-md-30">
-                    <h2 className="section-title mb-30">
-                      Projenizi telefonda konuşalım
-                    </h2>
+                    <h2 className="section-title mb-30">İletişime geçin</h2>
                     <p className="section-descr dark-white mb-0">
-                      İhtiyacınızı doğrudan bizi arayarak paylaşın; kapsam,
-                      zamanlama ve doğru teknik yaklaşım için birlikte net bir
-                      yol haritası oluşturalım.
+                      Hizmetlerimiz ve proje kapsamı hakkında detaylı bilgi
+                      almak için bize ulaşın.
                     </p>
                   </div>
                   <div className="col-lg-7">

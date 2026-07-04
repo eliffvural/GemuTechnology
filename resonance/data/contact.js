@@ -8,10 +8,7 @@ export const contactItems = [
     iconClass: "mi-mobile",
     title: "Telefon",
     text: companyPhone,
-    link: {
-      url: companyPhoneHref,
-      text: "Hemen Ara",
-    },
+    href: companyPhoneHref,
   },
   {
     iconClass: "mi-location",

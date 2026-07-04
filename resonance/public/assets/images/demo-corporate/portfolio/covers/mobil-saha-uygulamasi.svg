@@ -1,35 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="760" viewBox="0 0 1320 760" role="img" aria-label="Mobil Uygulama proje görseli">
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="760" viewBox="0 0 1320 760" role="img" aria-label="Mobil Saha Uygulaması">
   <defs>
     <linearGradient id="bg-mobil-saha-uygulamasi" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0b2e38"/>
-      <stop offset="55%" stop-color="#176f86"/>
-      <stop offset="100%" stop-color="#0f4c5c"/>
+      <stop offset="0%" stop-color="#0c3d5c"/>
+      <stop offset="100%" stop-color="#1d6fa3"/>
     </linearGradient>
-    <radialGradient id="glow-mobil-saha-uygulamasi" cx="50%" cy="40%" r="60%">
-      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.18"/>
+    <radialGradient id="orb1-mobil-saha-uygulamasi" cx="80%" cy="20%" r="45%">
+      <stop offset="0%" stop-color="#7dd3fc" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#7dd3fc" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orb2-mobil-saha-uygulamasi" cx="15%" cy="85%" r="40%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.2"/>
       <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
     </radialGradient>
-    <pattern id="grid-mobil-saha-uygulamasi" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
-    </pattern>
+    <linearGradient id="shine-mobil-saha-uygulamasi" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="blur-mobil-saha-uygulamasi" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="40"/>
+    </filter>
   </defs>
+
   <rect width="1320" height="760" fill="url(#bg-mobil-saha-uygulamasi)"/>
-  <rect width="1320" height="760" fill="url(#glow-mobil-saha-uygulamasi)"/>
-  <rect width="1320" height="760" fill="url(#grid-mobil-saha-uygulamasi)"/>
-  <circle cx="180" cy="120" r="120" fill="#38bdf8" opacity="0.06"/>
-  <circle cx="1140" cy="640" r="160" fill="#38bdf8" opacity="0.05"/>
-  
-      <rect x="540" y="180" width="240" height="400" rx="32" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.25)" stroke-width="2"/>
-      <rect x="620" y="210" width="80" height="8" rx="4" fill="rgba(255,255,255,0.2)"/>
-      <circle cx="660" cy="290" r="36" fill="rgba(56,189,248,0.2)" stroke="#38bdf8" stroke-width="2"/>
-      <path d="M660 262 L660 318 M636 290 L684 290" stroke="#38bdf8" stroke-width="3" stroke-linecap="round"/>
-      <rect x="570" y="360" width="180" height="12" rx="6" fill="rgba(255,255,255,0.2)"/>
-      <rect x="570" y="390" width="140" height="10" rx="5" fill="rgba(255,255,255,0.12)"/>
-      <rect x="570" y="420" width="160" height="10" rx="5" fill="rgba(255,255,255,0.1)"/>
-      <rect x="570" y="470" width="180" height="44" rx="12" fill="#38bdf8" opacity="0.85"/>
-      <path d="M500 520 Q560 460 620 500 T740 480" stroke="#38bdf8" stroke-width="2" fill="none" opacity="0.5"/>
-    
-  <text x="80" y="680" fill="rgba(255,255,255,0.35)" font-size="13" font-family="system-ui,-apple-system,sans-serif" letter-spacing="0.12em">GEMU TECHNOLOGY</text>
-  <text x="1240" y="680" text-anchor="end" fill="#38bdf8" font-size="13" font-family="system-ui,-apple-system,sans-serif" font-weight="600">MOBIL UYGULAMA</text>
+  <rect width="1320" height="760" fill="url(#orb1-mobil-saha-uygulamasi)"/>
+  <rect width="1320" height="760" fill="url(#orb2-mobil-saha-uygulamasi)"/>
+
+  <ellipse cx="1080" cy="140" rx="220" ry="180" fill="#7dd3fc" opacity="0.12" filter="url(#blur-mobil-saha-uygulamasi)"/>
+  <ellipse cx="200" cy="620" rx="260" ry="200" fill="#38bdf8" opacity="0.1" filter="url(#blur-mobil-saha-uygulamasi)"/>
+
+  <rect x="0" y="0" width="1320" height="760" fill="url(#shine-mobil-saha-uygulamasi)" transform="rotate(-8 660 380)"/>
+
+  <rect x="90" y="90" width="180" height="42" rx="21" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"/>
+  <text x="180" y="117" text-anchor="middle" fill="#ffffff" font-size="15" font-family="system-ui,-apple-system,sans-serif" font-weight="600" letter-spacing="0.06em">MOBIL UYGULAMA</text>
+
+  <text x="90" y="320" fill="#ffffff" font-size="52" font-family="system-ui,-apple-system,sans-serif" font-weight="700" letter-spacing="-0.02em">
+    <tspan x="90" dy="0">Mobil Saha</tspan><tspan x="90" dy="58">Uygulaması</tspan>
+  </text>
+
+  <rect x="90" y="500" width="280" height="110" rx="20" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.18)" stroke-width="1.5"/>
+  <text x="120" y="555" fill="#7dd3fc" font-size="42" font-family="system-ui,-apple-system,sans-serif" font-weight="700">3x</text>
+  <text x="120" y="590" fill="rgba(255,255,255,0.75)" font-size="16" font-family="system-ui,-apple-system,sans-serif">daha hızlı geri dönüş</text>
+
+  <circle cx="1150" cy="580" r="90" fill="none" stroke="#7dd3fc" stroke-width="2" opacity="0.35"/>
+  <circle cx="1150" cy="580" r="60" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
+  <circle cx="1150" cy="580" r="8" fill="#7dd3fc"/>
+
+  <text x="90" y="700" fill="rgba(255,255,255,0.35)" font-size="13" font-family="system-ui,-apple-system,sans-serif" letter-spacing="0.14em">GEMU TECHNOLOGY</text>
 </svg>
