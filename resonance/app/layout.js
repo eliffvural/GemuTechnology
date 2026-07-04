@@ -16,12 +16,12 @@ export const metadata = {
     template: "%s | Gemu Technology",
   },
   description:
-    "Gemu Technology; Manisa Yunusemre merkezli kurumsal web, mobil uygulama, kurumsal süreç yazılımları, AI ve otomasyon çözümleri geliştiren yazılım şirketidir.",
+    "Gemu Technology; Manisa Teknokent merkezli kurumsal web, mobil uygulama, kurumsal süreç yazılımları, AI ve otomasyon çözümleri geliştiren yazılım şirketidir.",
   applicationName: "Gemu Technology",
   keywords: [
     "Gemu Technology",
     "Manisa yazılım şirketi",
-    "Yunusemre yazılım",
+    "Manisa Teknokent yazılım",
     "kurumsal web geliştirme",
     "kurumsal süreç yazılımı",
     "mobil uygulama geliştirme",
@@ -56,7 +56,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Gemu Technology | Yazılım Hizmetleri",
     description:
-      "Manisa Yunusemre merkezli yazılım hizmetleri, kurumsal web, mobil uygulama, süreç yazılımları, AI ve otomasyon çözümleri.",
+      "Manisa Teknokent merkezli yazılım hizmetleri, kurumsal web, mobil uygulama, süreç yazılımları, AI ve otomasyon çözümleri.",
     images: ["/assets/images/gemu/logo-horizontal-english.png"],
   },
   robots: {
@@ -73,7 +73,7 @@ export const metadata = {
   category: "technology",
   other: {
     "geo.region": "TR-45",
-    "geo.placename": "Yunusemre, Manisa",
+    "geo.placename": "Manisa Teknokent",
     "geo.position": "38.6191;27.4289",
     ICBM: "38.6191, 27.4289",
   },
@@ -96,7 +96,8 @@ const organizationSchema = {
   telephone: "+90 850 123 45 67",
   address: {
     "@type": "PostalAddress",
-    addressLocality: "Yunusemre",
+    streetAddress: "Manisa Teknokent",
+    addressLocality: "Manisa",
     addressRegion: "Manisa",
     addressCountry: "TR",
   },

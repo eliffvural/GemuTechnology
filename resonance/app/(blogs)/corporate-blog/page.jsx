@@ -232,7 +232,7 @@ export default async function CorporateBlogPage() {
                             width={100}
                             className="left img-left"
                           />
-                          Manisa Yunusemre merkezli yazılım ekibimiz; kurumsal
+                          Manisa Teknokent merkezli yazılım ekibimiz; kurumsal
                           web, mobil uygulama, süreç yazılımları, AI ve otomasyon
                           alanlarında uygulanabilir dijital ürünler geliştirir.
                         </div>
