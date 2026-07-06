@@ -2,6 +2,12 @@ export const companyPhone = "+90 (850) 123 45 67";
 export const companyPhoneHref = "tel:+908501234567";
 export const companyEmail = "info@gemutechnology.com";
 export const companyEmailHref = "mailto:info@gemutechnology.com";
+export const companyAddress =
+  "Muradiye Mah. Celal Bayar Üniversitesi Kampüsü Küme Evler Tekno Kent No: 22 Yunusemre/Manisa";
+export const companyAddressMapUrl =
+  "https://www.google.com/maps/search/?api=1&query=Muradiye+Mah.+Celal+Bayar+%C3%9Cniversitesi+Teknokent+No+22+Yunusemre+Manisa";
+export const companyAddressEmbedUrl =
+  "https://maps.google.com/maps?q=Muradiye+Mah.+Celal+Bayar+%C3%9Cniversitesi+Kamp%C3%BCs%C3%BC+Teknokent+No+22+Yunusemre+Manisa&z=16&output=embed";
 
 export const contactItems = [
   {
@@ -12,10 +18,10 @@ export const contactItems = [
   },
   {
     iconClass: "mi-location",
-    title: "Ofis",
-    text: "Manisa Teknokent",
+    title: "Adres",
+    text: companyAddress,
     link: {
-      url: "https://www.google.com/maps/search/?api=1&query=Manisa%20Teknokent",
+      url: companyAddressMapUrl,
       text: "Haritada Gör",
       rel: "nofollow noopener",
       target: "_blank",

@@ -230,7 +230,8 @@ export default function CorporateBlogPage() {
                             width={100}
                             className="left img-left"
                           />
-                          Manisa Teknokent merkezli yazılım ekibimiz; kurumsal
+                          Muradiye Mah. Celal Bayar Üniversitesi Kampüsü Teknokent
+                          merkezli yazılım ekibimiz; kurumsal
                           web, mobil uygulama, süreç yazılımları, AI ve otomasyon
                           alanlarında uygulanabilir dijital ürünler geliştirir.
                         </div>

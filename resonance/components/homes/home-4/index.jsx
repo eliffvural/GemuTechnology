@@ -3,6 +3,7 @@ import React from "react";
 import Cta from "./Cta";
 import Service from "./Service";
 import Portfolio from "./Portfolio";
+import Products from "./Products";
 import Steps from "./Steps";
 import Blog from "../home-4/Blog";
 import Contact from "./Contact";
@@ -418,6 +419,31 @@ export default function Home4({ onePage = false, dark = false }) {
                 ))}
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section
+        className={`page-section scrollSpysection ${
+          dark ? "bg-dark-1 light-content" : "bg-gray-light-1"
+        }`}
+        id="products"
+      >
+        <div className="container position-relative">
+          <Products />
+          <div className="local-scroll text-center mt-50">
+            <Link
+              href="/urunler"
+              className={`btn btn-mod ${
+                dark ? "btn-dark" : "btn-w"
+              } btn-with-icon btn-circle`}
+            >
+              <span className="btn-icon color-2">
+                <i className="mi-link-alt" />
+              </span>
+              <span data-btn-animate="y">
+                <AnimateButton text={"Tüm Ürünleri İnceleyin"} />
+              </span>
+            </Link>
           </div>
         </div>
       </section>

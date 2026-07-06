@@ -27,7 +27,8 @@ export const metadata = {
     "mobil uygulama geliştirme",
     "AI otomasyon",
     "teknik danışmanlık",
-    "Teknokent yazılım",
+    "Parafoni",
+    "cashback cüzdan",
   ],
   authors: [{ name: "Gemu Technology" }],
   creator: "Gemu Technology",
@@ -73,7 +74,7 @@ export const metadata = {
   category: "technology",
   other: {
     "geo.region": "TR-45",
-    "geo.placename": "Manisa Teknokent",
+    "geo.placename": "Yunusemre, Manisa",
     "geo.position": "38.6191;27.4289",
     ICBM: "38.6191, 27.4289",
   },
@@ -96,8 +97,9 @@ const organizationSchema = {
   telephone: "+90 850 123 45 67",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Manisa Teknokent",
-    addressLocality: "Manisa",
+    streetAddress:
+      "Muradiye Mah. Celal Bayar Üniversitesi Kampüsü Küme Evler Tekno Kent No: 22",
+    addressLocality: "Yunusemre",
     addressRegion: "Manisa",
     addressCountry: "TR",
   },

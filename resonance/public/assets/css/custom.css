@@ -32,6 +32,66 @@
   height: auto;
   object-fit: contain;
 }
+
+.gemu-footer-bottom {
+  padding: 22px 0 8px;
+  border-top: 1px solid rgba(18, 18, 18, 0.1);
+}
+
+.gemu-footer-bottom-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.gemu-footer-copy {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.gemu-footer-legal {
+  color: var(--color-primary-1);
+  font-size: 14px;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+.gemu-footer-credit {
+  margin: 14px 0 0;
+  padding-top: 14px;
+  border-top: 1px solid rgba(18, 18, 18, 0.06);
+  color: #888;
+  font-size: 13px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.gemu-footer-credit a {
+  color: #666;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.gemu-footer-credit a:hover {
+  color: var(--color-primary-1);
+}
+
+@media (max-width: 767px) {
+  .gemu-footer-bottom-main {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .gemu-footer-legal {
+    white-space: normal;
+  }
+}
+
 .gemu-admin-login-logo {
   display: block;
   width: 210px;
@@ -203,6 +263,217 @@ html {
 .theme-corporate .gemu-contact-info-card .ci-link a {
   font-size: 18px !important;
   line-height: 1.45 !important;
+}
+
+.theme-corporate .gemu-contact-info-card .contact-item:first-of-type + hr + .contact-item .ci-text,
+.theme-corporate .gemu-contact-info-card .contact-item:nth-child(3) .ci-text {
+  font-size: 16px !important;
+  line-height: 1.55 !important;
+}
+
+.gemu-product-feature {
+  overflow: hidden;
+  border: 1px solid rgba(18, 18, 18, 0.08);
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 22px 65px rgba(0, 0, 0, 0.06);
+}
+
+.gemu-product-feature .gemu-product-image-col {
+  display: flex;
+  min-height: 100%;
+}
+
+.gemu-product-feature .gemu-product-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex: 1;
+  min-height: 100%;
+  padding: 36px 32px;
+  overflow: hidden;
+  background: linear-gradient(160deg, #071612 0%, #0c241c 55%, #071612 100%);
+}
+
+.gemu-product-feature .gemu-product-image > span {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.gemu-product-feature .gemu-product-image img,
+.gemu-product-feature .gemu-product-cover {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.gemu-product-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 46px;
+}
+
+.gemu-product-card {
+  overflow: hidden;
+  border: 1px solid rgba(18, 18, 18, 0.08);
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 22px 65px rgba(0, 0, 0, 0.06);
+}
+
+.gemu-product-image {
+  display: block;
+  background: #f2f5f6;
+}
+
+.gemu-product-card-image > span {
+  display: block !important;
+  width: 100% !important;
+}
+
+.gemu-product-card-image img,
+.gemu-product-cover {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.gemu-product-content h3 {
+  margin: 0 0 18px;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.gemu-product-content p {
+  margin: 0 0 24px;
+  color: #666;
+  font-size: 18px;
+  line-height: 1.65;
+}
+
+.gemu-product-highlights {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.gemu-product-highlights li {
+  position: relative;
+  padding-left: 22px;
+  color: #555;
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+.gemu-product-highlights li + li {
+  margin-top: 10px;
+}
+
+.gemu-product-highlights li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.62em;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-primary-1);
+}
+
+.gemu-product-highlights-page li {
+  font-size: 18px;
+}
+
+.gemu-product-card {
+  display: block;
+  height: 100%;
+  color: inherit;
+  text-decoration: none;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+.gemu-product-card:hover {
+  border-color: rgba(23, 111, 134, 0.18);
+  color: inherit;
+  box-shadow: 0 20px 54px rgba(0, 0, 0, 0.07);
+  transform: translateY(-3px);
+}
+
+.gemu-product-card-image {
+  overflow: hidden;
+  background: #f2f5f6;
+}
+
+.gemu-product-card-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.gemu-product-card-body {
+  padding: 28px 30px 32px;
+}
+
+.gemu-product-card-body span {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--color-primary-1);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.gemu-product-card-body h2 {
+  margin: 0 0 12px;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.15;
+}
+
+.gemu-product-card-body p {
+  margin: 0;
+  color: #666;
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+.theme-corporate .footer-2 .fw-menu li {
+  line-height: 1.55;
+}
+
+@media (max-width: 991px) {
+  .gemu-product-feature .gemu-product-image {
+    min-height: 360px;
+    padding: 28px 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .gemu-product-feature .gemu-product-image {
+    min-height: 320px;
+    padding: 24px 20px;
+  }
+
+  .gemu-product-content {
+    padding: 28px 24px;
+  }
+
+  .gemu-product-content h3 {
+    font-size: 32px;
+  }
 }
 
 .theme-corporate .gemu-contact-info-card hr {

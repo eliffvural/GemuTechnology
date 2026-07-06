@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import { companyAddress } from "@/data/contact";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -66,6 +67,9 @@ export default function Footer4() {
                     <Link href="/hizmetler">Hizmetler</Link>
                   </li>
                   <li>
+                    <Link href="/urunler">Ürünler</Link>
+                  </li>
+                  <li>
                     <Link href="/projeler">Projeler</Link>
                   </li>
                 </ul>
@@ -96,7 +100,7 @@ export default function Footer4() {
                   <li>
                     <a href="mailto:info@gemutechnology.com">info@gemutechnology.com</a>
                   </li>
-                  <li>Manisa Teknokent</li>
+                  <li>{companyAddress}</li>
                   <li>
                     <Link href="/iletisim">İletişim</Link>
                   </li>
@@ -106,34 +110,27 @@ export default function Footer4() {
           </div>
         </div>
       </div>
-      {/* Footer Text */}
-      <div className="row pt-20 border-top">
-        <div className="col-md-8 mb-sm-30">
-          © {new Date().getFullYear()} Gemu Technology. Tüm hakları saklıdır.
-        </div>
-        <div className="col-md-4 text-md-end mb-md-40">
-          <Link href="/hizmet-sartlari" className="link-hover-anim">
+      <div className="gemu-footer-bottom">
+        <div className="gemu-footer-bottom-main">
+          <span className="gemu-footer-copy">
+            © {new Date().getFullYear()} Gemu Technology. Tüm hakları saklıdır.
+          </span>
+          <Link href="/hizmet-sartlari" className="gemu-footer-legal link-hover-anim">
             Mesafeli Satış ve Hizmet Şartları
           </Link>
         </div>
+        <p className="gemu-footer-credit">
+          Bu site{" "}
+          <a
+            href="https://marithen.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Marithen Yazılım
+          </a>{" "}
+          tarafından geliştirilmiştir.
+        </p>
       </div>
-      <div className="row pt-15 pb-10">
-        <div className="col-12 text-center">
-          <p className="mb-0 small opacity-07">
-            Bu site{" "}
-            <a
-              href="https://marithen.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="fw-semibold link-hover-anim"
-            >
-              Marithen Yazılım
-            </a>{" "}
-            tarafından geliştirilmiştir.
-          </p>
-        </div>
-      </div>
-      {/* End Footer Text */}
     </div>
   );
 }

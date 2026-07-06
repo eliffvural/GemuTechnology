@@ -4,6 +4,8 @@ const routes = [
   "",
   "/hakkimizda",
   "/hizmetler",
+  "/urunler",
+  "/urunler/parafoni",
   "/projeler",
   "/projeler/b2b-siparis-portali",
   "/projeler/mobil-saha-uygulamasi",

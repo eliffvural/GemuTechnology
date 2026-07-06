@@ -157,6 +157,7 @@ export const corporateMultipage = [
   { href: "/", text: "Ana Sayfa" },
   { href: "/hakkimizda", text: "Hakkımızda" },
   { href: "/hizmetler", text: "Hizmetler" },
+  { href: "/urunler", text: "Ürünler" },
   { href: "/projeler", text: "Projeler" },
   { href: "/blog", text: "Blog" },
   { href: "/iletisim", text: "İletişim" },
