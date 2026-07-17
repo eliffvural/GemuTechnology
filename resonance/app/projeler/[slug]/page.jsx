@@ -113,8 +113,8 @@ export default async function ProjectDetailPage({ params }) {
               <div className="project-detail-image mb-70 mb-sm-40">
                 <Image
                   src={currentProject.imageUrl}
-                  width={1320}
-                  height={760}
+                  width={1484}
+                  height={1060}
                   alt={currentProject.title}
                 />
               </div>
@@ -175,6 +175,14 @@ export default async function ProjectDetailPage({ params }) {
                       href={`/projeler/${item.slug}`}
                       className="case-study-detail-card"
                     >
+                      <div className="case-study-detail-image">
+                        <Image
+                          src={item.imageUrl}
+                          width={660}
+                          height={472}
+                          alt={item.title}
+                        />
+                      </div>
                       <div className="case-study-detail-top">
                         <span>{item.eyebrow}</span>
                         <strong>{item.number}</strong>

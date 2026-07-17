@@ -142,7 +142,7 @@ export default function CorporatePortfolioPage() {
                           <Image
                             src={featuredProject.imageUrl}
                             width={760}
-                            height={520}
+                            height={543}
                             alt={featuredProject.title}
                           />
                         </Link>
@@ -199,6 +199,14 @@ export default function CorporatePortfolioPage() {
                           href={`/projeler/${project.slug}`}
                           className="case-study-detail-card"
                         >
+                          <div className="case-study-detail-image">
+                            <Image
+                              src={project.imageUrl}
+                              width={660}
+                              height={472}
+                              alt={project.title}
+                            />
+                          </div>
                           <div className="case-study-detail-top">
                             <span>{project.eyebrow}</span>
                             <strong>{project.number}</strong>

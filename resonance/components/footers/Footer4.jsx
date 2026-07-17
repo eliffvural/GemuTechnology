@@ -95,7 +95,7 @@ export default function Footer4() {
                 <h4 className="fw-title mb-20">İletişim</h4>
                 <ul className="fw-menu clearlist">
                   <li>
-                    <a href="tel:+908501234567">+90 (850) 123 45 67</a>
+                    <a href="tel:+905313604534">+90 531 360 45 34</a>
                   </li>
                   <li>
                     <a href="mailto:info@gemutechnology.com">info@gemutechnology.com</a>
@@ -119,17 +119,6 @@ export default function Footer4() {
             Mesafeli Satış ve Hizmet Şartları
           </Link>
         </div>
-        <p className="gemu-footer-credit">
-          Bu site{" "}
-          <a
-            href="https://marithen.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Marithen Yazılım
-          </a>{" "}
-          tarafından geliştirilmiştir.
-        </p>
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
-export const companyPhone = "+90 (850) 123 45 67";
-export const companyPhoneHref = "tel:+908501234567";
+export const companyPhone = "+90 531 360 45 34";
+export const companyPhoneHref = "tel:+905313604534";
 export const companyEmail = "info@gemutechnology.com";
 export const companyEmailHref = "mailto:info@gemutechnology.com";
 export const companyAddress =

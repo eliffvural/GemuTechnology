@@ -94,7 +94,7 @@ const organizationSchema = {
   logo: `${siteUrl}/assets/images/gemu/logo-horizontal-english.png`,
   image: `${siteUrl}/assets/images/demo-corporate/hs-image-2-gemu.png`,
   email: "info@gemutechnology.com",
-  telephone: "+90 850 123 45 67",
+  telephone: "+90 531 360 45 34",
   address: {
     "@type": "PostalAddress",
     streetAddress:

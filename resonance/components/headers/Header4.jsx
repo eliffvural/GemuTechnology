@@ -44,9 +44,9 @@ export default function Header4({ links }) {
             <div className="vr mt-2" />
           </li>
           <li>
-            <a href="tel:+908501234567">
+            <a href="tel:+905313604534">
               <i className="mi-mobile size-24 color-primary-1 align-center" />
-              +90 (850) 123 45 67
+              +90 531 360 45 34
             </a>
           </li>
         </ul>

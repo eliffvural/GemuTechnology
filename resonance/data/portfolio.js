@@ -237,10 +237,10 @@ export const portfolios3 = [
 ];
 
 export const projectCoverBasePath =
-  "/assets/images/demo-corporate/portfolio/covers";
+  "/assets/images/gemu/projects";
 
 export function getProjectCoverImage(slug) {
-  return `${projectCoverBasePath}/${slug}.svg`;
+  return `${projectCoverBasePath}/${slug}.jpg`;
 }
 
 export const portfolios4 = [
